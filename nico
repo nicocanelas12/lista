@@ -1440,14 +1440,6 @@ https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/pfpdcsvoyd/
 
 
 
-#EXTINF:-1 tvg-name="UNIVERSAL COMEDY" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1283/CH_LOGO/800/542/0/0/94843453076948.png" group-title="HBO + Universal",Universal Comedy opc2
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://www.m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=062672eb7346a690feab6c84a8de9dce&keyid%5B%5D=9fd8daa507b4c58f414f1d007cf0eccf
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/pfpdcsvoyd/out/v1/1bb43614ccd348fd8b9cc4d4fc5be059/cenc.mpd
-
-
 #EXTINF:-1 tvg-id="Universal Crime.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1284/CH_LOGO/160/160/0/0/34307524076949.png" group-title="HBO + Universal",Universal Crime 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"1efd7edf60e1514f775dd13d046ae708":"c2ef1abbd945c62c11b1375eaaa50f0d"}
