@@ -61,7 +61,7 @@ https://edge-live02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"cc0abcc84ec380cfc192b96d32abad23":"9b7825385b89ff82d01909a4ae404877#}
+#KODIPROP:inputstream.adaptive.license_key={"cc0abcc84ec380cfc192b96d32abad23":"9b7825385b89ff82d01909a4ae404877"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 #EXTINF:-1 tvg-id="Telefe HD.uy" tvg-logo="https://i.imgur.com/1ad9pDr.png" group-title="Nacional",Telefe Internacional 
