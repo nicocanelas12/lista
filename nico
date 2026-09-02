@@ -259,7 +259,7 @@ https://edge-live02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 
 #EXTINF:-1 tvg-id="MixTV.ar" tvg-logo="https://raw.githubusercontent.com/CINECITY2023/cinecity/refs/heads/cinecity.net/logos/buenos-aires/CHmixtv.png" group-title="Nacional",Mix TV 
-#KODIPROP:inputstream.adaptive.license_key={"0e1327b5b1f4dfe767aec622c9ef64ce":"60c64a922af0121bf73261c825e33f18"}
+#KODIPROP:inputstream.adaptive.license_key={"65d71143cb18b78e179cee85f858d5dd":"60c64a922af0121bf73261c825e33f18"}
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
