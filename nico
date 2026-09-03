@@ -629,7 +629,17 @@ https://edge-live02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg4NTQwMDkzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI3MDQ1ODRhOWNmOTc0OGVlIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODgzNjcyOTYtMTA1IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMyIsImF1ZCI6IjM0MyIsInNvdXJjZXMiOlsxMDUsODUsMTQ0LDIxMCw4Niw4OF19.UANWDopeCRGJ_ahkAvpQboCDBk_acWoa9QicqDA5iL7Ul31W2jXCyDuFN1iZKzwXApCT_7uTwl3VNwKCByT6RQ==/live/c3eds/TyC_Internacional/sa_dash_full_e_7CF9BB041AD89713AD8CF4CF/TyC_Internacional.mpd
 
+#EXTINF:-1 tvg-id="TyC 24" tvg-name="TyC 24" tvg-logo="https://i.ibb.co/jPPwcwnk/tyc-play-2026.png" group-title="Deportes",TyC 24
+#EXTVLCOPT:http-referrer=https://play.tycsports.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36
+#EXTHTTP:{"cookie":"","referer":"https://play.tycsports.com/","user-agent":"Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36"}
+https://live-04-11-tyc24.vodgc.net/tyc24/index.m3u8
 
+#EXTINF:-1 tvg-id="TyC Sports Fan" tvg-name="TyC Sports Fan" tvg-logo="https://www.totalmedios.com/img/noticias/2026/08/6a90d38c2b1d7.jpg" group-title="Deportes",TyC Sports Fan
+#EXTVLCOPT:http-referrer=https://play.tycsports.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36
+#EXTHTTP:{"cookie":"","referer":"https://play.tycsports.com/","user-agent":"Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36"}
+https://streams2.sofast.tv/ptnr-hispasat/title-TYC-SPORTS-LATMA/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/18a85327-6b17-4d41-8c2f-41ff8511c1dd/sofastplayout/2f7c083c-a970-4cd4-a634-0b56fed45495/manifest.m3u8
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"5c86e237317c2231ac1bc130e995fad6":"dcacf7b239ee03df3c69ca11dbcde4eb"}
