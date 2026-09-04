@@ -37,12 +37,11 @@ https://joy.nx-pc.edge-apps.net/hls/6d4cm-ihgob-f3k27-31j97.m3u8
 
 
 #EXTINF:-1 tvg-id="America.uy" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/america-ar.png" group-title="Nacional",América TV now
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://nowtv.express.com.ar/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=26bbe14a22e84f658be33f1c60e5d8e9:944f1d10165c2baa527e969c1c36d55e
-https://anedgeros.express.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg4NTk4MTMxIiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2MxZWRzL0FNRVJJQ0FfVFYvU0FfREFTSF9jaXBpeC8iLCJzZXNzaW9uX2Nkbl9pZCI6ImY4NDM5YTY1MTc0ZTdkZDEiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiMjkxOTciLCJkZXZpY2VfaWQiOiIyMjAxODU5IiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzE5MC4yLjEwNS4yMjUiLCJzZXNzaW9uX3RpbWVvdXQiOjEyMDAsImF1ZCI6IjQiLCJzb3VyY2VzIjpbNF19.8k5aL3zMawjf6mBVr91j8tWIPE0__eRJX1fYCScEvN5jXy8akCSG_mgI3cqibwscclAjQ7KpUn4DJorfpgc39g==/live/c1eds/AMERICA_TV/SA_DASH_cipix/AMERICA_TV.mpd?begin=2026-09-04T20%3A45%3A00Z&token=M9qLx3VpR7zTa2NcY8kWf6HsDj4EuB1pGo5XiAnQz
-
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://mrghnngupolsgatcmevw.supabase.co/functions/v1/PerFlow_AmericaAr
+#KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
+#KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
+https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg4NzEzNTc0Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiJkOGQ5MDQzMWI5NDc0MWViIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODg1NDA3NTYtNjkzIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjExNCIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMTQ0LDIxMCw4Niw4OF19.nr1Idw1_CB6OXAL51nJB2Eb7C8e8DL-WmXLyRTez4RzfoVfgEFoEbE9Hjr3cCBNht41OQuu3ClZKp1bc1n-SbA==/live/c3eds/AmericaTV/SA_Live_dash_enc/AmericaTV.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"3cec1b1ea9799dda5596e64f37e5ed20":"c69f3afde2085dcaaaddbf55246a0323"}
