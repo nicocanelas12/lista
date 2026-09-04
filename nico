@@ -410,7 +410,7 @@ Deportes
 #EXTINF:-1 group-logo="https://i.imgur.com/EU6cNrE.png"
 
 
-#EXTINF:-1 tvg-id="ESPN HD.uy" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png"  group-title="Deportes",ESPN HD
+#EXTINF:-1 tvg-id="ESPN HD.uy" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png"  group-title="Deportes",ESPN HD now
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://nowtv.express.com.ar/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
