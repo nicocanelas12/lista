@@ -60,7 +60,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 
 
-#EXTINF:-1 tvg-id="cl#telefe-internacional" tvg-logo="[https://raw.githubusercontent.com/ThedarkSoldier996/novaimg/main/icons/052.webp](https://raw.githubusercontent.com/ThedarkSoldier996/novaimg/main/icons/052.webp)",TELEFE INTERNACIONAL
+#EXTINF:-1 tvg-id="cl#telefe-internacional" tvg-logo="https://raw.githubusercontent.com/ThedarkSoldier996/novaimg/main/icons/052.webp" group-title="Nacional",TELEFE INTERNACIONAL
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://mrghnngupolsgatcmevw.supabase.co/functions/v1/PerFlow_TelefeInternacionalAr
 #EXTVLCOPT:http-origin=https://portal.app.flow.com.ar
