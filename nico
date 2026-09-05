@@ -34,7 +34,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 
 #EXTINF:-1 tvg-id="America.uy" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/america-ar.png" group-title="Nacional",América TV
-#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkeyclearkey
 #KODIPROP:inputstream.adaptive.license_key={"ee8a6cc35fdb4ab7adeed9d16593459f":"5ca774838d5c887f7a8d7dee64b9a6b0"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
