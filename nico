@@ -767,8 +767,8 @@ https://099ed2f3014c41e78f3c7bc29b21bc11.mediatailor.us-east-1.amazonaws.com/v1/
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0499248f3b773962a4a8e329f6e5e79f:cf6440f739789a5a2823c876f2f7373d
-#KODIPROP:inputstream.adaptive.stream_headers=Origin=https://android_mobile.directvgo.com&User-Agent=dgo/4.48.0%20(Android;%20Android%207.1.2;%20Asus;%20ASUS_Z01QD)%20ExoPlayer/2.19.1
-https://1313-aws-da-mt.akamaized.net/v1/dash/dffceb859a31f14d0ed059ef6b4e2e4d850e60b1/live_1313/1313_DIRECTV_SPORTS_URU_DASH/manifest.mpd
+#KODIPROP:inputstream.adaptive.stream_headers=Origin=https://android_mobile.directvgo.com&User-Agent=dgo/4.48.0%20(Android;%20Android%207.1.2;%20Asus;%20ASUS_Z01QD)%20ExoPlayer/2.19.1&Cookie=hdntl=exp=1788674649~acl=%2f*~id=592c9d1f-bdf6-5dfa-b32b-44d6e7a62082~data=hdntl~hmac=99db9a3892c6214f8a9600
+https://1313-aws-da-mt.akamaized.net/v1/dash/dffceb859a31f14d0ed059ef6b4e2e4d850e60b1/live_1313/1313_DIRECTV_SPORTS_URU_WC_DASH/manifest.mpd
 
 #EXTINF:-1 tvg-id="DSportsUyPremium" tvg-name="DSPORT UY PREMIUM" tvg-logo="https://raw.githubusercontent.com/CINECITY2023/cinecity/refs/heads/cinecity.net/logos/deportes/CHdsportsuruguaypremium.png" group-title="Deportes",DSports PREMIUM 🇺🇾
 #EXTVLCOPT:http-referrer=https://portal.app.flow.com.ar
