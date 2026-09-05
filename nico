@@ -874,6 +874,14 @@ https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/ajfoeddkbz/
 https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/lsilniwjf7/out/v1/fc40f22f10374517a2784e1d97cb23f4/cenc.mpd
 
 
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/J4sjd5Bs/fox-one-plus.png" group-title="Deportes",FOX ONE PLUS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=fa2333198b068c64561263fb7264d74c:a9b9fce5b9cc409d925250484f7dde90
+https://live1-ott.izzigo.tv/14/out/u/dash/FOX-ONE-PLUS-HD/default.mpd
+
 #EXTINF:-1 tvg-id="FS1.us" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/fe/FS1_2016.svg/revision/latest/scale-to-width-down/811?cb=20230817005728" group-title="Deportes",FS1
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
