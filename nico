@@ -930,13 +930,31 @@ https://a12aivottepl-a.akamaihd.net/gru-nitro/live/dash/enc/3ynrpdanq2/out/v1/81
 #KODIPROP:inputstream.adaptive.license_key=cb80e1e7d7598eaf98b1dbbe6dc14ee9:103ae55c7948ca1d159d6743619d26c4
 https://live3-ott.izzigo.tv/12/out/u/dash/SKY-SPORTS-16-HD/default.mpd
 
+#EXTINF:-1 tvg-name="CANAL 5 VIX" tvg-logo="https://i.ibb.co/V310Z0q/canal5.png" group-title="Deportes",CANAL 5 VIX
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=d695093ea3e66d75a4d213a3e2cbf360&key=01be3f645e89a067d2786c295f68dde4
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://www.primevideo.com/&User-Agent=AivAndroidPlayer/1.0%20(AndroidDevice)
+https://netskrt.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/ntkdl68eob/out/v1/bd5dfb7676994383881bc6e71877d29d/cenc.mpd
 
 #EXTINF:-1 tvg-id="Bein Sports extra ñ" tvg-logo="https://i.ibb.co/HpLnftJs/Picsart-25-10-26-21-20-12-346.webp" group-title="Deportes", Bein Sports extra ñ
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://dl.dropbox.com/scl/fi/mvxasp2naascu373f4fev/paravision.json?rlkey=dojgg1ya7fani8ye608y3i91n&st=cc95n5mp&dl=0
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
 
+#EXTINF:-1 tvg-name="TSN 1" tvg-logo="https://www.sportsmediawatch.com/wp-content/uploads/2013/05/tsn.png" group-title="Deportes",TSN 1
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?key=17d2ac8dbc5429bd70af3433aa12158d&keyid=14eeabf30c14b7fbf3008c03099ce011
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://www.primevideo.com/&User-Agent=AivAndroidPlayer/1.0%20(AndroidDevice)
+https://netskrt.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd
 
+#EXTINF:-1 tvg-name="TSN 5" tvg-logo="https://www.sportsmediawatch.com/wp-content/uploads/2013/05/tsn.png" group-title="Deportes",TSN 5
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?key=18dce92a2891fee68d21ede5173230f8&keyid=385ceb9714b75e0cef61254f80b31002
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://www.primevideo.com/&User-Agent=AivAndroidPlayer/1.0%20(AndroidDevice)
+https://netskrt.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd
 
 LPF Play
 
