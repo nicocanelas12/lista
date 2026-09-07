@@ -1145,7 +1145,7 @@ https://edge-live03-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="FX.ar" tvg-name="FX" tvg-logo="https://i.postimg.cc/sg7qWnn7/V2.png" group-title="Cine + Series",FX 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=9701932cab0e4aa3b8078176d5d54dd0:76819026588b16fd7083436b2b94485e
+#KODIPROP:inputstream.adaptive.license_key={"9701932cab0e4aa3b8078176d5d54dd0":"76819026588b16fd7083436b2b94485e"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live03-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg4ODc2MTI5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0FtZXJpY2FUVi9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZGVhY2Y0MDZkNjI5ZWMzYyIsInNlc3Npb25faWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYS0xNzg4NzAzMjk1LTIyMyIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiNDMzNDQxNzNmZjA1MThhMGQwZGI0MmNhYzJhZjljYWEiLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMTQiLCJhdWQiOiIzMzIiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.3-QcZ2ojv_8U2jrMgPTkFL5k_XGRCpp4ausiv0c_5I_6hXb_OIWNE5_eusRZQsZAEiA5wUbEv9Yvzjmc0QPUmA==/out/v1/FXHD/SA_Live_dash_enc/FXHD.mpd
