@@ -652,8 +652,7 @@ https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 #EXTINF:-1 tvg-id="AmericaSports.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/america-sports-ar.png?raw=true" group-title="Deportes",America Sports 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MDUxMjAxIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0VTUE4ySEQvU0FfTGl2ZV9kYXNoX2VuYy8iLCJzZXNzaW9uX2Nkbl9pZCI6ImY0NTg0NDQ0MzQyOWVhN2QiLCJzZXNzaW9uX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MtMTc4ODg3ODQwMS0yNjMiLCJjbGllbnRfaWQiOiJmbG93OjExMTI4MjEtLWZsb3c6MTExMjgyMTpQIiwiZGV2aWNlX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MiLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjIiLCJhdWQiOiIxMTgiLCJzb3VyY2VzIjpbMTA1LDg1LDIxMCw4Niw4OF19.cyiaCTi0CrFJjIUcv_WGXK5UthC8eaiukoqCioyBl7bDNJk3Wt-WgCnfdjK_lTuIAT3yvQhGYz9NGDxoV3veZg==/live/c6eds/America_Sports/sa_dash_full_e_7CF9BB041AD89713AD8CF4CF/America_Sports.mpd
-
+https://cdn-token.app.flow.com.ar/cdntoken/v2/generator?path=https:%2F%2Fchromecast.cvattv.com.ar%2Flive%2Fc3eds%2FAmericaTV%2FSA_Live_dash_enc%2FAmericaTV.mpd
 
 
 #EXTINF:-1 tvg-id="PXSports.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/px-sports-ar.png?raw=true" group-title="Deportes",Px Sports 
