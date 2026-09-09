@@ -648,7 +648,7 @@ https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3269536fedc69cba1e0281ff62cc4eb9:5246eedf4e7af3771f80899db667dede
+#KODIPROP:inputstream.adaptive.license_key={"3269536fedc69cba1e0281ff62cc4eb9":"5246eedf4e7af3771f80899db667dede"}
 #EXTINF:-1 tvg-id="AmericaSports.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/america-sports-ar.png?raw=true" group-title="Deportes",America Sports 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
