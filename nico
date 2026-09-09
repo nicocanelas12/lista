@@ -380,7 +380,7 @@ https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MDUxMjAxIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0VTUE4ySEQvU0FfTGl2ZV9kYXNoX2VuYy8iLCJzZXNzaW9uX2Nkbl9pZCI6ImY0NTg0NDQ0MzQyOWVhN2QiLCJzZXNzaW9uX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MtMTc4ODg3ODQwMS0yNjMiLCJjbGllbnRfaWQiOiJmbG93OjExMTI4MjEtLWZsb3c6MTExMjgyMTpQIiwiZGV2aWNlX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MiLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjIiLCJhdWQiOiIxMTgiLCJzb3VyY2VzIjpbMTA1LDg1LDIxMCw4Niw4OF19.cyiaCTi0CrFJjIUcv_WGXK5UthC8eaiukoqCioyBl7bDNJk3Wt-WgCnfdjK_lTuIAT3yvQhGYz9NGDxoV3veZg==/live/c6eds/Kidoo/SA_Live_dash_enc/Kidoo.mpd
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/ThedarkSoldier996/novaimg/main/icons/222.webp" group-title="Infantil",El Reino Infantil
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.bo.flow.com.ar/images/content/800/542/VZirRVsFrCclyGZf9mHQlg?tags=CH_LOGO" group-title="Infantil",El Reino Infantil
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=b6e4e7306f1dac49fceecc6ce0bebe1d:6d02fe9fc3938bb268405ad1693f0a5a
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -495,7 +495,7 @@ https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://wxlhqitmigmkpfcsqyzt.supabase.co/functions/v1/PerFlow_ESPNSUR
+#KODIPROP:inputstream.adaptive.license_key=e95fe84b9f73e6655fde711d5c896056:267a0e514deb984803bec43cc607c4cb
 #EXTINF:-1 tvg-id="ESPN HD.uy" tvg-name="ESPN" tvg-logo="http://res.cloudinary.com/doj39auqi/image/upload/v1684343656/cxuieragbu4epuhxo7in.png" group-title="Deportes",ESPN 🇺🇾 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
@@ -1192,6 +1192,21 @@ https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MDUxMjAxIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0VTUE4ySEQvU0FfTGl2ZV9kYXNoX2VuYy8iLCJzZXNzaW9uX2Nkbl9pZCI6ImY0NTg0NDQ0MzQyOWVhN2QiLCJzZXNzaW9uX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MtMTc4ODg3ODQwMS0yNjMiLCJjbGllbnRfaWQiOiJmbG93OjExMTI4MjEtLWZsb3c6MTExMjgyMTpQIiwiZGV2aWNlX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MiLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjIiLCJhdWQiOiIxMTgiLCJzb3VyY2VzIjpbMTA1LDg1LDIxMCw4Niw4OF19.cyiaCTi0CrFJjIUcv_WGXK5UthC8eaiukoqCioyBl7bDNJk3Wt-WgCnfdjK_lTuIAT3yvQhGYz9NGDxoV3veZg==/live/c6eds/Golden/sa_dash_full_e_7CF9BB041AD89713AD8CF4CF/Golden.mpd
 
+
+#EXTINF:-1 tvg-name="GOLDEN PLUS" tvg-logo="https://i.ibb.co/NyNYXrx/golden-plus.png" group-title="Cine + Series",Golden Plus
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ed5849d33e47606d6118d7fb2e39acd0:63670e5fe0c253ec7b5e8d7ddb9dc76b
+https://live-pv-ta.amazon.fastly-edge.com/iad-nitro/live/clients/dash/enc/o09knwldwh/out/v1/15f9f74c888e4fdd9815ea94635ae4db/cenc.mpd
+
+
+#EXTINF:-1 tvg-name="GOLDEN PREMIER" tvg-logo="https://i.ibb.co/6D60Brn/golden-premier.png" group-title="Cine + Series",Golden Premier
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=b39fdb1efc89fa2d46fce8428c3e09:1942081db257b29353c9e6e0f5e0c5cd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.primevideo.com/
+#EXTVLCOPT:http-origin=https://www.primevideo.com
+https://live-pv-ta.amazon.fastly-edge.com/gru-nitro/live/clients/dash/enc/1pyrprmguo/out/v1/e63748f718754f6ca76df9ce757b10f5/cenc.mpd
 
 #EXTINF:-1 tvg-id="DHE.ar" tvg-logo="https://i.postimg.cc/kXrk53s4/Logo-1.png" group-title="Cine + Series",DHE 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
