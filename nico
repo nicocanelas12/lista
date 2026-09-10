@@ -435,7 +435,7 @@ https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 #EXTINF:-1 tvg-id="ESPN 2 HD.uy" tvg-name="ESPN 2" tvg-logo="https://i.postimg.cc/D4yRcwg2/ESPN-2-Argentina.png" group-title="Deportes",ESPN 2 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=e6eab53cf8ea962b999c59c298596a65:10c103ae76f99620d66fa75f2c03302a
+#KODIPROP:inputstream.adaptive.license_key={"e6eab53cf8ea962b999c59c298596a65":"10c103ae76f99620d66fa75f2c03302a"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MDUxMjAxIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0VTUE4ySEQvU0FfTGl2ZV9kYXNoX2VuYy8iLCJzZXNzaW9uX2Nkbl9pZCI6ImY0NTg0NDQ0MzQyOWVhN2QiLCJzZXNzaW9uX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MtMTc4ODg3ODQwMS0yNjMiLCJjbGllbnRfaWQiOiJmbG93OjExMTI4MjEtLWZsb3c6MTExMjgyMTpQIiwiZGV2aWNlX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MiLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjIiLCJhdWQiOiIxMTgiLCJzb3VyY2VzIjpbMTA1LDg1LDIxMCw4Niw4OF19.cyiaCTi0CrFJjIUcv_WGXK5UthC8eaiukoqCioyBl7bDNJk3Wt-WgCnfdjK_lTuIAT3yvQhGYz9NGDxoV3veZg==/live/c6eds/ESPN2_Arg/SA_Live_dash_enc/ESPN2_Arg.mpd
@@ -571,7 +571,7 @@ https://joy.nx-pc.edge-apps.net/hls/nhpm-b5ank-dc0f8-23dl8.m3u8
 
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=0b1e6825350fa1bc0032f8f36287e006:11fc540a4539d18f91cd403a5ed42284
+#KODIPROP:inputstream.adaptive.license_key={"0b1e6825350fa1bc0032f8f36287e006":"11fc540a4539d18f91cd403a5ed42284"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 #EXTINF:-1 tvg-id="TyC Sports.ar" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1981/CH_LOGO/400/400/0/0/42832369072861.png" group-title="Deportes",TyC Sports FHD
