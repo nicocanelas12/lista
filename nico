@@ -122,7 +122,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="DNews.ar" tvg-logo="https://raw.githubusercontent.com/masterentertainment/listas/refs/heads/main/logos/DNEWS.png" group-title="Nacional",DNews
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=5dcaeaa309c8d828c7731c7877158a92:423e96f5f1199b026cbab4a7521e0591
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c7eds/DNews/SA_Live_dash_enc/DNews.mpd
@@ -174,7 +174,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Diputados_TV/SA_Live_dash_enc/Diputados_TV.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=8700e5c6a3528f38f878a1720ab8a5d4:dd4d69622cd92dfe429229925c6a0a75
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 #EXTINF:-1 ch-number="11" tvg-id="Canal de la Ciudad.ar" tvg-logo="https://i.postimg.cc/k5nvDBrT/Fondo-Oscuro.png" group-title="Nacional", Canal de la Ciudad
@@ -197,7 +197,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=7e9c0f045a0940b971d1067eecf629b7:923f466a008d077b21ac13ede21600a5
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 #EXTINF:-1 tvg-id="ArgentinisimaSatelital.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/argentinisima-satelital-ar.png" group-title="Nacional",Argentinisima
@@ -213,7 +213,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="Volver.ar"  tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/volver-ar.png" group-title="Nacional",Volver 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=277df1cbe2bc86d555780d59eb7f2740:306cb0274acd57bf70c7eafc643ebb4d
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Volver/SA_Live_dash_enc/Volver.mpd
@@ -222,7 +222,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="CineAr.ar" tvg-name="Cine.AR" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/61/CH_LOGO/400/400/0/0/98997452071605.png" group-title="Nacional",Cine.AR 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=7a11a38b78f2a44380bf3954b169066e:4e84e73a2ddfca8c8f473023033e0649
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/INCAA_Tv/SA_Live_dash_enc/INCAA_Tv.mpd
@@ -246,14 +246,14 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=13e166b20d99713a42e42bfe91c7330b:413a0665d266bcc76a706ccfce2a2410
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 #EXTINF:-1 tvg-id="Encuentro.uy" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/encuentro-ar.png" group-title="Nacional", Encuentro
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Encuentro/SA_Live_dash_enc/Encuentro.mpd	
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=ada50e6dfa73ff021b64cda0e3266441:a8e86512821e7657d05acbbb703b5269
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 #EXTINF:-1 tvg-id="CANAL A.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/canal-a-ar.png" group-title="Nacional", Canal (á)
@@ -261,7 +261,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="Perfil.ar" tvg-logo="https://i.imgur.com/AvICFVH.png" group-title="Nacional",+Perfil
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=2bbbc95ef2db831cab99b3bc29f96e14:f3755517e66c2bf8af9e7dda33a7c9ab
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c7eds/Canal_Economico/SA_Live_dash_enc/Canal_Economico.mpd
@@ -1689,11 +1689,17 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="MTV.ar" tvg-logo="https://raw.githubusercontent.com/masterentertainment/listas/refs/heads/main/logos/MTVLA.png" group-title="Música",MTV 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=bbbb2956cf5963fb1ae243998ad2722f2:27f1f7ef07abe59d54be2bce4c9a1bc2
+#KODIPROP:inputstream.adaptive.license_key={"bbbb2956cf5963fb1ae243998ad2722f2":"27f1f7ef07abe59d54be2bce4c9a1bc2"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/MTV_HD/SA_Live_dash_enc/MTV_HD.mpd
 
+#EXTINF:-1 tvg-id="QuieroMusica.ar" tvg-logo="https://www.personal.com.ar/content/dam/teco-cms-ecosystem/flow/guia-de-canales/3281.png" group-title="Música",Quiero Musica
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=b650f8342cb564426d68304411bbfe8b:91c659df1f76ccc54ccd865517824e34
+#KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
+#KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
+https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Quiero_HD/SA_Live_dash_enc/Quiero_HD.mpd
 
 
 #EXTINF:-1 tvg-id="El Canal de la Música.ar" tvg-logo="https://i.postimg.cc/3JH12Ykm/CM.png" group-title="Música", Canal de la Música 
@@ -1712,7 +1718,13 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Vorterix/SA_Live_dash_enc/Vorterix.mpd
 
-
+#EXTINF:-1 tvg-logo="https://geo.edge.pontiscloud.com:9002/images/901/CH_LOGO/200/200/0/0/12050400077728.png" group-title="Música", Billboard
+#EXTVLCOPT:http-user-agent=VisualOn OSMP+ Player(Linux;Android)
+#EXTVLCOPT:http-referrer=https://webclient.axsbolivia.com/
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=kid:kw8rM4ZGN_rystq2yNC6kg,k:Uw5lYcxBl-nqt797bzWj7Q
+#EXTHTTP:{"urls":["https://cdn.sensa.com.ar/output/SMT1/BLBH/playlist.m3u8"],"headers":{"Origin":"https://webclient.axsbolivia.com","Referer":"https://webclient.axsbolivia.com/","User-Agent":"VisualOn OSMP+ Player(Linux;Android)"}}
+https://cdn.sensa.com.ar/output/SMT1/BLBH/playlist.m3u8
 
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
