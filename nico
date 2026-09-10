@@ -170,19 +170,19 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 #KODIPROP:inputstream.adaptive.license_key={"83404a1a63bad8a1d21aabf89f6436cc":"b4ce534c34911e703ffc780653bb2a78"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 ch-number="11" tvg-id="Diputados TV.ar" tvg-logo="https://i.postimg.cc/m2VyFnKH/Diputados.png" group-title="Nacional", Diputados TV
+#EXTINF:-1 tvg-id="Diputados TV.ar" tvg-logo="https://i.postimg.cc/m2VyFnKH/Diputados.png" group-title="Nacional", Diputados TV
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Diputados_TV/SA_Live_dash_enc/Diputados_TV.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=8700e5c6a3528f38f878a1720ab8a5d4:dd4d69622cd92dfe429229925c6a0a75
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 ch-number="11" tvg-id="Canal de la Ciudad.ar" tvg-logo="https://i.postimg.cc/k5nvDBrT/Fondo-Oscuro.png" group-title="Nacional", Canal de la Ciudad
+#EXTINF:-1 tvg-id="Canal de la Ciudad.ar" tvg-logo="https://i.postimg.cc/k5nvDBrT/Fondo-Oscuro.png" group-title="Nacional", Canal de la Ciudad
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Canal_de_la_ciudad/SA_Live_dash_enc/Canal_de_la_ciudad.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"71c9374566b0b5517083bc923175969a":"56292911445ae704f390669ec5d7faa7"}
-#EXTINF:-1 ch-number="11" tvg-id="KZO.ar" tvg-logo="https://cdn.bo.flow.com.ar/images/content//228/228/h0sFN_bK9VXxjOK-Ko1k3w?tags=CH_LOGO" group-title="Nacional",KZO 
+#EXTINF:-1 tvg-id="KZO.ar" tvg-logo="https://cdn.bo.flow.com.ar/images/content//228/228/h0sFN_bK9VXxjOK-Ko1k3w?tags=CH_LOGO" group-title="Nacional",KZO 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/KZO/SA_Live_dash_enc/KZO.mpd	
@@ -229,9 +229,9 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 
 
-#EXTINF:-1 tvg-name="BravoTV.ar" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/2561/CH_LOGO/400/400/0/0/23653274077154.png" group-title="Nacional",Bravo TV 
+#EXTINF:-1 tvg-name="canal 25" tvg-logo="https://i.ibb.co/RpQLdrKk/flow.png" group-title="Nacional",Canal 25 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d7afc43dab940d699b61466b245369f:712b5165ff990156e6c9e580b0b4df59
+#KODIPROP:inputstream.adaptive.license_key=d67ea3430c0dd019e820535765268109:7d7bf2d1b5f4c7c97138a1b9b98e0675
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c7eds/BravoTV/SA_Live_dash_enc/BravoTV.mpd
