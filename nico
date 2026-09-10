@@ -689,7 +689,7 @@ https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 https://edge-mix02-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MDUxMjAxIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0VTUE4ySEQvU0FfTGl2ZV9kYXNoX2VuYy8iLCJzZXNzaW9uX2Nkbl9pZCI6ImY0NTg0NDQ0MzQyOWVhN2QiLCJzZXNzaW9uX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MtMTc4ODg3ODQwMS0yNjMiLCJjbGllbnRfaWQiOiJmbG93OjExMTI4MjEtLWZsb3c6MTExMjgyMTpQIiwiZGV2aWNlX2lkIjoiYTU5ODZkNzYyOTE2MTJlZTVlNDBiM2VkODI5NTAzY2MiLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjIiLCJhdWQiOiIxMTgiLCJzb3VyY2VzIjpbMTA1LDg1LDIxMCw4Niw4OF19.cyiaCTi0CrFJjIUcv_WGXK5UthC8eaiukoqCioyBl7bDNJk3Wt-WgCnfdjK_lTuIAT3yvQhGYz9NGDxoV3veZg==/live/c3eds/DeporTVHD/SA_Live_dash_enc/DeporTVHD.mpd
 
 
-#EXTINF:-1 tvg-id="DSports.ar" tvg-name="DSports Argentina" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Flow) 
+#EXTINF:-1 tvg-id="610dtv.ar" tvg-name="DSports" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Flow) 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"86d19904429f78baf98cf1fd481c430e":"5229197732a9a3e109264b272bd782f2"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
