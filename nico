@@ -9,7 +9,7 @@ Nacional
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=589f5b6f4afec0b3362cd6be2ab1eb36:6d685f3151730ca6a4be7765a46d30a5
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 tvg-id="TV Pública.ar" tvg-logo="https://i.ibb.co/6cvkTygb/Televisi-n-P-blica-Argentina-2021.png" group-title="Nacional",TV Pública 
+#EXTINF:-1 tvg-id="TV Pública.ar" tvg-logo="https://i.postimg.cc/5t1Qr2mk/LEP.png" group-title="Nacional",TV Pública 
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Canal7/SA_Live_dash_enc/Canal7.mpd
 
 
@@ -17,7 +17,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 #KODIPROP:inputstream.adaptive.license_key={"589f5b6f4afec0b3362cd6be2ab1eb36":"6d685f3151730ca6a4be7765a46d30a5"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 tvg-id="TV Pública.ar" tvg-logo="https://i.ibb.co/6cvkTygb/Televisi-n-P-blica-Argentina-2021.png" group-title="Nacional",TV Pública FHD
+#EXTINF:-1 tvg-id="TV Pública.ar" tvg-logo="https://i.postimg.cc/5t1Qr2mk/LEP.png" group-title="Nacional",TV Pública FHD
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Canal7/SA_Live_dash_enc_wl/Canal7.mpd
 
 
@@ -152,7 +152,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Metro/SA_Live_dash_enc/Metro.mpd
 
 
-#EXTINF:-1 tvg-id="Ar12.ar" tvg-name="AR|12" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/argentina-12-ar.png" group-title="Nacional",AR|12 
+#EXTINF:-1 tvg-id="Ar12.ar" tvg-name="AR|12" tvg-logo="https://i.postimg.cc/BnPRzqvb/LEP.png" group-title="Nacional",AR|12 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"723d8d918d61cee1f708ec849b6498a2":"b4b48cfccc1cddcc73bc7a7df46cb531"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -211,7 +211,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Canal_90/SA_Live_dash_enc/Canal_90.mpd
 
 
-#EXTINF:-1 tvg-id="Volver.ar"  tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/volver-ar.png" group-title="Nacional",Volver 
+#EXTINF:-1 tvg-id="Volver.ar" tvg-logo="https://i.postimg.cc/tR1jTzHt/Fondo-Oscuro.png" group-title="Nacional",Volver 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=277df1cbe2bc86d555780d59eb7f2740:306cb0274acd57bf70c7eafc643ebb4d
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -633,10 +633,10 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/masterentertainment/listas/refs/heads/main/logos/EVNTD.png" group-title="Deportes",Eventos Flow
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"3d7afc43dab940d699b61466b245369f":"712b5165ff990156e6c9e580b0b4df59"}
+#KODIPROP:inputstream.adaptive.license_key={"49eb924ba998ca7fbbaee30dcef1ecb4":"11111111111111118111000000000000"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c3eds/Eventos_PY/SA_Live_dash_enc/Eventos_PY.mpd
+https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c4eds/Info_Mora/SA_Live_dash_enc_wl/Info_Mora.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"3d7afc43dab940d699b61466b245369f":"712b5165ff990156e6c9e580b0b4df59"}
@@ -1132,7 +1132,7 @@ https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-id="STAR Channel HD.uy" tvg-logo="https://i.postimg.cc/28BbwZBS/Fondo_Oscuro.png" group-title="Cine + Series",Star Channel 
+#EXTINF:-1 tvg-id="STAR Channel HD.uy" tvg-logo="https://static.flow.com.ar/images/-/-/0/0/7718553707879.png" group-title="Cine + Series",Star Channel 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"fc14190acc872e204f3973c75b6439f2":"34cf13899db248a7aa2c1deb288d75ef"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
