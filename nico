@@ -281,7 +281,7 @@ Infantil
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/PAKA_PAKA/SA_Live_dash_enc/PAKA_PAKA.mpd
 
 
-#EXTINF:-1 tvg-id="Disney Channel HD.uy" tvg-logo="https://i.postimg.cc/MpXdYn3G/Disney_Channel.png" group-title="Infantil",Disney Channel
+#EXTINF:-1 tvg-id="Disney Channel HD.uy" tvg-logo="https://i.ibb.co/vdfh1bd/disney-channel.png" group-title="Infantil",Disney Channel
 #KODIPROP:inputstream.adaptive.license_key=138981ed5f75527232593af4c92c9007:0f05c78bd7e8bc3e9e0f708c1424f34b
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
