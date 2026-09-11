@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://www.open-epg.com/files/argentina4.xml.gz,https://www.open-epg.com/files/uruguay2.xml.gz"
+#EXTM3U x-tvg-url="https://albaforge.com/bin-cas6u/epg/an/EPG/ARGENTINA.xml.gz,https://albaforge.com/bin-cas6u/epg/an/EPG/FLOWTV.xml.gz,https://www.open-epg.com/files/argentina4.xml.gz,https://www.open-epg.com/files/uruguay2.xml.gz"
  
 Nacional
  
@@ -649,12 +649,12 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=3269536fedc69cba1e0281ff62cc4eb9:5246eedf4e7af3771f80899db667dede
-#EXTINF:-1 tvg-id="AMSports.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/america-sports-ar.png?raw=true" group-title="Deportes",America Sports 
+#EXTINF:-1 tvg-id="America Sports.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/america-sports-ar.png?raw=true" group-title="Deportes",America Sports 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/America_Sports/SA_Live_dash_enc/America_Sports.mpd
 
-#EXTINF:-1 tvg-id="PXSports.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/px-sports-ar.png?raw=true" group-title="Deportes",Px Sports 
+#EXTINF:-1 tvg-id="[PXSP] PX Sports" tvg-name="PX Sports" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/px-sports-ar.png?raw=true" group-title="Deportes",Px Sports 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=61973e2f6b81657862b645fe2a34416a:2786c5b66d05cf6f1a42b8c270453319
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -663,7 +663,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 
 
-#EXTINF:-1 tvg-id="ElGarage.ar" tvg-logo="https://i.postimg.cc/t4PkZ3n5/Logo-Fondo-Oscuro.png" group-title="Deportes",Garage TV 
+#EXTINF:-1 tvg-id="El Garage Tv.ar" tvg-logo="https://i.postimg.cc/t4PkZ3n5/Logo-Fondo-Oscuro.png" group-title="Deportes",Garage TV 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=a3ea9cbb34e7f4dbf6156a68f913d6d7:1c00f433ce482e2b8766a6a020634947
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -1201,7 +1201,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Golden/SA_Live_dash_enc/Golden.mpd
 
 
-#EXTINF:-1 tvg-name="Golden Edge.uy" tvg-logo="https://m.media-amazon.com/images/G/01/digital/video/Linear_Clean_Slate/Golden_Edge._SL500_FMpng_.png" group-title="Cine + Series",Golden Edge
+#EXTINF:-1 tvg-name="Golden Edge.ar" tvg-logo="https://m.media-amazon.com/images/G/01/digital/video/Linear_Clean_Slate/Golden_Edge._SL500_FMpng_.png" group-title="Cine + Series",Golden Edge
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=ae4cbc34d4b1645f6c7b26410dde7b58:647478cd3bd0dfb3e820249296c23096
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
@@ -1514,7 +1514,12 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/out/v1/TNT_NOVELAS/SA_Live_dash_enc/TBS.mpd
 
-
+#EXTINF:-1 tvg-id="TLNovelas.ar" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/301/CH_LOGO/160/160/0/0/9347484107170.png" group-title="Novelas + Variedades",TLNovelas
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=62bf7b8ec759904f0676d24b0baef659:16435593f900bd954071486abdc8bd81
+#KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
+#KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
+https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5MjI0MTgzIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9vdXQvdjEvRlhIRC9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiZjliZGUyZmY3MGI2NGQ0YyIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MDUxMzg4LTk3MiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjMiLCJhdWQiOiIxOTgiLCJzb3VyY2VzIjpbMTA1LDg1LDE0NCwyMTAsODYsODhdfQ==.chDvW-SAtI3ZU0rJ1dpOQsw8_0HzM9uAOGKPxbXB7sEX6Z674cp8zb7_0a9xNe6WEFmyDZwfbq1rzE-wx8J5hQ==/live/c6eds/Telenovelas/SA_Live_dash_enc/Telenovelas.mpd
 
 #EXTINF:-1 tvg-id="Animal Planet HD.uy" tvg-logo="https://raw.githubusercontent.com/CINECITY2023/cinecity/refs/heads/cinecity.net/logos/cultura/CHanimalplanet.png" group-title="Novelas + Variedades",Animal Planet 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
