@@ -409,7 +409,7 @@ https://edge-live04-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 #KODIPROP:inputstream.adaptive.license_key=c502892e037a9f34827147b2b24e42cf:2531bd34bec6c0e8fa4e07aedb261ade
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-https://cdn-token.app.flow.com.ar/cdntoken/v2/generator?path=https://cdn-flow-balancer.app.flow.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.==.Eok0u3xCiLSHirL6CRxGgRQEBag0odUVfZmZn5e3gn8P9wagmLZhvQQaIMoJkPrPt_VsPsWM353-ukpup3CJMA/live/c7eds/Fox_Sports_Premiun_HD/SA_Live_dash_enc_wl/Fox_Sports_Premiun_HD.mpd
+https://cdn-token.app.flow.com.ar/cdntoken/v2/generator?path=https%3A%2F%2Fcdn-flow-balancer.app.flow.com.ar%2Ftok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.==.Eok0u3xCiLSHirL6CRxGgRQEBag0odUVfZmZn5e3gn8P9wagmLZhvQQaIMoJkPrPt_VsPsWM353-ukpup3CJMA%2Flive%2Fc7eds%2FFox_Sports_Premiun_HD%2FSA_Live_dash_enc_wl%2FFox_Sports_Premiun_HD.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c502892e037a9f34827147b2b24e42cf:2531bd34bec6c0e8fa4e07aedb261ade
