@@ -1304,7 +1304,7 @@ http://147.78.1.28/xview/hbo_2_hd.mpd
 
 #EXTINF:-1 321" tvg-id="HBO Plus HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/124/CH_LOGO/160/160/0/0/10237380072165.png" group-title="HBO + Universal",HBO Plus
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"c1c780647a98d46c7e5867cf204d129a":"006d44f02be55c28f34b9106d79a82a9"}
+#KODIPROP:inputstream.adaptive.license_key={"c1c780647a98d46c3e5867cf204d129a":"006d44f02be55c28f34b9106d79a82a9"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c6eds/HBO_Plus/SA_Live_dash_enc/HBO_Plus.mpd
