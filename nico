@@ -1392,7 +1392,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 #EXTINF:-1 tvg-id="Universal Premiere.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1285/CH_LOGO/160/160/0/0/62685863076950.png" group-title="HBO + Universal",Universal Premiere 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"909eb7589305cd00e1b6827fadd74411":"43a9e55701369437d24892240d9741c2"}
+#KODIPROP:inputstream.adaptive.license_key={"909eb7589305cd00e1b6827fadd74411":"43a9e55701369434df4892240d9741c2"} 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c6eds/Universal_Premiere/SA_Live_dash_enc/Universal_Premiere.mpd
@@ -1413,7 +1413,7 @@ https://netskrt.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/ciqsqqxp8g/
 
 #EXTINF:-1 tvg-id="Universal Cinema.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1282/CH_LOGO/160/160/0/0/21817888076947.png" group-title="HBO + Universal",Universal Cinema 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"bc2ba2a391c2edc5a2990841c5c30636":"892061b87f07c6d816f234a1328c3420"}
+#KODIPROP:inputstream.adaptive.license_key={"6c2ba2a391c2edc5a2990841c5c30636":"892061b87f07c6d816f234a1328c3420"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c6eds/Universal_Cinema/SA_Live_dash_enc/Universal_Cinema.mpd
@@ -1450,7 +1450,7 @@ https://netskrt.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/pfpdcsvoyd/
 
 #EXTINF:-1 tvg-id="Universal Crime.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1284/CH_LOGO/160/160/0/0/34307524076949.png" group-title="HBO + Universal",Universal Crime 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"d8a2142b66d54b58165973e137bef4f0":"f30900beab737d0f39b543e58044ba2f"}
+#KODIPROP:inputstream.adaptive.license_key={"d8a2142b66d54b58165973e137bef4f0":"f30900beab737d0f39b543e58344ba2f"} 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar/
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c6eds/universal_Crime/SA_Live_dash_enc/universal_Crime.mpd
