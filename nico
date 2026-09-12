@@ -460,7 +460,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 #EXTINF:-1 tvg-id="ESPN 5 HD.uy" tvg-logo="https://i.imgur.com/eBYBgnn.png" group-title="Deportes",ESPN 5
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"vCqn2eY1Tkl57mKw7FWVxQ","kid":"z2Jt48rtm_rwuFwGqv0s0A"}],"type":"temporary"}
+#KODIPROP:inputstream.adaptive.license_key={"cf626de3cadd9bfaf0b85c06aafd2cd0":"bc2aa7d9e6354e4979ee62b0ec5595c5"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c7eds/ESPN4/SA_Live_dash_enc/ESPN4.mpd
@@ -472,7 +472,7 @@ https://vcdn.mn10.entel.bo:443/Content/DASH/Live/Channel(80c74968-a2ef-4005-8661
 
 #EXTINF:-1 tvg-id="ESPN 6 HD.uy" tvg-logo="https://i.imgur.com/dk8AYkV.png" group-title="Deportes",ESPN 6 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"fdac1b45f19959b848f498c8eff15d12":"c2a6edacac0370ef792ffaccfe2610a9"}
+#KODIPROP:inputstream.adaptive.license_key={"fdac1b45f19959b848f498c8eff15d12":"c2a6e7acabc370ef792ffacc5e2610a9"} 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c7eds/FoxSports3_UY/SA_Live_dash_enc/FoxSports3_UY.mpd
@@ -484,7 +484,7 @@ https://vcdn.mn10.entel.bo:443/Content/DASH/Live/Channel(b30aa51e-97fa-4354-bb38
 
 #EXTINF:-1 tvg-id="ESPN 7 HD.uy" tvg-logo="https://i.imgur.com/bWrggk0.png" group-title="Deportes",ESPN 7
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"fdac1b45f19959b848f498c8eff15d12":"c2a6edacac0370ef792ffaccfe2610a9"}
+#KODIPROP:inputstream.adaptive.license_key={"fdac1b45f19959b848f498c8eff15d12":"c2a6e7acabc370ef792ffacc5e2610a9"} 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live04-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5NDAzNDczIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL0NhbmFsNy9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiNzliNjZlYTFlYjNhMDk3ZSIsInNlc3Npb25faWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNy0xNzg5MjMwNjcyLTg1NiIsImNsaWVudF9pZCI6ImZsb3c6OTk5OTAwMDAyNzU4MTcwLS1mbG93Ojk5OTkwMDAwMjc1ODE3MDpQIiwiZGV2aWNlX2lkIjoiODViOWQxOWEyNjEwMTA4M2VkM2JkNjQ4ZGE0NTZjYjciLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMjAxLjIzNS42Ni4xMjIiLCJhdWQiOiIzNTciLCJzb3VyY2VzIjpbMTA1LDg1LDIxMCw4Niw4OF19.hdrEZRQbiFZigZPSyzQaIcsyAII4kKOh5g-QyGbDQOpmKgnNvn4GPYsyMduLlY2Ma-0OtMXcBhzm6cicQb0zXg==/live/c7eds/FoxSports2_UY/SA_Live_dash_enc/FoxSports2_UY.mpd
@@ -512,7 +512,7 @@ https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(8757cb0a-3584-40cd-901e-893
 
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"3f2e12c72e1a011be0569fbd9ca486ab":"1273deabb3c043560fe66edd2b1690f1"}
+#KODIPROP:inputstream.adaptive.license_key={"3f2e12c72e1a011be0569fbd9ca486ab":"1273deabb3c043560fe264dd2b1690f1"} 
 #EXTINF:-1 tvg-id="ESPN 2 HD.uy" tvg-name="ESPN 2" tvg-logo="https://raw.githubusercontent.com/masterentertainment/listas/refs/heads/main/logos/ESPN2.png" group-title="Deportes",ESPN 2 🇺🇾 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
@@ -602,7 +602,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
  
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"e7880e1b0d50ca324646b9d73d781e1f":"2befed7812ee52310d421c1d7756d072"}
+#KODIPROP:inputstream.adaptive.license_key={"e7880e1b0d50ca324646b9d73d781e1f":"2bef2d7912ee52310d421c1d7756d072"} 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 #EXTINF:-1 tvg-id="629dtv.cl" tvg-logo="https://i.imgur.com/qeZwmix.jpeg" group-title="Deportes",TyC Sports Internacional
