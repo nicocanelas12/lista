@@ -597,7 +597,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 
 #EXTINF:-1 tvg-id="629dtv.cl" tvg-logo="https://i.imgur.com/qeZwmix.jpeg" group-title="Deportes",TyC Sports Internacional 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"e5c8061b0d508a32064646b9d73d781e":"2bff2d7912ee52310d421c1c7776d072"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
