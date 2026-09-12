@@ -452,7 +452,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 #EXTINF:-1 tvg-id="ESPN 4 HD.uy" tvg-logo="https://i.postimg.cc/1fnQ2Sfy/ESPN-4-Sur.png" group-title="Deportes",ESPN 4 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=d02981e6faeacef49c90fdb053ab641d:645e13624e933841b1ea35cda1b55bd1
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"ZF4TYk6TOEGx6jXNobVb0Q","kid":"0CmB5vrqzvSckP2wU6tkHQ"}],"type":"temporary"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c3eds/ESPNHD/SA_Live_dash_enc/ESPNHD.mpd
@@ -460,7 +460,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 #EXTINF:-1 tvg-id="ESPN 5 HD.uy" tvg-logo="https://i.imgur.com/eBYBgnn.png" group-title="Deportes",ESPN 5
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"cf626de3caed9bfaf0b85c06aafd2cd0":"bc2aa7d9e6354e4979ee62b0ec5595c5"}
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"vCqn2eY1Tkl57mKw7FWVxQ","kid":"z2Jt48rtm_rwuFwGqv0s0A"}],"type":"temporary"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c7eds/ESPN4/SA_Live_dash_enc/ESPN4.mpd
