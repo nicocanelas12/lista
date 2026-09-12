@@ -129,7 +129,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 #EXTINF:-1 tvg-id="Cronica.ar" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/62/CH_LOGO/160/160/0/0/90907313073986.png" group-title="Nacional",Crónica TV 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"33ded37fefaa6c3d6878e0d555dfaffd":"9e024c10af20f240a1ea35b94d147f28"}
+#KODIPROP:inputstream.adaptive.license_key={"33ded37fefaa6c3d6878e0d555dfaffd":"9e024c10af20f240a1ea35b94d147f28"} 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c7eds/CronicaTV/SA_Live_dash_enc/CronicaTV.mpd
@@ -1292,7 +1292,7 @@ http://147.78.1.28/xview/hbo_west_hd.mpd
 
 #EXTINF:-1 tvg-id="HBO 2 HD.uy" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/HBO2P.png?raw=true" group-title="HBO + Universal",HBO 2
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"926d5e1201584b4c21761d167125f407":"148a358284689e40b22074c244c535da"}
+#KODIPROP:inputstream.adaptive.license_key={"91bd6f829d06498c21e212acf1c5fa07":"148a358284689e40b22074c244c535da"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Mzk4Mjk5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiI2ZjliNzkxMGRmMzNkZmJkIiwic2Vzc2lvbl9pZCI6Ijg1YjlkMTlhMjYxMDEwODNlZDNiZDY0OGRhNDU2Y2I3LTE3ODkyMjU0OTktMjgyIiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI4NWI5ZDE5YTI2MTAxMDgzZWQzYmQ2NDhkYTQ1NmNiNyIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMjEwLDg2LDg4XX0=.EQHdm7SinRHw4B8RLKv17o_NLrfS047KR3meOGLA61fNwgbGk1doedvgawQyp5Yd0gwac2tI1RlYPas_-VOBLg==/live/c6eds/HBO_2/SA_Live_dash_enc/HBO_2.mpd
