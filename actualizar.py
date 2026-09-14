@@ -11,8 +11,6 @@ if not username or not password:
 
 print("Iniciando navegador automatizado...")
 with sync_playwright() as p:
-    # Ponemos headless=False para que veas la ventana abrirse en tu PC 
-    # y sepas exactamente qué está haciendo el script.
     browser = p.chromium.launch(headless=False, slow_mo=500)
     context = browser.new_context()
     page = context.new_page()
@@ -22,23 +20,34 @@ with sync_playwright() as p:
 
     print("Buscando enlace de usuario y contraseña...")
     try:
-        # Intentamos hacer clic en el texto exacto del botón izquierdo
-        page.click("text=Ingresar con usuario y contraseña", timeout=8000)
+        page.click("text=Ingresar con usuario y contraseña", timeout=5000)
     except Exception as e:
-        print(f"No se requirió clic previo o no se encontró el texto: {e}")
+        print(f"Aviso: {e}")
 
-    print("Rellenando credenciales...")
-    # Buscamos directamente cualquier campo de entrada disponible en pantalla
+    print("Esperando campo de usuario e ingresándolo...")
     page.wait_for_selector("input", timeout=10000)
     
-    # Escribimos usuario y contraseña en los inputs que encuentre
-    inputs = page.locator("input")
-    inputs.nth(0).fill(username)
-    inputs.nth(1).fill(password)
+    # Escribir el usuario en el primer input que aparezca
+    page.locator("input").first.fill(username)
     
-    print("Enviando formulario...")
-    # Hacemos clic en el botón de ingresar/enviar
-    page.locator("button[type='submit'], button").last.click()
+    print("Buscando botón de continuar/siguiente o campo de contraseña...")
+    # A veces hay un botón de continuar/siguiente antes de la contraseña, o pasamos directo. 
+    # Intentamos hacer clic en un botón de continuar si existe, si no, presionamos Enter.
+    try:
+        page.locator("button:has-text('Continuar'), button:has-text('Siguiente'), button[type='submit']").first.click(timeout=3000)
+    except:
+        page.keyboard.press("Enter")
+
+    print("Esperando el campo de contraseña...")
+    # Ahora esperamos que aparezca el input de tipo password
+    page.wait_for_selector("input[type='password']", timeout=10000)
+    page.locator("input[type='password']").first.fill(password)
+    
+    print("Enviando formulario de acceso...")
+    try:
+        page.locator("button[type='submit'], button:has-text('Ingresar'), button:has-text('Iniciar sesión')").last.click()
+    except:
+        page.keyboard.press("Enter")
 
     print("Esperando redirección al inicio...")
     try:
