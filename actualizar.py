@@ -3,38 +3,36 @@ import re
 import json
 from playwright.sync_api import sync_playwright
 
-print("Iniciando navegador con tu perfil de usuario real...")
-with sync_playwright() as p:
-    # Apuntamos a la ruta estándar de Chrome en Windows para usar tu sesión existente
-    user_data_dir = os.path.expanduser("~") + r"\AppData\Local\Google\Chrome\User Data"
-    
-    try:
-        # Abrimos el navegador persistente usando tu propio perfil (evita 2FA/bloqueos)
-        context = p.chromium.launch_persistent_context(
-            user_data_dir=user_data_dir,
-            channel="chrome",
-            headless=False,
-            args=["--profile-directory=Default"]
-        )
-    except Exception as e:
-        print(f"No se pudo abrir el perfil de Chrome predeterminado ({e}), usando navegador limpio...")
-        browser = p.chromium.launch(headless=False)
-        context = browser.new_context()
+# Carpeta local exclusiva para guardar tu sesión de forma segura
+USER_DATA_DIR = "./flow_profile"
 
+print("Iniciando navegador con sesión persistente...")
+with sync_playwright() as p:
+    # Creamos un contexto persistente local que no interfiere con tu Chrome abierto
+    context = p.chromium.launch_persistent_context(
+        user_data_dir=USER_DATA_DIR,
+        headless=False, # Déjalo en False para la primera vez (luego puedes pasarlo a True si querés)
+        args=["--start-maximized"]
+    )
+    
     page = context.new_page()
 
-    print("Entrando directamente a Flow...")
+    print("Entrando al portal de Flow...")
     page.goto("https://portal.app.flow.com.ar/inicio", wait_until="networkidle")
 
-    print("Esperando a que cargue la sesión y el Local Storage...")
+    print("Esperando acceso a la plataforma...")
+    print("👉 Si la ventana te pide iniciar sesión o verificar por código, hazlo manualmente en esa ventana.")
+    
+    # Esperamos hasta que detecte que ya entraste a la página de inicio (hasta 2 minutos para que lo hagas tranquilo la primera vez)
     try:
-        page.wait_for_url("**/inicio**", timeout=20000)
-    except:
-        print("Verifica si estás logueado en esta ventana del navegador.")
+        page.wait_for_url("**/inicio**", timeout=120000)
+        print("¡Sesión detectada con éxito!")
+    except Exception as e:
+        print(f"Tiempo de espera agotado para el login manual: {e}")
 
     page.wait_for_timeout(4000)
 
-    # Extraer el token fresco directamente del Local Storage de tu sesión activa
+    # Extraer el token fresco del Local Storage
     local_storage_data = page.evaluate("() => window.localStorage.getItem('fenix_flow/accessToken')")
     
     nuevo_token = None
@@ -51,7 +49,7 @@ if not nuevo_token:
     print("No se pudo extraer el token automáticamente.")
     exit(1)
 
-print("¡Token extraído con éxito desde tu sesión!")
+print("¡Token extraído y guardado correctamente!")
 
 # Actualizar archivos M3U en la carpeta nico
 carpeta_nico = "nico"
