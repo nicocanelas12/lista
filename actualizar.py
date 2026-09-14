@@ -11,7 +11,8 @@ if not username or not password:
 
 print("Iniciando navegador automatizado...")
 with sync_playwright() as p:
-    # Usamos headless=True para que corra en segundo plano de forma silenciosa
+    # Cambiamos a headless=False por un momento si quieres ver qué hace, 
+    # o déjalo en True para que corra invisible. Usaremos True para automatización.
     browser = p.chromium.launch(headless=True)
     context = browser.new_context()
     page = context.new_page()
@@ -19,25 +20,37 @@ with sync_playwright() as p:
     print("Entrando al portal de Flow...")
     page.goto("https://portal.app.flow.com.ar/prelogin", wait_until="networkidle")
 
-    # Hacer clic en ingresar con usuario y contraseña si aparece el botón
+    # Hacer clic en el botón de ingresar con usuario y contraseña
     try:
-        page.get_by_text("Ingresar con usuario y contraseña").click(timeout=5000)
+        page.click("text=Ingresar con usuario y contraseña", timeout=5000)
     except:
-        pass
+        print("El botón de usuario/contraseña no apareció o ya estaba visible.")
+
+    print("Esperando campos de texto...")
+    # Esperamos explícitamente a que aparezca cualquier campo de entrada
+    page.wait_for_selector("input", timeout=10000)
 
     print("Rellenando credenciales...")
-    # Selectores para los campos de usuario y contraseña
-    page.fill("input[type='email'], input[name='username'], input[id='username']", username)
-    page.fill("input[type='password'], input[name='password'], input[id='password']", password)
+    # Buscamos los inputs de forma más general por su tipo o posición si fallan los nombres
+    inputs = page.locator("input")
     
-    # Click en el botón de enviar
-    page.click("button[type='submit'], button:has-text('Ingresar'), button:has-text('Iniciar sesión')")
+    # Rellenar usuario (usualmente el primer input o el que tenga type email/text)
+    page.locator("input[type='email'], input[type='text']").first.fill(username)
+    # Rellenar contraseña
+    page.locator("input[type='password']").first.fill(password)
+    
+    print("Enviando formulario...")
+    # Hacer clic en el botón de login
+    page.locator("button[type='submit'], button:has-text('Ingresar'), button:has-text('Iniciar sesión')").first.click()
 
     print("Esperando inicio de sesión y redirección...")
     try:
-        page.wait_for_url("**/inicio**", timeout=30000)
+        page.wait_for_url("**/inicio**", timeout=35000)
     except Exception as e:
-        print(f"Advertencia en la redirección: {e}")
+        print(f"Aviso en la redirección (continuando de todos modos): {e}")
+
+    # Dar un pequeño respiro para que se escriba el LocalStorage
+    page.wait_for_timeout(3000)
 
     # Extraer el objeto de sesión del Local Storage
     local_storage_data = page.evaluate("() => window.localStorage.getItem('fenix_flow/accessToken')")
