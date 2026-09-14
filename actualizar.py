@@ -11,40 +11,42 @@ if not username or not password:
 
 print("Iniciando navegador automatizado...")
 with sync_playwright() as p:
-    browser = p.chromium.launch(headless=True)
+    # Ponemos headless=False para que veas la ventana abrirse en tu PC 
+    # y sepas exactamente qué está haciendo el script.
+    browser = p.chromium.launch(headless=False, slow_mo=500)
     context = browser.new_context()
     page = context.new_page()
 
     print("Entrando al portal de Flow...")
     page.goto("https://portal.app.flow.com.ar/prelogin", wait_until="networkidle")
 
-    print("Buscando y haciendo clic en 'Ingresar con usuario y contraseña'...")
+    print("Buscando enlace de usuario y contraseña...")
     try:
-        # Esperar a que el botón/texto aparezca y hacer clic
-        page.wait_for_selector("text=Ingresar con usuario y contraseña", timeout=10000)
-        page.click("text=Ingresar con usuario y contraseña")
+        # Intentamos hacer clic en el texto exacto del botón izquierdo
+        page.click("text=Ingresar con usuario y contraseña", timeout=8000)
     except Exception as e:
-        print(f"Aviso al buscar el botón de acceso: {e}")
-
-    print("Esperando a que aparezcan los campos de texto...")
-    # Damos un respiro para que el formulario de login se renderice en pantalla
-    page.wait_for_selector("input[type='email'], input[type='text']", timeout=10000)
+        print(f"No se requirió clic previo o no se encontró el texto: {e}")
 
     print("Rellenando credenciales...")
-    page.locator("input[type='email'], input[type='text']").first.fill(username)
-    page.locator("input[type='password']").first.fill(password)
+    # Buscamos directamente cualquier campo de entrada disponible en pantalla
+    page.wait_for_selector("input", timeout=10000)
+    
+    # Escribimos usuario y contraseña en los inputs que encuentre
+    inputs = page.locator("input")
+    inputs.nth(0).fill(username)
+    inputs.nth(1).fill(password)
     
     print("Enviando formulario...")
-    page.locator("button[type='submit'], button:has-text('Ingresar'), button:has-text('Iniciar sesión')").first.click()
+    # Hacemos clic en el botón de ingresar/enviar
+    page.locator("button[type='submit'], button").last.click()
 
-    print("Esperando inicio de sesión y redirección...")
+    print("Esperando redirección al inicio...")
     try:
-        page.wait_for_url("**/inicio**", timeout=35000)
+        page.wait_for_url("**/inicio**", timeout=40000)
     except Exception as e:
-        print(f"Aviso en la redirección (continuando): {e}")
+        print(f"Aviso de espera: {e}")
 
-    # Pausa corta para asegurar que el LocalStorage guarde el token completo
-    page.wait_for_timeout(4000)
+    page.wait_for_timeout(3000)
 
     # Extraer el objeto de sesión del Local Storage
     local_storage_data = page.evaluate("() => window.localStorage.getItem('fenix_flow/accessToken')")
@@ -77,7 +79,6 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazar tokens anteriores por el nuevo token extraído
                 contenido_actualizado = re.sub(r'(tok_|eyJ0eXAiO)[a-zA-Z0-9_\-\.]+', f"{nuevo_token}", contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
