@@ -11,7 +11,6 @@ if not username or not password:
 
 print("Iniciando navegador automatizado...")
 with sync_playwright() as p:
-    # Dejamos headless=False para que veas la ventana en tu PC y sepas qué ocurre
     browser = p.chromium.launch(headless=False, slow_mo=1000)
     context = browser.new_context()
     page = context.new_page()
@@ -25,31 +24,28 @@ with sync_playwright() as p:
     except Exception as e:
         print(f"Aviso: {e}")
 
-    print("Esperando campos de texto...")
+    print("Esperando campo de texto e ingresando usuario...")
     page.wait_for_selector("input", timeout=10000)
     
-    # Comprobemos si hay más de un input visible en la misma pantalla de golpe
-    inputs = page.locator("input")
-    print(f"Campos input encontrados en pantalla: {inputs.count()}")
+    # Escribir usuario en el primer campo
+    input_usuario = page.locator("input").first
+    input_usuario.fill(username)
+    
+    print("Avanzando al siguiente paso (presionando Enter y buscando botón)...")
+    # Presionamos Enter sobre el input del usuario para disparar la transición
+    input_usuario.press("Enter")
+    
+    # Opcional: intentamos hacer clic en cualquier botón visible que diga Continuar, Siguiente o similar
+    try:
+        page.locator("button:has-text('Continuar'), button:has-text('Siguiente'), button:has-text('Ingresar'), button[type='submit']").first.click(timeout=3000)
+    except:
+        pass
 
-    if inputs.count() >= 2:
-        print("Los campos de usuario y contraseña están en la misma pantalla.")
-        inputs.nth(0).fill(username)
-        inputs.nth(1).fill(password)
-    else:
-        print("Pantalla de usuario única. Ingresando usuario...")
-        inputs.first.fill(username)
-        
-        print("Haciendo clic en el botón de continuar o siguiente...")
-        try:
-            page.locator("button:has-text('Continuar'), button:has-text('Siguiente'), button[type='submit']").first.click(timeout=3000)
-        except:
-            page.keyboard.press("Enter")
-
-        print("Esperando campo de contraseña...")
-        page.wait_for_selector("input[type='password']", timeout=10000)
-        page.locator("input[type='password']").first.fill(password)
-
+    print("Esperando campo de contraseña...")
+    # Damos un respiro y esperamos que aparezca el input de contraseña
+    page.wait_for_selector("input[type='password']", timeout=12000)
+    page.locator("input[type='password']").first.fill(password)
+    
     print("Enviando formulario de acceso...")
     try:
         page.locator("button[type='submit'], button:has-text('Ingresar'), button:has-text('Iniciar sesión')").last.click()
