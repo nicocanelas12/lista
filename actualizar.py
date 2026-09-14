@@ -3,64 +3,38 @@ import re
 import json
 from playwright.sync_api import sync_playwright
 
-username = os.environ.get("FLOW_USER")
-password = os.environ.get("FLOW_PASS")
-
-if not username or not password:
-    raise ValueError("Faltan las credenciales FLOW_USER o FLOW_PASS.")
-
-print("Iniciando navegador automatizado...")
+print("Iniciando navegador con tu perfil de usuario real...")
 with sync_playwright() as p:
-    browser = p.chromium.launch(headless=False, slow_mo=1000)
-    context = browser.new_context()
+    # Apuntamos a la ruta estándar de Chrome en Windows para usar tu sesión existente
+    user_data_dir = os.path.expanduser("~") + r"\AppData\Local\Google\Chrome\User Data"
+    
+    try:
+        # Abrimos el navegador persistente usando tu propio perfil (evita 2FA/bloqueos)
+        context = p.chromium.launch_persistent_context(
+            user_data_dir=user_data_dir,
+            channel="chrome",
+            headless=False,
+            args=["--profile-directory=Default"]
+        )
+    except Exception as e:
+        print(f"No se pudo abrir el perfil de Chrome predeterminado ({e}), usando navegador limpio...")
+        browser = p.chromium.launch(headless=False)
+        context = browser.new_context()
+
     page = context.new_page()
 
-    print("Entrando al portal de Flow...")
-    page.goto("https://portal.app.flow.com.ar/prelogin", wait_until="networkidle")
+    print("Entrando directamente a Flow...")
+    page.goto("https://portal.app.flow.com.ar/inicio", wait_until="networkidle")
 
-    print("Buscando enlace de usuario y contraseña...")
+    print("Esperando a que cargue la sesión y el Local Storage...")
     try:
-        page.click("text=Ingresar con usuario y contraseña", timeout=5000)
-    except Exception as e:
-        print(f"Aviso: {e}")
-
-    print("Esperando campo de texto e ingresando usuario...")
-    page.wait_for_selector("input", timeout=10000)
-    
-    # Escribir usuario en el primer campo
-    input_usuario = page.locator("input").first
-    input_usuario.fill(username)
-    
-    print("Avanzando al siguiente paso (presionando Enter y buscando botón)...")
-    # Presionamos Enter sobre el input del usuario para disparar la transición
-    input_usuario.press("Enter")
-    
-    # Opcional: intentamos hacer clic en cualquier botón visible que diga Continuar, Siguiente o similar
-    try:
-        page.locator("button:has-text('Continuar'), button:has-text('Siguiente'), button:has-text('Ingresar'), button[type='submit']").first.click(timeout=3000)
+        page.wait_for_url("**/inicio**", timeout=20000)
     except:
-        pass
+        print("Verifica si estás logueado en esta ventana del navegador.")
 
-    print("Esperando campo de contraseña...")
-    # Damos un respiro y esperamos que aparezca el input de contraseña
-    page.wait_for_selector("input[type='password']", timeout=12000)
-    page.locator("input[type='password']").first.fill(password)
-    
-    print("Enviando formulario de acceso...")
-    try:
-        page.locator("button[type='submit'], button:has-text('Ingresar'), button:has-text('Iniciar sesión')").last.click()
-    except:
-        page.keyboard.press("Enter")
+    page.wait_for_timeout(4000)
 
-    print("Esperando redirección al inicio...")
-    try:
-        page.wait_for_url("**/inicio**", timeout=40000)
-    except Exception as e:
-        print(f"Aviso de espera: {e}")
-
-    page.wait_for_timeout(3000)
-
-    # Extraer el objeto de sesión del Local Storage
+    # Extraer el token fresco directamente del Local Storage de tu sesión activa
     local_storage_data = page.evaluate("() => window.localStorage.getItem('fenix_flow/accessToken')")
     
     nuevo_token = None
@@ -71,13 +45,13 @@ with sync_playwright() as p:
         except Exception as err:
             print(f"Error al parsear el JSON del token: {err}")
 
-    browser.close()
+    context.close()
 
 if not nuevo_token:
-    print("No se pudo extraer el token automáticamente del navegador.")
+    print("No se pudo extraer el token automáticamente.")
     exit(1)
 
-print("¡Token extraído con éxito por el navegador!")
+print("¡Token extraído con éxito desde tu sesión!")
 
 # Actualizar archivos M3U en la carpeta nico
 carpeta_nico = "nico"
