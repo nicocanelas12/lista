@@ -18,17 +18,18 @@ payload = {
     "grant_type": "password"
 }
 
-# Cabeceras simulando un navegador para evitar bloqueos o timeouts del WAF
+# Cabeceras completas incluyendo Content-Type para la API de Flow
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
+    "Content-Type": "application/x-www-form-urlencoded",
     "Origin": "https://portal.app.flow.com.ar",
     "Referer": "https://portal.app.flow.com.ar/"
 }
 
 nuevo_token = None
 try:
-    response = requests.post(login_url, data=payload, headers=headers, timeout=30)
+    response = requests.post(login_url, data=payload, headers=headers, timeout=15)
     print(f"Código de respuesta de Flow: {response.status_code}")
     
     if response.status_code == 200:
@@ -37,7 +38,7 @@ try:
     else:
         print(f"Respuesta del servidor: {response.text}")
 except Exception as e:
-    print(f"Aviso en la conexión HTTP principal: {e}")
+    print(f"Error detallado de conexión: {e}")
 
 if not nuevo_token:
     print("No se pudo extraer automáticamente el token por API directa. Verifica la respuesta.")
