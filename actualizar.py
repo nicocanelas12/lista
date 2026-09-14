@@ -11,7 +11,6 @@ if not username or not password:
 print("Conectando con Flow...")
 login_url = "https://portal.app.flow.com.ar/api/oauth/v2/token"
 
-# Payload actualizado con los parámetros exactos que espera la API de OAuth de Flow
 payload = {
     "username": username,
     "password": password,
@@ -32,14 +31,13 @@ nuevo_token = None
 try:
     response = requests.post(login_url, data=payload, headers=headers, timeout=20)
     print(f"Código de respuesta de Flow: {response.status_code}")
+    print(f"Texto recibido del servidor: {response.text}")
     
     if response.status_code == 200:
         data = response.json()
-        nuevo_token = data.get("access_token") or data.get("token")
-    else:
-        print(f"Respuesta del servidor de Flow: {response.text}")
+        nuevo_token = data.get("access_token") or data.get("token") or data.get("access_token_string")
 except Exception as e:
-    print(f"Excepción de red: {e}")
+    print(f"Excepción al procesar la respuesta: {e}")
 
 if not nuevo_token:
     print("No se pudo obtener el token nuevo.")
