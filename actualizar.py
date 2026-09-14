@@ -11,8 +11,6 @@ if not username or not password:
 
 print("Conectando con el servicio de Flow...")
 
-# 2. Lógica de autenticación para la obtención del token
-# Utilizamos el flujo estándar de inicio de sesión o sesión activa
 login_url = "https://portal.app.flow.com.ar/api/oauth/v2/token"
 payload = {
     "username": username,
@@ -20,20 +18,28 @@ payload = {
     "grant_type": "password"
 }
 
+# Cabeceras simulando un navegador para evitar bloqueos o timeouts del WAF
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Origin": "https://portal.app.flow.com.ar",
+    "Referer": "https://portal.app.flow.com.ar/"
+}
+
 nuevo_token = None
 try:
-    response = requests.post(login_url, data=payload, timeout=30)
+    response = requests.post(login_url, data=payload, headers=headers, timeout=30)
+    print(f"Código de respuesta de Flow: {response.status_code}")
+    
     if response.status_code == 200:
         data = response.json()
         nuevo_token = data.get("access_token") or data.get("token")
+    else:
+        print(f"Respuesta del servidor: {response.text}")
 except Exception as e:
     print(f"Aviso en la conexión HTTP principal: {e}")
 
-# Si la API directa requiere una cabecera o sesión específica, puedes ajustar el token obtenido.
-# Como respaldo dinámico, si el request directo requiere cookies o sesión de Flow, 
-# asegúrate de que el token provenga de la variable de autenticación generada.
 if not nuevo_token:
-    # Si requieres simular o extraer mediante otra vía alternativa del flujo:
     print("No se pudo extraer automáticamente el token por API directa. Verifica la respuesta.")
     exit(1)
 
