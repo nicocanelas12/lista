@@ -1147,7 +1147,7 @@ https://edge-live06-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="FX.ar" tvg-name="FX" tvg-logo="https://i.postimg.cc/sg7qWnn7/V2.png" group-title="Cine + Series",FX 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=9701932cab0e4aa3b8078176d5d54dd0:76819026588b16fd7083436b2b94485e
+#KODIPROP:inputstream.adaptive.license_key={"9701932cab0e4aa3b8078176d5d54dd0":"76819026588b16fd7083436b2b94485e"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live06-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5NTcyMTE5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M0ZWRzL0NhbmFsXzVfUm9zYXJpby9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiNzVlMGVmOTY4ZWJiM2QxYSIsInNlc3Npb25faWQiOiI0YWIwZjBiNmIzNTVmYTdjOWJiYTJjYTY0ZmM1YzgzMC0xNzg5Mzk5MjY1LTYzMyIsImNsaWVudF9pZCI6ImZsb3c6MTExMjgyMS0tZmxvdzoxMTEyODIxOlAiLCJkZXZpY2VfaWQiOiI0YWIwZjBiNmIzNTVmYTdjOWJiYTJjYTY0ZmM1YzgzMCIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjExNCIsImF1ZCI6IjM2NSIsInNvdXJjZXMiOlsxMDUsODUsMTQ0LDIxMCw4Niw4OF19.70i0lpYXHmfPj2nFPwbKya6r_rgDmAm1G7S-lmjJT_He4abyJ_kAGUSkurzKxL8KvhsTMYNu2n7XbYSUF0pW3g==/out/v1/FXHD/SA_Live_dash_enc/FXHD.mpd
@@ -1240,7 +1240,7 @@ https://edge-live06-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 
 #EXTINF:-1 tvg-id="Europa Europa HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/264/CH_LOGO/160/160/0/0/8622092407184.png" group-title="Cine + Series",Europa Europa 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=02ba4e4b769e4c148250ec3f2f206e46:659530e217d14c24826899bdefac48e9
+#KODIPROP:inputstream.adaptive.license_key={"02ba4e4b769e4c148250ec3f2f206e46":"659530e217d14c24826899bdefac48e9"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live06-bel.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5NTcyMTE5Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M0ZWRzL0NhbmFsXzVfUm9zYXJpby9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiNzVlMGVmOTY4ZWJiM2QxYSIsInNlc3Npb25faWQiOiI0YWIwZjBiNmIzNTVmYTdjOWJiYTJjYTY0ZmM1YzgzMC0xNzg5Mzk5MjY1LTYzMyIsImNsaWVudF9pZCI6ImZsb3c6MTExMjgyMS0tZmxvdzoxMTEyODIxOlAiLCJkZXZpY2VfaWQiOiI0YWIwZjBiNmIzNTVmYTdjOWJiYTJjYTY0ZmM1YzgzMCIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjExNCIsImF1ZCI6IjM2NSIsInNvdXJjZXMiOlsxMDUsODUsMTQ0LDIxMCw4Niw4OF19.70i0lpYXHmfPj2nFPwbKya6r_rgDmAm1G7S-lmjJT_He4abyJ_kAGUSkurzKxL8KvhsTMYNu2n7XbYSUF0pW3g==/out/v1/Europa_Europa/SA_Live_dash_enc/Europa_Europa.mpd
