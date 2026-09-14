@@ -10,14 +10,19 @@ if not username or not password:
 
 print("Conectando con Flow...")
 login_url = "https://portal.app.flow.com.ar/api/oauth/v2/token"
+
+# Payload actualizado con los parámetros exactos que espera la API de OAuth de Flow
 payload = {
     "username": username,
     "password": password,
-    "grant_type": "password"
+    "grant_type": "password",
+    "client_id": "flow-web",
+    "scope": "openid profile email"
 }
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
     "Content-Type": "application/x-www-form-urlencoded",
     "Origin": "https://portal.app.flow.com.ar",
     "Referer": "https://portal.app.flow.com.ar/"
@@ -26,11 +31,13 @@ headers = {
 nuevo_token = None
 try:
     response = requests.post(login_url, data=payload, headers=headers, timeout=20)
+    print(f"Código de respuesta de Flow: {response.status_code}")
+    
     if response.status_code == 200:
         data = response.json()
         nuevo_token = data.get("access_token") or data.get("token")
     else:
-        print(f"Error en la API: {response.text}")
+        print(f"Respuesta del servidor de Flow: {response.text}")
 except Exception as e:
     print(f"Excepción de red: {e}")
 
@@ -40,6 +47,7 @@ if not nuevo_token:
 
 token_limpio = str(nuevo_token).replace("tok_", "")
 
+# Reemplazar en la carpeta nico
 carpeta_nico = "nico"
 modificados = 0
 
