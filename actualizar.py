@@ -1,6 +1,7 @@
 import os
 import re
-import requests
+import json
+from playwright.sync_api import sync_playwright
 
 username = os.environ.get("FLOW_USER")
 password = os.environ.get("FLOW_PASS")
@@ -8,44 +9,56 @@ password = os.environ.get("FLOW_PASS")
 if not username or not password:
     raise ValueError("Faltan las credenciales FLOW_USER o FLOW_PASS.")
 
-print("Conectando con Flow...")
-login_url = "https://portal.app.flow.com.ar/api/oauth/v2/token"
+print("Iniciando navegador automatizado...")
+with sync_playwright() as p:
+    # Usamos headless=True para que corra en segundo plano de forma silenciosa
+    browser = p.chromium.launch(headless=True)
+    context = browser.new_context()
+    page = context.new_page()
 
-payload = {
-    "username": username,
-    "password": password,
-    "grant_type": "password",
-    "client_id": "flow-web",
-    "scope": "openid profile email"
-}
+    print("Entrando al portal de Flow...")
+    page.goto("https://portal.app.flow.com.ar/prelogin", wait_until="networkidle")
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
-    "Content-Type": "application/x-www-form-urlencoded",
-    "Origin": "https://portal.app.flow.com.ar",
-    "Referer": "https://portal.app.flow.com.ar/"
-}
+    # Hacer clic en ingresar con usuario y contraseña si aparece el botón
+    try:
+        page.get_by_text("Ingresar con usuario y contraseña").click(timeout=5000)
+    except:
+        pass
 
-nuevo_token = None
-try:
-    response = requests.post(login_url, data=payload, headers=headers, timeout=20)
-    print(f"Código de respuesta de Flow: {response.status_code}")
-    print(f"Texto recibido del servidor: {response.text}")
+    print("Rellenando credenciales...")
+    # Selectores para los campos de usuario y contraseña
+    page.fill("input[type='email'], input[name='username'], input[id='username']", username)
+    page.fill("input[type='password'], input[name='password'], input[id='password']", password)
     
-    if response.status_code == 200:
-        data = response.json()
-        nuevo_token = data.get("access_token") or data.get("token") or data.get("access_token_string")
-except Exception as e:
-    print(f"Excepción al procesar la respuesta: {e}")
+    # Click en el botón de enviar
+    page.click("button[type='submit'], button:has-text('Ingresar'), button:has-text('Iniciar sesión')")
+
+    print("Esperando inicio de sesión y redirección...")
+    try:
+        page.wait_for_url("**/inicio**", timeout=30000)
+    except Exception as e:
+        print(f"Advertencia en la redirección: {e}")
+
+    # Extraer el objeto de sesión del Local Storage
+    local_storage_data = page.evaluate("() => window.localStorage.getItem('fenix_flow/accessToken')")
+    
+    nuevo_token = None
+    if local_storage_data:
+        try:
+            token_obj = json.loads(local_storage_data)
+            nuevo_token = token_obj.get("idToken")
+        except Exception as err:
+            print(f"Error al parsear el JSON del token: {err}")
+
+    browser.close()
 
 if not nuevo_token:
-    print("No se pudo obtener el token nuevo.")
+    print("No se pudo extraer el token automáticamente del navegador.")
     exit(1)
 
-token_limpio = str(nuevo_token).replace("tok_", "")
+print("¡Token extraído con éxito por el navegador!")
 
-# Reemplazar en la carpeta nico
+# Actualizar archivos M3U en la carpeta nico
 carpeta_nico = "nico"
 modificados = 0
 
@@ -57,7 +70,8 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                contenido_actualizado = re.sub(r'tok_[a-zA-Z0-9_\-\.]+', f"tok_{token_limpio}", contenido)
+                # Reemplazar tokens anteriores por el nuevo token extraído
+                contenido_actualizado = re.sub(r'(tok_|eyJ0eXAiO)[a-zA-Z0-9_\-\.]+', f"{nuevo_token}", contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
                     f.write(contenido_actualizado)
