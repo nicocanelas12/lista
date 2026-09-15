@@ -20,40 +20,39 @@ with sync_playwright() as p:
         global encontrado_token
         if not encontrado_token:
             url = request.url
-            # Buscamos específicamente en las peticiones que cargan contenidos o streams multimedia
-            if ('token=' in url or 'access_token=' in url or 'auth=' in url) and ('player' in url or 'manifest' in url or 'channels' in url or 'live' in url):
+            # Capturamos cualquier petición que lleve un token o parámetro de autenticación
+            if 'token=' in url or 'access_token=' in url or 'auth=' in url:
                 match = re.search(r'(?:token|access_token|auth)=([a-zA-Z0-9_\-\.]+)', url)
                 if match:
-                    encontrado_token = match.group(1)
-                    print(f"\n¡Token de reproducción capturado con éxito: {encontrado_token[:30]}...!")
+                    val = match.group(1)
+                    if len(val) > 20: # Aseguramos que sea un token largo válido
+                        encontrado_token = val
+                        print(f"\n¡Token capturado con éxito: {encontrado_token[:30]}...!")
 
     page.on("request", intercept_request)
 
-    print("Entrando directamente a la sección de TV/Guía de Flow...")
+    print("Entrando al portal de Flow...")
     try:
-        # Abrimos directamente la sección de guía o tv en vivo para forzar al reproductor
-        page.goto("https://portal.app.flow.com.ar/guia", wait_until="domcontentloaded", timeout=60000)
+        page.goto("https://portal.app.flow.com.ar/inicio", wait_until="domcontentloaded", timeout=60000)
     except Exception as e:
         print(f"Aviso en carga: {e}")
 
     print("\n----------------------------------------------------")
-    print("¡Ventana abierta! Haz clic en cualquier canal de la guía")
-    print("para reproducirlo. El script capturará el token activo.")
+    print("¡Navegador abierto! Haz clic en la guía o en un canal.")
     print("----------------------------------------------------\n")
 
-    # Esperamos hasta 2 minutos para que elijas el canal con total tranquilidad
+    # Damos tiempo para que cargue y capture el token al navegar
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 120:
+    while not encontrado_token and (time.time() - start_time) < 90:
         page.wait_for_timeout(1000)
 
     if encontrado_token:
-        print("Esperando 3 segundos adicionales para asegurar la captura...")
-        page.wait_for_timeout(3000)
+        page.wait_for_timeout(2000)
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token de reproducción. Asegúrate de hacer clic en un canal.")
+    print("No se pudo capturar el token. Asegúrate de navegar un segundo.")
     exit(1)
 
 print("Actualizando listas M3U...")
@@ -69,12 +68,8 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazamos el token donde aparezca después de 'token='
-                contenido_actualizado = re.sub(r'(token=)[^&\s"]+', rf'\1{encontrado_token}', contenido)
-                
-                # O reemplazamos la cadena anterior por el nuevo token si usa otra estructura
-                if contenido_actualizado == contenido:
-                    contenido_actualizado = re.sub(r'bklk[a-zA-Z0-9_\-\.]+', encontrado_token, contenido)
+                # Reemplazo universal: busca 'token=' y actualiza todo el valor posterior hasta el próximo '&' o comilla
+                contenido_actualizado = re.sub(r'(token=)[^&\s"\']+', rf'\1{encontrado_token}', contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
                     f.write(contenido_actualizado)
