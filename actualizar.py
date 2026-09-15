@@ -6,9 +6,8 @@ from playwright.sync_api import sync_playwright
 USER_DATA_DIR = "./flow_profile"
 encontrado_token = None
 
-print("Iniciando automatización para capturar el token...")
+print("Iniciando automatización de Flow...")
 with sync_playwright() as p:
-    # Usamos tu Chrome real con sesión persistente
     context = p.chromium.launch_persistent_context(
         user_data_dir=USER_DATA_DIR,
         channel="chrome",
@@ -22,35 +21,45 @@ with sync_playwright() as p:
         global encontrado_token
         if not encontrado_token:
             url = request.url
-            # Capturamos el token apenas la API de Flow responde con las credenciales de sesión
             if 'token=' in url or 'access_token=' in url or 'auth=' in url:
                 match = re.search(r'(?:token|access_token|auth)=([a-zA-Z0-9_\-\.]+)', url)
                 if match:
                     val = match.group(1)
                     if len(val) > 20:
                         encontrado_token = val
-                        print(f"\n¡Token capturado automáticamente: {encontrado_token[:30]}...!")
+                        print(f"\n¡Token capturado desde la red: {encontrado_token[:30]}...!")
 
     page.on("request", intercept_request)
 
-    print("Entrando al portal de Flow (mantén tu sesión iniciada)...")
+    print("Entrando al portal...")
     try:
-        # Entramos a la portada; la API genera el token de red de forma automática sin reproducir nada
         page.goto("https://portal.app.flow.com.ar/inicio", wait_until="domcontentloaded", timeout=60000)
     except Exception as e:
         print(f"Aviso en carga: {e}")
 
-    print("Esperando a que la red responda con el token (10 segundos)...")
+    print("Esperando a que la sesión cargue por completo (20 segundos)...")
     
-    # Damos unos segundos para que se genere la petición de red automática
+    # Damos tiempo prudente para capturar por red o cookies automáticamente
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 15:
+    while not encontrado_token and (time.time() - start_time) < 20:
         page.wait_for_timeout(1000)
+
+    # Si la red no lo disparó en esos segundos, lo buscamos directamente en las cookies de sesión
+    if not encontrado_token:
+        print("Buscando token en las cookies de la sesión...")
+        cookies = context.cookies()
+        for cookie in cookies:
+            if 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
+                val = cookie['value']
+                if len(val) > 20:
+                    encontrado_token = val
+                    print(f"¡Token capturado desde la cookie '{cookie['name']}': {encontrado_token[:30]}...!")
+                    break
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token. Asegúrate de haber iniciado sesión la primera vez.")
+    print("No se pudo capturar el token. Asegúrate de haber iniciado sesión al menos una vez.")
     exit(1)
 
 print("Actualizando listas M3U...")
@@ -66,8 +75,11 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazo universal del token en tus listas
+                # Reemplazo robusto: busca tanto 'token=' como cualquier identificador previo que empiece con bklk o similar
                 contenido_actualizado = re.sub(r'(token=)[^&\s"\']+', rf'\1{encontrado_token}', contenido)
+                
+                if contenido_actualizado == contenido:
+                    contenido_actualizado = re.sub(r'bklk[a-zA-Z0-9_\-\.]+', encontrado_token, contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
                     f.write(contenido_actualizado)
