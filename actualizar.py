@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 USER_DATA_DIR = os.path.join(BASE_DIR, "flow_profile")
 CARPETA_NICO = os.path.join(BASE_DIR, "nico")
 
-print("--- ACTUALIZADOR DE FLOW (DEFINITIVO) ---")
+print("--- ACTUALIZADOR DE FLOW (URL COMPLETA) ---")
 
 with sync_playwright() as p:
     context = p.chromium.launch_persistent_context(
@@ -44,12 +44,10 @@ if not token_jwt:
     print("\nNo se encontró la cookie 'flow_idToken'. Asegúrate de haber iniciado sesión.")
     exit(1)
 
-# Armamos el token completo con tok_ adelante para que coincida con tus listas
-token_final = f"tok_{token_jwt}"
+# Preparamos el nuevo token completo
+token_nuevo = f"tok_{token_jwt}"
 
-print(f"\n¡Token listo para actualizar: {token_final[:35]}...!")
-print(f"Buscando carpeta 'nico' en: {CARPETA_NICO}")
-
+print(f"\n¡Token listo! Actualizando archivos en: {CARPETA_NICO}")
 modificados = 0
 
 if os.path.exists(CARPETA_NICO):
@@ -61,16 +59,18 @@ if os.path.exists(CARPETA_NICO):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazamos cualquier tok_ viejo por el nuevo token completo
-                contenido_actualizado, count = re.subn(r'tok_[^/]+', token_final, contenido)
+                # Esta expresión regular busca desde 'tok_' hasta que encuentra '/live/' 
+                # y reemplaza todo ese bloque viejo por el nuevo token, preservando el resto de la URL (/live/...).
+                patron = r'tok_.*?(/live/)'
+                contenido_actualizado, count = re.subn(patron, f'{token_nuevo}\\1', contenido)
 
                 if count > 0:
                     with open(ruta_archivo, "w", encoding="utf-8") as f:
                         f.write(contenido_actualizado)
                     modificados += 1
-                    print(f"-> ¡Actualizado con éxito: {file} ({count} cambios)!")
+                    print(f"-> ¡Actualizado con éxito: {file} ({count} enlaces modificados)!")
                 else:
-                    print(f"-> El archivo {file} no tenía la estructura 'tok_' para actualizar.")
+                    print(f"-> El archivo {file} no encontró coincidencias con el patrón de Flow.")
 else:
     print(f"¡Error! No se encontró la carpeta 'nico' en la ruta: {CARPETA_NICO}")
 
