@@ -6,10 +6,12 @@ from playwright.sync_api import sync_playwright
 USER_DATA_DIR = "./flow_profile"
 encontrado_token = None
 
-print("Iniciando navegador con sesion persistente...")
+print("Iniciando Google Chrome con sesion persistente...")
 with sync_playwright() as p:
+    # Usamos channel="chrome" para abrir tu Chrome real con soporte de video y DRM
     context = p.chromium.launch_persistent_context(
         user_data_dir=USER_DATA_DIR,
+        channel="chrome",
         headless=False,
         args=["--start-maximized", "--disable-blink-features=AutomationControlled"]
     )
@@ -20,12 +22,11 @@ with sync_playwright() as p:
         global encontrado_token
         if not encontrado_token:
             url = request.url
-            # Capturamos cualquier petición que lleve un token o parámetro de autenticación
             if 'token=' in url or 'access_token=' in url or 'auth=' in url:
                 match = re.search(r'(?:token|access_token|auth)=([a-zA-Z0-9_\-\.]+)', url)
                 if match:
                     val = match.group(1)
-                    if len(val) > 20: # Aseguramos que sea un token largo válido
+                    if len(val) > 20:
                         encontrado_token = val
                         print(f"\n¡Token capturado con éxito: {encontrado_token[:30]}...!")
 
@@ -38,12 +39,12 @@ with sync_playwright() as p:
         print(f"Aviso en carga: {e}")
 
     print("\n----------------------------------------------------")
-    print("¡Navegador abierto! Haz clic en la guía o en un canal.")
+    print("¡Chrome abierto! Entra a un canal y dale Play.")
+    print("El script capturará el token automáticamente.")
     print("----------------------------------------------------\n")
 
-    # Damos tiempo para que cargue y capture el token al navegar
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 90:
+    while not encontrado_token and (time.time() - start_time) < 120:
         page.wait_for_timeout(1000)
 
     if encontrado_token:
@@ -52,7 +53,7 @@ with sync_playwright() as p:
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token. Asegúrate de navegar un segundo.")
+    print("No se pudo capturar el token.")
     exit(1)
 
 print("Actualizando listas M3U...")
@@ -68,7 +69,6 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazo universal: busca 'token=' y actualiza todo el valor posterior hasta el próximo '&' o comilla
                 contenido_actualizado = re.sub(r'(token=)[^&\s"\']+', rf'\1{encontrado_token}', contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
