@@ -32,66 +32,20 @@ with sync_playwright() as p:
 
     page.wait_for_timeout(6000)
 
-    # Volcamos todo el contenido de Local Storage a la consola para identificar la clave exacta
-    js_code = """
-    () => {
-        let allData = {};
-        for (let i = 0; i < localStorage.length; i++) {
-            let key = localStorage.key(i);
-            allData[key] = localStorage.getItem(key);
-        }
-        return allData;
-    }
-    """
-    storage_data = page.evaluate(js_code)
-    print("--- CONTENIDO COMPLETO DE LOCAL STORAGE ---")
-    for k, v in storage_data.items():
-        print(f"CLAVE: {k} --> VALOR: {v[:150]}...")
+    # Volcamos Session Storage
+    session_data = page.evaluate("() => { let d = {}; for(let i=0; i<sessionStorage.length; i++){ let k=sessionStorage.key(i); d[k]=sessionStorage.getItem(k); } return d; }")
+    print("--- SESSION STORAGE ---")
+    print(session_data)
+
+    # Volcamos Cookies
+    cookies = context.cookies()
+    print("--- COOKIES ---")
+    for c in cookies:
+        if len(c['value']) > 20:
+            print(f"Cookie: {c['name']} --> {c['value'][:50]}...")
+
     print("-------------------------------------------")
-
-    # Buscamos de forma amplia cualquier coincidencia que parezca token o credencial
-    nuevo_token = None
-    for k, val in storage_data.items():
-        if val:
-            try:
-                parsed = json.loads(val)
-                if isinstance(parsed, dict):
-                    # Buscamos cualquier campo clave dentro de objetos JSON almacenados
-                    for sub_k, sub_v in parsed.items():
-                        if isinstance(sub_v, str) and (len(sub_v) > 30 and ('token' in sub_k.lower() or 'auth' in sub_k.lower() or 'id' in sub_k.lower())):
-                            print(f"¡Candidato encontrado en JSON de '{k}' -> '{sub_k}': {sub_v}")
-                            nuevo_token = sub_v
-                            break
-            except:
-                pass
-            if nuevo_token:
-                break
-
+    
+    # Pausa para que el navegador no se cierre solo y puedas ver todo
+    input("Presiona ENTER en esta ventana negra de la terminal cuando quieras cerrar el navegador...")
     context.close()
-
-if not nuevo_token:
-    print("No se pudo extraer el token automáticamente con el escaneo profundo.")
-    exit(1)
-
-print(f"¡Token extraído con éxito: {nuevo_token[:30]}...!")
-
-carpeta_nico = "nico"
-modificados = 0
-
-if os.path.exists(carpeta_nico):
-    for root, dirs, files in os.walk(carpeta_nico):
-        for file in files:
-            if file.endswith((".m3u", ".m3u8", ".txt")):
-                ruta_archivo = os.path.join(root, file)
-                with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
-                    contenido = f.read()
-
-                contenido_actualizado = re.sub(r'(tok_|eyJ0eXAiO)[a-zA-Z0-9_\-\.]+', f"{nuevo_token}", contenido)
-
-                with open(ruta_archivo, "w", encoding="utf-8") as f:
-                    f.write(contenido_actualizado)
-                
-                modificados += 1
-                print(f"Actualizado: {ruta_archivo}")
-
-print(f"Proceso finalizado. Archivos modificados: {modificados}")
