@@ -10,20 +10,16 @@ with sync_playwright() as p:
     context = p.chromium.launch_persistent_context(
         user_data_dir=USER_DATA_DIR,
         headless=False,
-        args=[
-            "--start-maximized",
-            "--disable-blink-features=AutomationControlled", # Oculta que es un bot
-        ]
+        args=["--start-maximized", "--disable-blink-features=AutomationControlled"]
     )
     
     page = context.new_page()
 
     print("Entrando al portal de Flow...")
-    # Cambiamos networkidle por domcontentloaded para que no falle si la red rechaza elementos secundarios
     try:
         page.goto("https://portal.app.flow.com.ar/inicio", wait_until="domcontentloaded", timeout=60000)
     except Exception as e:
-        print(f"Aviso en la carga inicial: {e}")
+        print(f"Aviso en carga: {e}")
 
     print("Esperando acceso a la plataforma...")
     print("ATENCION: Si la ventana te pide iniciar sesion o verificar por codigo, hazlo manualmente en esa ventana.")
@@ -32,37 +28,74 @@ with sync_playwright() as p:
         page.wait_for_url("**/inicio**", timeout=120000)
         print("Sesion detectada con exito!")
     except Exception as e:
-        print(f"Tiempo de espera agotado para el login manual: {e}")
+        print(f"Tiempo de espera agotado: {e}")
 
     page.wait_for_timeout(6000)
 
-    # Diagnóstico de Local Storage
+    # Obtenemos las llaves del Local Storage y Session Storage
     keys_in_storage = page.evaluate("() => Object.keys(window.localStorage)")
-    print(f"Llaves disponibles en Local Storage: {keys_in_storage}")
+    session_keys = page.evaluate("() => Object.keys(window.sessionStorage)")
+    print(f"Local Storage: {keys_in_storage}")
+    print(f"Session Storage: {session_keys}")
 
     nuevo_token = None
-    for key_name in ['fenix_flow/accessToken', 'access_token', 'token', 'auth', 'user']:
-        if key_name in keys_in_storage:
-            val = page.evaluate(f"() => window.localStorage.getItem('{key_name}')")
-            if val:
+
+    js_code = """
+    () => {
+        let allData = {};
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            allData[key] = localStorage.getItem(key);
+        }
+        for (let i = 0; i < sessionStorage.length; i++) {
+            let key = sessionStorage.key(i);
+            allData[key] = sessionStorage.getItem(key);
+        }
+        return allData;
+    }
+    """
+    storage_data = page.evaluate(js_code)
+
+    # Buscamos en todo el almacenamiento algo que parezca un token (JWT o clave larga)
+    for k, val in storage_data.items():
+        if val:
+            # Si el valor es largo o contiene estructura de token
+            if isinstance(val, str) and (len(val) > 40 or "eyJ" in val or "tok_" in val):
+                print(f"Revisando clave candidata '{k}': {val[:60]}...")
                 try:
                     parsed = json.loads(val)
                     if isinstance(parsed, dict):
-                        nuevo_token = parsed.get("idToken") or parsed.get("accessToken") or parsed.get("token")
-                    else:
-                        nuevo_token = val
+                        # Buscamos recursivamente o por campos comunes
+                        possible = parsed.get("idToken") or parsed.get("accessToken") or parsed.get("token") or parsed.get("access_token")
+                        if possible:
+                            nuevo_token = possible
+                            print(f"¡Token encontrado dentro del JSON de '{k}'!")
+                            break
                 except:
-                    nuevo_token = val
-                if nuevo_token:
-                    break
+                    # Si no es JSON pero tiene pinta de token directo
+                    if "eyJ" in val or val.startswith("tok_"):
+                        nuevo_token = val
+                        print(f"¡Token directo encontrado en '{k}'!")
+                        break
+
+    # Si aún no lo encontramos, buscamos en cookies de sesión
+    if not nuevo_token:
+        print("Buscando en cookies de sesión...")
+        cookies = context.cookies()
+        for cookie in cookies:
+            val = cookie['value']
+            if len(val) > 40 and ('token' in cookie['name'].lower() or 'auth' in cookie['name'].lower() or 'session' in cookie['name'].lower()):
+                print(f"Encontrada cookie candidata: {cookie['name']}")
+                nuevo_token = val
+                break
 
     context.close()
 
 if not nuevo_token:
-    print("No se pudo extraer el token automaticamente.")
+    print("No se pudo extraer el token automáticamente.")
     exit(1)
 
-print("Token extraido y guardado correctamente!")
+print("¡Token extraido con éxito!")
 
 carpeta_nico = "nico"
 modificados = 0
@@ -75,6 +108,7 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
+                # Reemplazamos los tokens viejos por el nuevo encontrado
                 contenido_actualizado = re.sub(r'(tok_|eyJ0eXAiO)[a-zA-Z0-9_\-\.]+', f"{nuevo_token}", contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
