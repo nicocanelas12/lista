@@ -1,13 +1,14 @@
 import os
 import re
-import json
+import time
 from playwright.sync_api import sync_playwright
 
 USER_DATA_DIR = "./flow_profile"
+encontrado_token = None
 
-print("Abriendo Google Chrome...")
+print("Iniciando automatización para capturar el token...")
 with sync_playwright() as p:
-    # Usamos channel="chrome" para utilizar tu navegador principal con tu sesión ya iniciada
+    # Usamos tu Chrome real con sesión persistente
     context = p.chromium.launch_persistent_context(
         user_data_dir=USER_DATA_DIR,
         channel="chrome",
@@ -17,47 +18,39 @@ with sync_playwright() as p:
     
     page = context.new_page()
 
-    print("Entrando al portal de Flow...")
+    def intercept_request(request):
+        global encontrado_token
+        if not encontrado_token:
+            url = request.url
+            # Capturamos el token apenas la API de Flow responde con las credenciales de sesión
+            if 'token=' in url or 'access_token=' in url or 'auth=' in url:
+                match = re.search(r'(?:token|access_token|auth)=([a-zA-Z0-9_\-\.]+)', url)
+                if match:
+                    val = match.group(1)
+                    if len(val) > 20:
+                        encontrado_token = val
+                        print(f"\n¡Token capturado automáticamente: {encontrado_token[:30]}...!")
+
+    page.on("request", intercept_request)
+
+    print("Entrando al portal de Flow (mantén tu sesión iniciada)...")
     try:
+        # Entramos a la portada; la API genera el token de red de forma automática sin reproducir nada
         page.goto("https://portal.app.flow.com.ar/inicio", wait_until="domcontentloaded", timeout=60000)
     except Exception as e:
         print(f"Aviso en carga: {e}")
 
-    print("\n----------------------------------------------------")
-    print("Si te pide iniciar sesión, hazlo en esta ventana.")
-    print("Presiona ENTER en esta terminal una vez que estés adentro.")
-    print("----------------------------------------------------\n")
-
-    # Esperamos a que el usuario presione ENTER en la terminal cuando ya esté logueado
-    input("👉 Presiona ENTER aquí en la terminal cuando ya hayas iniciado sesión en Flow...")
-
-    # Extraemos el token o los datos de autenticación del LocalStorage / SessionStorage
-    print("Extrayendo credenciales de la sesión...")
+    print("Esperando a que la red responda con el token (10 segundos)...")
     
-    # Buscamos en localStorage
-    local_storage = page.evaluate("() => JSON.stringify(window.localStorage)")
-    session_storage = page.evaluate("() => JSON.stringify(window.sessionStorage)")
-    
-    encontrado_token = None
-    
-    # Buscamos patrones de token dentro del almacenamiento local
-    match_token = re.search(r'(?:token|access_token|auth|idToken)[":\s]+([a-zA-Z0-9_\-\.]{20,})', local_storage + session_storage)
-    if match_token:
-        encontrado_token = match_token.group(1)
-        print(f"¡Token extraído del almacenamiento: {encontrado_token[:30]}...!")
-    else:
-        # Si no está en el storage, revisamos las cookies activas
-        cookies = context.cookies()
-        for cookie in cookies:
-            if 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
-                encontrado_token = cookie['value']
-                print(f"¡Token extraído de la cookie '{cookie['name']}': {encontrado_token[:30]}...!")
-                break
+    # Damos unos segundos para que se genere la petición de red automática
+    start_time = time.time()
+    while not encontrado_token and (time.time() - start_time) < 15:
+        page.wait_for_timeout(1000)
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo extraer el token automáticamente. Asegúrate de haber iniciado sesión.")
+    print("No se pudo capturar el token. Asegúrate de haber iniciado sesión la primera vez.")
     exit(1)
 
 print("Actualizando listas M3U...")
@@ -73,7 +66,7 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazo universal en las rutas con token=
+                # Reemplazo universal del token en tus listas
                 contenido_actualizado = re.sub(r'(token=)[^&\s"\']+', rf'\1{encontrado_token}', contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
