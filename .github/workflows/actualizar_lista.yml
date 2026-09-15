@@ -1,38 +1,40 @@
 name: Actualizador Automático de Flow
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'
   workflow_dispatch:
+  # schedule:
+  #   - cron: '0 */6 * * *' # Opcional: cada 6 horas
 
 jobs:
   actualizar:
-    runs-on: [self-hosted, Windows, X64]
+    runs-on: windows-latest
 
     steps:
-      - name: Descargar repositorio
-        uses: actions/checkout@v4
+    - name: Descargar repositorio
+      uses: actions/checkout@v4
 
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
 
-      - name: Instalar dependencias y Playwright
-        run: |
-          pip install requests playwright
-          playwright install chromium
+    - name: Instalar dependencias y Playwright
+      run: |
+        pip install requests playwright
+        playwright install chromium
 
-      - name: Ejecutar script de automatización
-        env:
-          FLOW_USER: ${{ secrets.FLOW_USER }}
-          FLOW_PASS: ${{ secrets.FLOW_PASS }}
-        run: python actualizar.py
+    - name: Ejecutar script de automatización
+      env:
+        FLOW_USER: ${{ secrets.FLOW_USER }}
+        FLOW_PASS: ${{ secrets.FLOW_PASS }}
+      run: python actualizar.py
 
-      - name: Guardar cambios en el repositorio
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add nico/
-          git diff --cached --quiet || git commit -m "auto: token de Flow renovado por Playwright en nico"
-          git push
+    - name: Guardar cambios en el repositorio
+      shell: bash
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add nico/
+        git diff --cached --quiet || git commit -m "auto: token de Flow renovado por Playwright en nico"
+        git push
+        
