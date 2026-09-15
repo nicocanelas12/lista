@@ -6,14 +6,22 @@ from playwright.sync_api import sync_playwright
 USER_DATA_DIR = "./flow_profile"
 encontrado_token = None
 
-print("Iniciando Google Chrome con sesion persistente...")
+print("Iniciando navegador con soporte multimedia...")
 with sync_playwright() as p:
-    # Usamos channel="chrome" para abrir tu Chrome real con soporte de video y DRM
+    # Volvemos al motor estándar pero con argumentos específicos para permitir video y DRM
     context = p.chromium.launch_persistent_context(
         user_data_dir=USER_DATA_DIR,
-        channel="chrome",
         headless=False,
-        args=["--start-maximized", "--disable-blink-features=AutomationControlled"]
+        args=[
+            "--start-maximized",
+            "--disable-infobars",
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+            "--ignore-certificate-errors",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--disable-blink-features=AutomationControlled"
+        ],
+        ignore_default_args=["--enable-automation"]
     )
     
     page = context.new_page()
@@ -39,12 +47,11 @@ with sync_playwright() as p:
         print(f"Aviso en carga: {e}")
 
     print("\n----------------------------------------------------")
-    print("¡Chrome abierto! Entra a un canal y dale Play.")
-    print("El script capturará el token automáticamente.")
+    print("Inicia sesión si te lo pide, entra a un canal y dale Play.")
     print("----------------------------------------------------\n")
 
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 120:
+    while not encontrado_token and (time.time() - start_time) < 150:
         page.wait_for_timeout(1000)
 
     if encontrado_token:
