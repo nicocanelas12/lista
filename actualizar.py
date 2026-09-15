@@ -27,7 +27,6 @@ with sync_playwright() as p:
                     val = match.group(1)
                     if len(val) > 20:
                         encontrado_token = val
-                        print(f"\n¡Token capturado desde la red: {encontrado_token[:30]}...!")
 
     page.on("request", intercept_request)
 
@@ -37,29 +36,25 @@ with sync_playwright() as p:
     except Exception as e:
         print(f"Aviso en carga: {e}")
 
-    print("Esperando sesión (si pide iniciar sesión, hazlo en la ventana que se abrió)...")
-    
-    # Damos 40 segundos. Si no estás logueado, tienes tiempo de iniciar sesión y el script lo detectará solo al entrar.
+    print("Esperando sesión...")
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 40:
+    while not encontrado_token and (time.time() - start_time) < 30:
         page.wait_for_timeout(1000)
-        
-        # Búsqueda dinámica de respaldo en cookies cada pocos segundos
         if not encontrado_token:
             for cookie in context.cookies():
                 if 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
                     val = cookie['value']
                     if len(val) > 20:
                         encontrado_token = val
-                        print(f"¡Token capturado desde la cookie '{cookie['name']}': {encontrado_token[:30]}...!")
                         break
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token. Asegúrate de iniciar sesión en la ventana que se abre.")
+    print("No se pudo capturar el token.")
     exit(1)
 
+print(f"¡Token capturado con éxito: {encontrado_token[:30]}...!")
 print("Actualizando listas M3U...")
 
 carpeta_nico = "nico"
@@ -73,11 +68,9 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazo robusto
-                contenido_actualizado = re.sub(r'(token=)[^&\s"\']+', rf'\1{encontrado_token}', contenido)
-                
-                if contenido_actualizado == contenido:
-                    contenido_actualizado = re.sub(r'bklk[a-zA-Z0-9_\-\.]+', encontrado_token, contenido)
+                # Reemplazo exacto para la estructura /tok_... que usa tu lista
+                # Busca todo lo que empiece con tok_ y tenga puntos, guiones y caracteres largos seguidos
+                contenido_actualizado = re.sub(r'tok_[a-zA-Z0-9_\-\.]+', f'tok_{encontrado_token}', contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
                     f.write(contenido_actualizado)
