@@ -22,7 +22,6 @@ if "tok_" in entrada_usuario:
     else:
         token_nuevo = entrada_usuario
 else:
-    # Si pegaste solo el JWT puro (ej: eyJhbGci...), le agregamos el tok_ adelante
     if not entrada_usuario.startswith("tok_"):
         token_nuevo = f"tok_{entrada_usuario}"
     else:
@@ -44,7 +43,6 @@ for root, dirs, files in os.walk(BASE_DIR):
             with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                 contenido = f.read()
 
-            # Reemplazamos el bloque viejo por el nuevo token manteniendo la ruta /live/
             patron = r'tok_.*?(/live/)'
             contenido_actualizado, count = re.subn(patron, f'{token_nuevo}\\1', contenido)
 
