@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 USER_DATA_DIR = os.path.join(BASE_DIR, "flow_profile")
 CARPETA_NICO = os.path.join(BASE_DIR, "nico")
 
-print("--- DIAGNÓSTICO DE COOKIES FLOW ---")
+print("--- ACTUALIZADOR DE FLOW (DEFINITIVO) ---")
 
 with sync_playwright() as p:
     context = p.chromium.launch_persistent_context(
@@ -30,31 +30,24 @@ with sync_playwright() as p:
     
     input("Presiona ENTER en la terminal cuando estés logueado...")
 
-    print("\nBuscando cookies disponibles...")
-    todas_las_cookies = context.cookies()
+    print("\nBuscando el token en la cookie 'flow_idToken'...")
+    token_jwt = None
     
-    encontrado_token = None
-
-    for cookie in todas_las_cookies:
-        nombre = cookie['name']
-        valor = cookie['value']
-        # Imprimimos todas las cookies largas para encontrarlas rápido
-        if len(valor) > 20:
-            print(f"-> Cookie encontrada: [{nombre}] (Largo: {len(valor)})")
-        
-        # Buscamos coincidencias amplias
-        if any(k in nombre.lower() for k in ['token', 'auth', 'session', 'jwt', 'id']):
-            if len(valor) > 20:
-                encontrado_token = valor
+    for cookie in context.cookies():
+        if cookie['name'] == 'flow_idToken':
+            token_jwt = cookie['value']
+            break
 
     context.close()
 
-if not encontrado_token:
-    print("\nNo se pudo identificar un token largo en las cookies.")
-    print("Por favor, mira en la lista de arriba cuál fue la cookie que apareció cuando estabas logueado.")
+if not token_jwt:
+    print("\nNo se encontró la cookie 'flow_idToken'. Asegúrate de haber iniciado sesión.")
     exit(1)
 
-print(f"\n¡Token detectado con éxito: {encontrado_token[:30]}...!")
+# Armamos el token completo con tok_ adelante para que coincida con tus listas
+token_final = f"tok_{token_jwt}"
+
+print(f"\n¡Token listo para actualizar: {token_final[:35]}...!")
 print(f"Buscando carpeta 'nico' en: {CARPETA_NICO}")
 
 modificados = 0
@@ -68,7 +61,8 @@ if os.path.exists(CARPETA_NICO):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                contenido_actualizado, count = re.subn(r'tok_[^/]+', f'tok_{encontrado_token}', contenido)
+                # Reemplazamos cualquier tok_ viejo por el nuevo token completo
+                contenido_actualizado, count = re.subn(r'tok_[^/]+', token_final, contenido)
 
                 if count > 0:
                     with open(ruta_archivo, "w", encoding="utf-8") as f:
