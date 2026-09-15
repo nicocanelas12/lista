@@ -1,5 +1,6 @@
 import os
 import re
+import time
 from playwright.sync_api import sync_playwright
 
 USER_DATA_DIR = "./flow_profile"
@@ -15,25 +16,23 @@ with sync_playwright() as p:
     
     page = context.new_page()
 
-    # Interceptamos las peticiones de red para cazar el token al vuelo
     def intercept_request(request):
         global encontrado_token
         if not encontrado_token:
-            headers = request.headers
-            # Buscamos en las cabeceras comunes de autorización
-            for header_name, header_val in headers.items():
-                if 'authorization' in header_name.lower() or 'token' in header_name.lower() or 'apikey' in header_name.lower():
-                    if len(header_val) > 20:
-                        encontrado_token = header_val.replace("Bearer ", "").replace("bearer ", "")
-                        print(f"¡Token capturado desde cabecera '{header_name}': {encontrado_token[:30]}...!")
-            
-            # También revisamos si viaja en la URL de la petición
             url = request.url
-            if 'token=' in url or 'access_token=' in url:
-                match = re.search(r'(?:token|access_token)=([a-zA-Z0-9_\-\.]+)', url)
+            # Buscamos si el token viaja en los parámetros de la URL
+            if 'token=' in url or 'access_token=' in url or 'auth=' in url:
+                match = re.search(r'(?:token|access_token|auth)=([a-zA-Z0-9_\-\.]+)', url)
                 if match:
                     encontrado_token = match.group(1)
                     print(f"¡Token capturado desde la URL: {encontrado_token[:30]}...!")
+            
+            # Revisamos las cabeceras por si viaja en la autorización
+            for header_name, header_val in request.headers.items():
+                if 'authorization' in header_name.lower() or 'token' in header_name.lower():
+                    if len(header_val) > 20:
+                        encontrado_token = header_val.replace("Bearer ", "").replace("bearer ", "")
+                        print(f"¡Token capturado desde cabecera '{header_name}': {encontrado_token[:30]}...!")
 
     page.on("request", intercept_request)
 
@@ -44,18 +43,16 @@ with sync_playwright() as p:
         print(f"Aviso en carga: {e}")
 
     print("Esperando acceso y actividad en la plataforma...")
-    print("Navega un segundo por la página o haz clic en algún canal para que el navegador genere peticiones...")
+    print("Navega un momento por la página o haz clic en algún canal para disparar las peticiones de red...")
     
-    # Esperamos hasta 60 segundos o hasta que capturemos el token por la red
-    import time
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 60:
+    while not encontrado_token and (time.time() - start_time) < 90:
         page.wait_for_timeout(1000)
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token por la red. Asegúrate de hacer clic en un canal mientras corre.")
+    print("No se pudo capturar el token por la red. Asegúrate de hacer clic en un canal.")
     exit(1)
 
 print("¡Token obtenido con éxito!")
@@ -71,7 +68,12 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                contenido_actualizado = re.sub(r'(tok_|eyJ0eXAiO)[a-zA-Z0-9_\-\.]+', f"{encontrado_token}", contenido)
+                # Reemplazamos el token en las URLs de tus listas
+                # (Actualiza esta línea si tus listas usan otro parámetro, por defecto busca token= o reemplaza cadenas anteriores que empiecen con bklk)
+                contenido_actualizado = re.sub(r'(token=)[a-zA-Z0-9_\-\.]+', rf'\1{encontrado_token}', contenido)
+                
+                # Si tus enlaces usan otra estructura para el token, puedes usar esta alternativa para barrer el token viejo:
+                contenido_actualizado = re.sub(r'bklk[a-zA-Z0-9_\-\.]+', encontrado_token, contenido_actualizado)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
                     f.write(contenido_actualizado)
