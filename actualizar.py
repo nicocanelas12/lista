@@ -32,14 +32,7 @@ with sync_playwright() as p:
 
     page.wait_for_timeout(6000)
 
-    # Obtenemos las llaves del Local Storage y Session Storage
-    keys_in_storage = page.evaluate("() => Object.keys(window.localStorage)")
-    session_keys = page.evaluate("() => Object.keys(window.sessionStorage)")
-    print(f"Local Storage: {keys_in_storage}")
-    print(f"Session Storage: {session_keys}")
-
-    nuevo_token = None
-
+    # Volcamos todo el contenido de Local Storage a la consola para identificar la clave exacta
     js_code = """
     () => {
         let allData = {};
@@ -47,55 +40,40 @@ with sync_playwright() as p:
             let key = localStorage.key(i);
             allData[key] = localStorage.getItem(key);
         }
-        for (let i = 0; i < sessionStorage.length; i++) {
-            let key = sessionStorage.key(i);
-            allData[key] = sessionStorage.getItem(key);
-        }
         return allData;
     }
     """
     storage_data = page.evaluate(js_code)
+    print("--- CONTENIDO COMPLETO DE LOCAL STORAGE ---")
+    for k, v in storage_data.items():
+        print(f"CLAVE: {k} --> VALOR: {v[:150]}...")
+    print("-------------------------------------------")
 
-    # Buscamos en todo el almacenamiento algo que parezca un token (JWT o clave larga)
+    # Buscamos de forma amplia cualquier coincidencia que parezca token o credencial
+    nuevo_token = None
     for k, val in storage_data.items():
         if val:
-            # Si el valor es largo o contiene estructura de token
-            if isinstance(val, str) and (len(val) > 40 or "eyJ" in val or "tok_" in val):
-                print(f"Revisando clave candidata '{k}': {val[:60]}...")
-                try:
-                    parsed = json.loads(val)
-                    if isinstance(parsed, dict):
-                        # Buscamos recursivamente o por campos comunes
-                        possible = parsed.get("idToken") or parsed.get("accessToken") or parsed.get("token") or parsed.get("access_token")
-                        if possible:
-                            nuevo_token = possible
-                            print(f"¡Token encontrado dentro del JSON de '{k}'!")
+            try:
+                parsed = json.loads(val)
+                if isinstance(parsed, dict):
+                    # Buscamos cualquier campo clave dentro de objetos JSON almacenados
+                    for sub_k, sub_v in parsed.items():
+                        if isinstance(sub_v, str) and (len(sub_v) > 30 and ('token' in sub_k.lower() or 'auth' in sub_k.lower() or 'id' in sub_k.lower())):
+                            print(f"¡Candidato encontrado en JSON de '{k}' -> '{sub_k}': {sub_v}")
+                            nuevo_token = sub_v
                             break
-                except:
-                    # Si no es JSON pero tiene pinta de token directo
-                    if "eyJ" in val or val.startswith("tok_"):
-                        nuevo_token = val
-                        print(f"¡Token directo encontrado en '{k}'!")
-                        break
-
-    # Si aún no lo encontramos, buscamos en cookies de sesión
-    if not nuevo_token:
-        print("Buscando en cookies de sesión...")
-        cookies = context.cookies()
-        for cookie in cookies:
-            val = cookie['value']
-            if len(val) > 40 and ('token' in cookie['name'].lower() or 'auth' in cookie['name'].lower() or 'session' in cookie['name'].lower()):
-                print(f"Encontrada cookie candidata: {cookie['name']}")
-                nuevo_token = val
+            except:
+                pass
+            if nuevo_token:
                 break
 
     context.close()
 
 if not nuevo_token:
-    print("No se pudo extraer el token automáticamente.")
+    print("No se pudo extraer el token automáticamente con el escaneo profundo.")
     exit(1)
 
-print("¡Token extraido con éxito!")
+print(f"¡Token extraído con éxito: {nuevo_token[:30]}...!")
 
 carpeta_nico = "nico"
 modificados = 0
@@ -108,7 +86,6 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazamos los tokens viejos por el nuevo encontrado
                 contenido_actualizado = re.sub(r'(tok_|eyJ0eXAiO)[a-zA-Z0-9_\-\.]+', f"{nuevo_token}", contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
