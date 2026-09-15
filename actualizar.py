@@ -20,19 +20,12 @@ with sync_playwright() as p:
         global encontrado_token
         if not encontrado_token:
             url = request.url
-            # Buscamos si el token viaja en los parámetros de la URL
+            # Buscamos tokens en las peticiones de streaming o API de Flow
             if 'token=' in url or 'access_token=' in url or 'auth=' in url:
                 match = re.search(r'(?:token|access_token|auth)=([a-zA-Z0-9_\-\.]+)', url)
                 if match:
                     encontrado_token = match.group(1)
-                    print(f"¡Token capturado desde la URL: {encontrado_token[:30]}...!")
-            
-            # Revisamos las cabeceras por si viaja en la autorización
-            for header_name, header_val in request.headers.items():
-                if 'authorization' in header_name.lower() or 'token' in header_name.lower():
-                    if len(header_val) > 20:
-                        encontrado_token = header_val.replace("Bearer ", "").replace("bearer ", "")
-                        print(f"¡Token capturado desde cabecera '{header_name}': {encontrado_token[:30]}...!")
+                    print(f"\n¡Token capturado con éxito: {encontrado_token[:30]}...!")
 
     page.on("request", intercept_request)
 
@@ -42,20 +35,27 @@ with sync_playwright() as p:
     except Exception as e:
         print(f"Aviso en carga: {e}")
 
-    print("Esperando acceso y actividad en la plataforma...")
-    print("Navega un momento por la página o haz clic en algún canal para disparar las peticiones de red...")
-    
+    print("\n----------------------------------------------------")
+    print("¡El navegador está abierto! Haz clic en un canal para reproducirlo.")
+    print("El script capturará el token en cuanto empiece a transmitir.")
+    print("----------------------------------------------------\n")
+
+    # Esperamos a que capture el token (damos hasta 2 minutos para que elijas el canal con tranquilidad)
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 90:
+    while not encontrado_token and (time.time() - start_time) < 120:
         page.wait_for_timeout(1000)
+
+    if encontrado_token:
+        print("Esperando 3 segundos adicionales para asegurar la captura...")
+        page.wait_for_timeout(3000)
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token por la red. Asegúrate de hacer clic en un canal.")
+    print("No se pudo capturar el token. Asegúrate de hacer clic en un canal.")
     exit(1)
 
-print("¡Token obtenido con éxito!")
+print("Actualizando listas M3U...")
 
 carpeta_nico = "nico"
 modificados = 0
@@ -68,12 +68,12 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazamos el token en las URLs de tus listas
-                # (Actualiza esta línea si tus listas usan otro parámetro, por defecto busca token= o reemplaza cadenas anteriores que empiecen con bklk)
-                contenido_actualizado = re.sub(r'(token=)[a-zA-Z0-9_\-\.]+', rf'\1{encontrado_token}', contenido)
+                # Reemplazamos el token donde aparezca después de 'token='
+                contenido_actualizado = re.sub(r'(token=)[^&\s"]+', rf'\1{encontrado_token}', contenido)
                 
-                # Si tus enlaces usan otra estructura para el token, puedes usar esta alternativa para barrer el token viejo:
-                contenido_actualizado = re.sub(r'bklk[a-zA-Z0-9_\-\.]+', encontrado_token, contenido_actualizado)
+                # Si tus listas usan otra estructura, barremos cadenas que empiecen con bklk
+                if contenido_actualizado == contenido:
+                    contenido_actualizado = re.sub(r'bklk[a-zA-Z0-9_\-\.]+', encontrado_token, contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
                     f.write(contenido_actualizado)
@@ -81,4 +81,4 @@ if os.path.exists(carpeta_nico):
                 modificados += 1
                 print(f"Actualizado: {ruta_archivo}")
 
-print(f"Proceso finalizado. Archivos modificados: {modificados}")
+print(f"¡Proceso finalizado con éxito! Archivos modificados: {modificados}")
