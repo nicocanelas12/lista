@@ -3,31 +3,21 @@ import re
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-print("--- ACTUALIZADOR DE FLOW (MODO MANUAL SEGURO) ---")
-print("1. Entra a Flow en tu navegador habitual (donde te carga bien).")
-print("2. Copia el token de tu sesión (o un enlace entero que tenga el token nuevo).")
+print("--- ACTUALIZADOR DE FLOW (REEMPLAZO DIRECTO DE URL) ---")
+print("1. Copia la URL completa de un canal que te funcione en Flow.")
 print("-" * 50)
 
-entrada_usuario = input("Pega aquí el token (o el enlace completo) y presiona ENTER: ").strip()
+url_nueva = input("Pega aquí la URL completa y presiona ENTER: ").strip()
 
-if not entrada_usuario:
-    print("No ingresaste nada. Saliendo...")
+if not url_nueva or "/live/" not in url_nueva:
+    print("La URL ingresada no es válida o no contiene '/live/'. Saliendo...")
     exit(1)
 
-# Si pegaste una URL completa, extraemos automáticamente la parte del token
-if "tok_" in entrada_usuario:
-    match_token = re.search(r'(tok_[^/\s]+)', entrada_usuario)
-    if match_token:
-        token_nuevo = match_token.group(1)
-    else:
-        token_nuevo = entrada_usuario
-else:
-    if not entrada_usuario.startswith("tok_"):
-        token_nuevo = f"tok_{entrada_usuario}"
-    else:
-        token_nuevo = entrada_usuario
+# Extraemos la base completa hasta antes de /live/
+# Ejemplo: https://edge-mix02-mun.cvattv.com.ar/tok_...
+base_nueva_limpia = url_nueva.split("/live/")[0]
 
-print(f"\nToken procesado correctamente.")
+print(f"\nNueva base de token detectada correctamente.")
 print(f"Escaneando archivos M3U/TXT en: {BASE_DIR}")
 
 modificados = 0
@@ -43,8 +33,11 @@ for root, dirs, files in os.walk(BASE_DIR):
             with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                 contenido = f.read()
 
-            patron = r'tok_.*?(/live/)'
-            contenido_actualizado, count = re.subn(patron, f'{token_nuevo}\\1', contenido)
+            # Reemplazamos cualquier dominio + tok_... antiguo que esté antes de /live/
+            # por nuestro nuevo dominio + token fresco completo.
+            patron = r'https://[^\s"<>]+?/live/'
+            
+            contenido_actualizado, count = re.subn(patron, f'{base_nueva_limpia}/live/', contenido)
 
             if count > 0:
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
