@@ -55,26 +55,35 @@ if not encontrado_token:
     exit(1)
 
 print(f"¡Token capturado con éxito: {encontrado_token[:30]}...!")
-print("Actualizando listas M3U...")
+print("Revisando archivos en la carpeta 'nico'...")
 
 carpeta_nico = "nico"
 modificados = 0
+archivos_encontrados = 0
 
 if os.path.exists(carpeta_nico):
     for root, dirs, files in os.walk(carpeta_nico):
         for file in files:
             if file.endswith((".m3u", ".m3u8", ".txt")):
+                archivos_encontrados += 1
                 ruta_archivo = os.path.join(root, file)
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazo ultra preciso: busca desde 'tok_' hasta encontrar la siguiente barra '/'
-                contenido_actualizado = re.sub(r'tok_[^/]+', f'tok_{encontrado_token}', contenido)
+                # Imprimimos una alerta si encuentra la palabra 'cvattv' o 'tok' en el archivo
+                if "cvattv" in contenido:
+                    print(f"-> Archivo compatible encontrado: {ruta_archivo}")
+                else:
+                    print(f"-> Archivo sin enlaces de Flow reconocidos: {ruta_archivo}")
 
-                with open(ruta_archivo, "w", encoding="utf-8") as f:
-                    f.write(contenido_actualizado)
-                
-                modificados += 1
-                print(f"Actualizado: {ruta_archivo}")
+                # Realizamos el reemplazo buscando de manera más amplia cualquier variante de tok_
+                contenido_actualizado, count = re.subn(r'tok_[^/]+', f'tok_{encontrado_token}', contenido)
 
-print(f"¡Proceso finalizado con éxito! Archivos modificados: {modificados}")
+                if count > 0:
+                    with open(ruta_archivo, "w", encoding="utf-8") as f:
+                        f.write(contenido_actualizado)
+                    modificados += 1
+                    print(f"   ¡Modificado con éxito! ({count} cambios en {file})")
+
+print(f"\nTotal archivos analizados: {archivos_encontrados}")
+print(f"¡Proceso finalizado! Archivos modificados: {modificados}")
