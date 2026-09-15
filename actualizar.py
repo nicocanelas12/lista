@@ -68,9 +68,8 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazo exacto para la estructura /tok_... que usa tu lista
-                # Busca todo lo que empiece con tok_ y tenga puntos, guiones y caracteres largos seguidos
-                contenido_actualizado = re.sub(r'tok_[a-zA-Z0-9_\-\.]+', f'tok_{encontrado_token}', contenido)
+                # Reemplazo ultra preciso: busca desde 'tok_' hasta encontrar la siguiente barra '/'
+                contenido_actualizado = re.sub(r'tok_[^/]+', f'tok_{encontrado_token}', contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
                     f.write(contenido_actualizado)
