@@ -3,15 +3,13 @@ import re
 import json
 from playwright.sync_api import sync_playwright
 
-# Carpeta local exclusiva para guardar tu sesión de forma segura
 USER_DATA_DIR = "./flow_profile"
 
-print("Iniciando navegador con sesión persistente...")
+print("Iniciando navegador con sesion persistente...")
 with sync_playwright() as p:
-    # Creamos un contexto persistente local que no interfiere con tu Chrome abierto
     context = p.chromium.launch_persistent_context(
         user_data_dir=USER_DATA_DIR,
-        headless=False, # Déjalo en False para la primera vez (luego puedes pasarlo a True si querés)
+        headless=False,
         args=["--start-maximized"]
     )
     
@@ -21,18 +19,16 @@ with sync_playwright() as p:
     page.goto("https://portal.app.flow.com.ar/inicio", wait_until="networkidle")
 
     print("Esperando acceso a la plataforma...")
-    print("👉 Si la ventana te pide iniciar sesión o verificar por código, hazlo manualmente en esa ventana.")
+    print("ATENCION: Si la ventana te pide iniciar sesion o verificar por codigo, hazlo manualmente en esa ventana.")
     
-    # Esperamos hasta que detecte que ya entraste a la página de inicio (hasta 2 minutos para que lo hagas tranquilo la primera vez)
     try:
         page.wait_for_url("**/inicio**", timeout=120000)
-        print("¡Sesión detectada con éxito!")
+        print("Sesion detectada con exito!")
     except Exception as e:
         print(f"Tiempo de espera agotado para el login manual: {e}")
 
     page.wait_for_timeout(4000)
 
-    # Extraer el token fresco del Local Storage
     local_storage_data = page.evaluate("() => window.localStorage.getItem('fenix_flow/accessToken')")
     
     nuevo_token = None
@@ -46,12 +42,11 @@ with sync_playwright() as p:
     context.close()
 
 if not nuevo_token:
-    print("No se pudo extraer el token automáticamente.")
+    print("No se pudo extraer el token automaticamente.")
     exit(1)
 
-print("¡Token extraído y guardado correctamente!")
+print("Token extraido y guardado correctamente!")
 
-# Actualizar archivos M3U en la carpeta nico
 carpeta_nico = "nico"
 modificados = 0
 
