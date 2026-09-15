@@ -37,29 +37,27 @@ with sync_playwright() as p:
     except Exception as e:
         print(f"Aviso en carga: {e}")
 
-    print("Esperando a que la sesión cargue por completo (20 segundos)...")
+    print("Esperando sesión (si pide iniciar sesión, hazlo en la ventana que se abrió)...")
     
-    # Damos tiempo prudente para capturar por red o cookies automáticamente
+    # Damos 40 segundos. Si no estás logueado, tienes tiempo de iniciar sesión y el script lo detectará solo al entrar.
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 20:
+    while not encontrado_token and (time.time() - start_time) < 40:
         page.wait_for_timeout(1000)
-
-    # Si la red no lo disparó en esos segundos, lo buscamos directamente en las cookies de sesión
-    if not encontrado_token:
-        print("Buscando token en las cookies de la sesión...")
-        cookies = context.cookies()
-        for cookie in cookies:
-            if 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
-                val = cookie['value']
-                if len(val) > 20:
-                    encontrado_token = val
-                    print(f"¡Token capturado desde la cookie '{cookie['name']}': {encontrado_token[:30]}...!")
-                    break
+        
+        # Búsqueda dinámica de respaldo en cookies cada pocos segundos
+        if not encontrado_token:
+            for cookie in context.cookies():
+                if 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
+                    val = cookie['value']
+                    if len(val) > 20:
+                        encontrado_token = val
+                        print(f"¡Token capturado desde la cookie '{cookie['name']}': {encontrado_token[:30]}...!")
+                        break
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token. Asegúrate de haber iniciado sesión al menos una vez.")
+    print("No se pudo capturar el token. Asegúrate de iniciar sesión en la ventana que se abre.")
     exit(1)
 
 print("Actualizando listas M3U...")
@@ -75,7 +73,7 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
-                # Reemplazo robusto: busca tanto 'token=' como cualquier identificador previo que empiece con bklk o similar
+                # Reemplazo robusto
                 contenido_actualizado = re.sub(r'(token=)[^&\s"\']+', rf'\1{encontrado_token}', contenido)
                 
                 if contenido_actualizado == contenido:
