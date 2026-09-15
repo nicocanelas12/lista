@@ -27,22 +27,48 @@ with sync_playwright() as p:
     except Exception as e:
         print(f"Tiempo de espera agotado para el login manual: {e}")
 
-    page.wait_for_timeout(4000)
+    # Damos unos segundos extra para que termine de cargar todos los datos internos de la sesión
+    page.wait_for_timeout(6000)
 
-    local_storage_data = page.evaluate("() => window.localStorage.getItem('fenix_flow/accessToken')")
-    
+    # Diagnóstico: Inspeccionamos todas las llaves del Local Storage para ver dónde guarda Flow el token
+    keys_in_storage = page.evaluate("() => Object.keys(window.localStorage)")
+    print(f"Llaves disponibles en Local Storage: {keys_in_storage}")
+
     nuevo_token = None
-    if local_storage_data:
-        try:
-            token_obj = json.loads(local_storage_data)
-            nuevo_token = token_obj.get("idToken")
-        except Exception as err:
-            print(f"Error al parsear el JSON del token: {err}")
+    
+    # Intentamos buscar en la llave anterior u otras comunes de Flow
+    for key_name in ['fenix_flow/accessToken', 'access_token', 'token', 'auth', 'user']:
+        if key_name in keys_in_storage:
+            val = page.evaluate(f"() => window.localStorage.getItem('{key_name}')")
+            print(f"Revisando llave '{key_name}': {val[:100] if val else 'Vacío'}")
+            if val:
+                try:
+                    # Si es un JSON, intentamos extraer el idToken o token
+                    parsed = json.loads(val)
+                    if isinstance(parsed, dict):
+                        nuevo_token = parsed.get("idToken") or parsed.get("accessToken") or parsed.get("token")
+                    else:
+                        nuevo_token = val
+                except:
+                    # Si no es JSON, asumimos que el valor mismo es el token
+                    nuevo_token = val
+                if nuevo_token:
+                    break
+
+    # Si aún no lo encontramos, buscamos en las cookies por si acaso
+    if not nuevo_token:
+        print("Buscando en cookies de sesión...")
+        cookies = context.cookies()
+        for cookie in cookies:
+            if 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
+                print(f"Encontrada cookie relevante: {cookie['name']}")
+                nuevo_token = cookie['value']
+                break
 
     context.close()
 
 if not nuevo_token:
-    print("No se pudo extraer el token automaticamente.")
+    print("No se pudo extraer el token automáticamente con las llaves conocidas.")
     exit(1)
 
 print("Token extraido y guardado correctamente!")
