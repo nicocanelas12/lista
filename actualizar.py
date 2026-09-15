@@ -1,44 +1,21 @@
 import os
 import re
-import time
+import json
 from playwright.sync_api import sync_playwright
 
 USER_DATA_DIR = "./flow_profile"
-encontrado_token = None
 
-print("Iniciando navegador con soporte multimedia...")
+print("Abriendo Google Chrome...")
 with sync_playwright() as p:
-    # Volvemos al motor estándar pero con argumentos específicos para permitir video y DRM
+    # Usamos channel="chrome" para utilizar tu navegador principal con tu sesión ya iniciada
     context = p.chromium.launch_persistent_context(
         user_data_dir=USER_DATA_DIR,
+        channel="chrome",
         headless=False,
-        args=[
-            "--start-maximized",
-            "--disable-infobars",
-            "--no-sandbox",
-            "--disable-setuid-sandbox",
-            "--ignore-certificate-errors",
-            "--enable-features=NetworkService,NetworkServiceInProcess",
-            "--disable-blink-features=AutomationControlled"
-        ],
-        ignore_default_args=["--enable-automation"]
+        args=["--start-maximized", "--disable-blink-features=AutomationControlled"]
     )
     
     page = context.new_page()
-
-    def intercept_request(request):
-        global encontrado_token
-        if not encontrado_token:
-            url = request.url
-            if 'token=' in url or 'access_token=' in url or 'auth=' in url:
-                match = re.search(r'(?:token|access_token|auth)=([a-zA-Z0-9_\-\.]+)', url)
-                if match:
-                    val = match.group(1)
-                    if len(val) > 20:
-                        encontrado_token = val
-                        print(f"\n¡Token capturado con éxito: {encontrado_token[:30]}...!")
-
-    page.on("request", intercept_request)
 
     print("Entrando al portal de Flow...")
     try:
@@ -47,20 +24,40 @@ with sync_playwright() as p:
         print(f"Aviso en carga: {e}")
 
     print("\n----------------------------------------------------")
-    print("Inicia sesión si te lo pide, entra a un canal y dale Play.")
+    print("Si te pide iniciar sesión, hazlo en esta ventana.")
+    print("Presiona ENTER en esta terminal una vez que estés adentro.")
     print("----------------------------------------------------\n")
 
-    start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 150:
-        page.wait_for_timeout(1000)
+    # Esperamos a que el usuario presione ENTER en la terminal cuando ya esté logueado
+    input("👉 Presiona ENTER aquí en la terminal cuando ya hayas iniciado sesión en Flow...")
 
-    if encontrado_token:
-        page.wait_for_timeout(2000)
+    # Extraemos el token o los datos de autenticación del LocalStorage / SessionStorage
+    print("Extrayendo credenciales de la sesión...")
+    
+    # Buscamos en localStorage
+    local_storage = page.evaluate("() => JSON.stringify(window.localStorage)")
+    session_storage = page.evaluate("() => JSON.stringify(window.sessionStorage)")
+    
+    encontrado_token = None
+    
+    # Buscamos patrones de token dentro del almacenamiento local
+    match_token = re.search(r'(?:token|access_token|auth|idToken)[":\s]+([a-zA-Z0-9_\-\.]{20,})', local_storage + session_storage)
+    if match_token:
+        encontrado_token = match_token.group(1)
+        print(f"¡Token extraído del almacenamiento: {encontrado_token[:30]}...!")
+    else:
+        # Si no está en el storage, revisamos las cookies activas
+        cookies = context.cookies()
+        for cookie in cookies:
+            if 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
+                encontrado_token = cookie['value']
+                print(f"¡Token extraído de la cookie '{cookie['name']}': {encontrado_token[:30]}...!")
+                break
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token.")
+    print("No se pudo extraer el token automáticamente. Asegúrate de haber iniciado sesión.")
     exit(1)
 
 print("Actualizando listas M3U...")
@@ -76,6 +73,7 @@ if os.path.exists(carpeta_nico):
                 with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
                     contenido = f.read()
 
+                # Reemplazo universal en las rutas con token=
                 contenido_actualizado = re.sub(r'(token=)[^&\s"\']+', rf'\1{encontrado_token}', contenido)
 
                 with open(ruta_archivo, "w", encoding="utf-8") as f:
