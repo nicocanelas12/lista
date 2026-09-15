@@ -17,73 +17,58 @@ with sync_playwright() as p:
     
     page = context.new_page()
 
-    def intercept_request(request):
-        global encontrado_token
-        if not encontrado_token:
-            url = request.url
-            if 'token=' in url or 'access_token=' in url or 'auth=' in url:
-                match = re.search(r'(?:token|access_token|auth)=([a-zA-Z0-9_\-\.]+)', url)
-                if match:
-                    val = match.group(1)
-                    if len(val) > 20:
-                        encontrado_token = val
-
-    page.on("request", intercept_request)
-
     print("Entrando al portal...")
     try:
         page.goto("https://portal.app.flow.com.ar/inicio", wait_until="domcontentloaded", timeout=60000)
     except Exception as e:
         print(f"Aviso en carga: {e}")
 
-    print("Esperando sesión...")
+    print("Buscando las credenciales de sesión activas...")
+    
+    # Damos hasta 25 segundos para revisar las cookies de forma continua mientras la página se estabiliza
     start_time = time.time()
-    while not encontrado_token and (time.time() - start_time) < 30:
+    while not encontrado_token and (time.time() - start_time) < 25:
         page.wait_for_timeout(1000)
-        if not encontrado_token:
-            for cookie in context.cookies():
-                if 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
-                    val = cookie['value']
-                    if len(val) > 20:
-                        encontrado_token = val
-                        break
+        
+        # Revisamos directamente el almacenamiento de cookies del navegador
+        for cookie in context.cookies():
+            # Buscamos la cookie exacta que maneja Flow para el token de sesión
+            if 'idtoken' in cookie['name'].lower() or 'token' in cookie['name'].lower() or 'auth' in cookie['name'].lower():
+                val = cookie['value']
+                if len(val) > 20:
+                    encontrado_token = val
+                    break
 
     context.close()
 
 if not encontrado_token:
-    print("No se pudo capturar el token.")
+    print("No se pudo capturar el token. Asegúrate de estar logueado.")
     exit(1)
 
-print(f"¡Token capturado con éxito: {encontrado_token[:30]}...!")
-print("Revisando archivos en la carpeta 'nico'...")
+print(f"\n¡Token capturado con éxito: {encontrado_token[:30]}...!")
 
-carpeta_nico = "nico"
+# Verificamos y actualizamos la carpeta nico
+ruta_actual = os.getcwd()
+carpeta_nico = os.path.join(ruta_actual, "nico")
 modificados = 0
-archivos_encontrados = 0
 
 if os.path.exists(carpeta_nico):
-    for root, dirs, files in os.walk(carpeta_nico):
-        for file in files:
-            if file.endswith((".m3u", ".m3u8", ".txt")):
-                archivos_encontrados += 1
-                ruta_archivo = os.path.join(root, file)
-                with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
-                    contenido = f.read()
+    archivos = os.listdir(carpeta_nico)
+    for file in archivos:
+        if file.endswith((".m3u", ".m3u8", ".txt")):
+            ruta_archivo = os.path.join(carpeta_nico, file)
+            with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as f:
+                contenido = f.read()
 
-                # Imprimimos una alerta si encuentra la palabra 'cvattv' o 'tok' en el archivo
-                if "cvattv" in contenido:
-                    print(f"-> Archivo compatible encontrado: {ruta_archivo}")
-                else:
-                    print(f"-> Archivo sin enlaces de Flow reconocidos: {ruta_archivo}")
+            # Reemplazo ultra preciso de tok_ hasta la barra /
+            contenido_actualizado, count = re.subn(r'tok_[^/]+', f'tok_{encontrado_token}', contenido)
 
-                # Realizamos el reemplazo buscando de manera más amplia cualquier variante de tok_
-                contenido_actualizado, count = re.subn(r'tok_[^/]+', f'tok_{encontrado_token}', contenido)
+            if count > 0:
+                with open(ruta_archivo, "w", encoding="utf-8") as f:
+                    f.write(contenido_actualizado)
+                modificados += 1
+                print(f"-> ¡Actualizado con éxito: {file} ({count} cambios)!")
+else:
+    print("No se encontró la carpeta 'nico'.")
 
-                if count > 0:
-                    with open(ruta_archivo, "w", encoding="utf-8") as f:
-                        f.write(contenido_actualizado)
-                    modificados += 1
-                    print(f"   ¡Modificado con éxito! ({count} cambios en {file})")
-
-print(f"\nTotal archivos analizados: {archivos_encontrados}")
-print(f"¡Proceso finalizado! Archivos modificados: {modificados}")
+print(f"\n¡Proceso finalizado! Archivos modificados: {modificados}")
