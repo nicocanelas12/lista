@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://www.open-epg.com/files/argentina4.xml.gz,https://www.open-epg.com/files/uruguay2.xml.gz"
+#EXTM3U x-tvg-url="https://www.open-epg.com/files/argentina2.xml.gz,https://www.open-epg.com/files/uruguay2.xml.gz"
  
 Nacional
  
@@ -432,7 +432,7 @@ Deportes
 https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5Njg4NjMwIiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2M2ZWRzL1RlbGVmZUhEL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiIyNDgzYWZmYjJiNjZiYzYyIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODk1MTU4MjktNDQ5IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjExNCIsImF1ZCI6IjMwNyIsInNvdXJjZXMiOlsxMDUsODUsMTQ0LDIxMCw4Niw4OF19.-LQx38NGPA0M16X4bikkPs6ezEO1ekgvA1Sn6teAA_7nQRgNpLVzjZJtNV6IJv4PF5pNeMEezjd9CAbEkc7jfQ==/live/c3eds/ESPN2HD/SA_Live_dash_enc/ESPN2HD.mpd
 
 
-#EXTINF:-1 tvg-id="ESPN 2 HD.uy" tvg-name="ESPN 2" tvg-logo="https://i.postimg.cc/D4yRcwg2/ESPN-2-Argentina.png" group-title="Deportes",ESPN 2 
+#EXTINF:-1 tvg-id="ESPN 2 HD.ar" tvg-name="ESPN 2" tvg-logo="https://i.postimg.cc/D4yRcwg2/ESPN-2-Argentina.png" group-title="Deportes",ESPN 2 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"e6eab53cf8ea962b999c59c298596a65":"10c103ae76f99620d66fa75f2c03302a"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -441,7 +441,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 
 
-#EXTINF:-1 tvg-id="ESPN 3 HD.uy" tvg-logo="https://i.postimg.cc/0MCLmw7Z/ESPN-3-Argentina.png" group-title="Deportes",ESPN 3 
+#EXTINF:-1 tvg-id="ESPN 3 HD.ar" tvg-logo="https://i.postimg.cc/0MCLmw7Z/ESPN-3-Argentina.png" group-title="Deportes",ESPN 3 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=deeed0f44c6b45e064f4d5064486e821:bf89ceeb93564ddc603ba6afd8c9266a
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -450,7 +450,7 @@ https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.ey
 
 
 
-#EXTINF:-1 tvg-id="ESPN 4 HD.uy" tvg-logo="https://i.postimg.cc/1fnQ2Sfy/ESPN-4-Sur.png" group-title="Deportes",ESPN 4 
+#EXTINF:-1 tvg-id="ESPN 4 HD.ar" tvg-logo="https://i.postimg.cc/1fnQ2Sfy/ESPN-4-Sur.png" group-title="Deportes",ESPN 4 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"ZF4TYk6TOEGx6jXNobVb0Q","kid":"0CmB5vrqzvSckP2wU6tkHQ"}],"type":"temporary"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
