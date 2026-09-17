@@ -1280,14 +1280,8 @@ https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv
 #EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
 #EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=e5e43e324b6cd33b92c9ac8c398bb3c8:c8c7f804f0ecfc8fc0d53dff48d7ece1
-https://live3-ott.izzigo.tv/15/out/u/dash/HBO-HD/default.mpd
-
-
-#EXTINF:-1 tvg-id="HBO HD.mx" tvg-logo="https://i.postimg.cc/hP2f012C/HBO.png" group-title="HBO + Universal",HBO 🇲🇽
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_west_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=026db28a966b1d022cbeaa8816e5525b&key=ed3f885f288102d9de178bdef3b7e451
+https://live1-ott.izzigo.tv/7/out/u/dash/HBO-HD-H265/default.mpd
 
 
 #EXTINF:-1 tvg-id="HBO 2 HD.uy" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/HBO2P.png?raw=true" group-title="HBO + Universal",HBO 2
@@ -1297,10 +1291,12 @@ http://147.78.1.28/xview/hbo_west_hd.mpd
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODQ0MTA2Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL01hZ2F6aW5lL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiJiOTVjYTg5NTY3YTY0MDdkIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODk2NzEzMTEtNjc2IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8xODEuMTIuMzYuMTUwIiwiYXVkIjoiMzA3Iiwic291cmNlcyI6WzEwNSw4NSwxNDQsMjEwLDg2LDg4XX0=.J9ylJ0NDiGsqpPIE2D7DGtZPQSIdjaWavwCgFVwEktPtMADqqsENls19sIEevkWyiOff5CC26IOrS27pFy8bOw==/live/c6eds/HBO_2/SA_Live_dash_enc/HBO_2.mpd
 
- #EXTINF:-1 tvg-id="HBO 2 HD.mx" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/HBO2P.png?raw=true" group-title="HBO + Universal",HBO 2 🇲🇽
+#EXTINF:-1 tvg-id="HBO 2 HD.mx" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/HBO2P.png?raw=true" group-title="HBO + Universal",HBO 2 🇲🇽
+#EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=af3d986f5d7f4bd3b672822514f400a3:325fea0b25600fd26bfd497a03a52599
-http://147.78.1.28/xview/hbo_2_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=8cee93949588075725a6b3528a415ae1&key=ab2bf64ff3a054e56527bce95c909f82
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO2-HD-H265/default.mpd
 
 #EXTINF:-1 321" tvg-id="HBO Plus HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/124/CH_LOGO/160/160/0/0/10237380072165.png" group-title="HBO + Universal",HBO Plus
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1310,10 +1306,11 @@ http://147.78.1.28/xview/hbo_2_hd.mpd
 https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODQ0MTA2Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL01hZ2F6aW5lL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiJiOTVjYTg5NTY3YTY0MDdkIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODk2NzEzMTEtNjc2IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8xODEuMTIuMzYuMTUwIiwiYXVkIjoiMzA3Iiwic291cmNlcyI6WzEwNSw4NSwxNDQsMjEwLDg2LDg4XX0=.J9ylJ0NDiGsqpPIE2D7DGtZPQSIdjaWavwCgFVwEktPtMADqqsENls19sIEevkWyiOff5CC26IOrS27pFy8bOw==/live/c6eds/HBO_Plus/SA_Live_dash_enc/HBO_Plus.mpd
 
 #EXTINF:-1 tvg-id="HBO Plus" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/124/CH_LOGO/160/160/0/0/10237380072165.png" group-title="HBO + Universal",HBO Plus 🇲🇽
+#EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=325fea0b25600fd26bfd497a03a52599&keyid%5B%5D=af3d986f5d7f4bd3b672822514f400a3
-http://147.78.1.28/xview/hbo_plus_hd.mpd
-
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=bcf21b0b685df69510b2709f18befd17&key=19f88216f52de21149cda28c301f5d96
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-PLUS-HD-H265/default.mpd
 
 #EXTINF:-1 322" tvg-id="HBO Family.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/102/CH_LOGO/160/160/0/0/7354519807335.png" group-title="HBO + Universal",HBO Family 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1323,9 +1320,11 @@ http://147.78.1.28/xview/hbo_plus_hd.mpd
 https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODQ0MTA2Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL01hZ2F6aW5lL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiJiOTVjYTg5NTY3YTY0MDdkIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODk2NzEzMTEtNjc2IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8xODEuMTIuMzYuMTUwIiwiYXVkIjoiMzA3Iiwic291cmNlcyI6WzEwNSw4NSwxNDQsMjEwLDg2LDg4XX0=.J9ylJ0NDiGsqpPIE2D7DGtZPQSIdjaWavwCgFVwEktPtMADqqsENls19sIEevkWyiOff5CC26IOrS27pFy8bOw==/live/c6eds/HBO_Family/SA_Live_dash_enc/HBO_Family.mpd
 
 #EXTINF:-1 tvg-id="HBO Family" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/102/CH_LOGO/160/160/0/0/7354519807335.png" group-title="HBO + Universal",HBO Family 🇲🇽
+#EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=325fea0b25600fd26bfd497a03a52599&keyid%5B%5D=af3d986f5d7f4bd3b672822514f400a3
-http://147.78.1.28/xview/hbo_family_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=230a6cfa5e7fd4665b15b6ddccb96459&key=939c3f61b9fb213518e49c24eceeab85
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-FAMILY-HD-H265/default.mpd
 
 #EXTINF:-1 323" tvg-id="HBO Mundi HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/107/CH_LOGO/160/160/0/0/61157416071448.png" group-title="HBO + Universal",HBO Mundi 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1335,9 +1334,11 @@ http://147.78.1.28/xview/hbo_family_hd.mpd
 https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODQ0MTA2Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL01hZ2F6aW5lL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiJiOTVjYTg5NTY3YTY0MDdkIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODk2NzEzMTEtNjc2IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8xODEuMTIuMzYuMTUwIiwiYXVkIjoiMzA3Iiwic291cmNlcyI6WzEwNSw4NSwxNDQsMjEwLDg2LDg4XX0=.J9ylJ0NDiGsqpPIE2D7DGtZPQSIdjaWavwCgFVwEktPtMADqqsENls19sIEevkWyiOff5CC26IOrS27pFy8bOw==/live/c6eds/HBO_Mundi/SA_Live_dash_enc/HBO_Mundi.mpd
 
 #EXTINF:-1 tvg-id="HBO Mundi" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/107/CH_LOGO/160/160/0/0/61157416071448.png" group-title="HBO + Universal",HBO Mundi 🇲🇽
+#EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_mundi_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=96b2370bdcc9acb6caa0cfd5aa35dcf4&key=b732a02918aa32e739e43952db768cc6
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-MUNDI-HD-H265/default.mpd
 
 #EXTINF:-1 tvg-id="HBO Signature HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/49/CH_LOGO/160/160/0/0/3657655307500.png" group-title="HBO + Universal",HBO Signature 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1354,9 +1355,11 @@ https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv
 https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODQ0MTA2Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL01hZ2F6aW5lL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiJiOTVjYTg5NTY3YTY0MDdkIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODk2NzEzMTEtNjc2IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8xODEuMTIuMzYuMTUwIiwiYXVkIjoiMzA3Iiwic291cmNlcyI6WzEwNSw4NSwxNDQsMjEwLDg2LDg4XX0=.J9ylJ0NDiGsqpPIE2D7DGtZPQSIdjaWavwCgFVwEktPtMADqqsENls19sIEevkWyiOff5CC26IOrS27pFy8bOw==/live/c6eds/HBO_Signature/SA_Live_dash_enc_wl/HBO_Signature.mpd
 
 #EXTINF:-1 tvg-id="HBO Signature" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/49/CH_LOGO/160/160/0/0/3657655307500.png" group-title="HBO + Universal",HBO Signature 🇲🇽
+#EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_signature_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=cbda1cb384558d8ec6fd3cc3841bad87&key=0eba590cffc565ed48ee61970c8bf2dc
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-SIGNATURE-HD-H265/default.mpd
 
 #EXTINF:-1 tvg-id="HBO POP HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/109/CH_LOGO/160/160/0/0/68908128073927.png" group-title="HBO + Universal",HBO Pop 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1366,9 +1369,11 @@ http://147.78.1.28/xview/hbo_signature_hd.mpd
 https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODQ0MTA2Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL01hZ2F6aW5lL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiJiOTVjYTg5NTY3YTY0MDdkIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODk2NzEzMTEtNjc2IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8xODEuMTIuMzYuMTUwIiwiYXVkIjoiMzA3Iiwic291cmNlcyI6WzEwNSw4NSwxNDQsMjEwLDg2LDg4XX0=.J9ylJ0NDiGsqpPIE2D7DGtZPQSIdjaWavwCgFVwEktPtMADqqsENls19sIEevkWyiOff5CC26IOrS27pFy8bOw==/live/c7eds/HBO_POP/SA_Live_dash_enc/HBO_POP.mpd
 
 #EXTINF:-1 tvg-id="HBO POP" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/109/CH_LOGO/160/160/0/0/68908128073927.png" group-title="HBO + Universal",HBO Pop 🇲🇽
+#EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_pop_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=04ab4cefd27bf2635261fa714af883d6&key=5a1282ee809826b9b2a5636970730da6
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-POP-HD-H265/default.mpd
 
 #EXTINF:-1 tvg-id="HBO Xtreme HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/108/CH_LOGO/160/160/0/0/6041444607334.png" group-title="HBO + Universal",HBO Xtreme 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1378,9 +1383,11 @@ http://147.78.1.28/xview/hbo_pop_hd.mpd
 https://autumn-bush-0e07.nicocanelas12.workers.dev/https://edge-live01-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODQ0MTA2Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL01hZ2F6aW5lL1NBX0xpdmVfZGFzaF9lbmMvIiwic2Vzc2lvbl9jZG5faWQiOiJiOTVjYTg5NTY3YTY0MDdkIiwic2Vzc2lvbl9pZCI6IjQzMzQ0MTczZmYwNTE4YTBkMGRiNDJjYWMyYWY5Y2FhLTE3ODk2NzEzMTEtNjc2IiwiY2xpZW50X2lkIjoiZmxvdzo5OTk5MDAwMDI3NTgxNzAtLWZsb3c6OTk5OTAwMDAyNzU4MTcwOlAiLCJkZXZpY2VfaWQiOiI0MzM0NDE3M2ZmMDUxOGEwZDBkYjQyY2FjMmFmOWNhYSIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8xODEuMTIuMzYuMTUwIiwiYXVkIjoiMzA3Iiwic291cmNlcyI6WzEwNSw4NSwxNDQsMjEwLDg2LDg4XX0=.J9ylJ0NDiGsqpPIE2D7DGtZPQSIdjaWavwCgFVwEktPtMADqqsENls19sIEevkWyiOff5CC26IOrS27pFy8bOw==/live/c6eds/HBO_Extreme/SA_Live_dash_enc/HBO_Extreme.mpd
 
 #EXTINF:-1 tvg-id="HBO Xtreme" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/108/CH_LOGO/160/160/0/0/6041444607334.png" group-title="HBO + Universal",HBO Xtreme 🇲🇽
+#EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_xtreme_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=abf304290bec7c982e706b1fae592aea&key=73e1d01cc86bb88c184fbca31292977f
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-XTREME-HD-H265/default.mpd
 
 #EXTINF:-1 tvg-id="Universal HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/41/CH_LOGO/800/542/0/0/9929073907327.png" group-title="HBO + Universal",Universal TV 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
