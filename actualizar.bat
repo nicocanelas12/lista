@@ -12,10 +12,15 @@ REM 1. Modifica el archivo base reemplazando servidor y token
 powershell -Command "$content = Get-Content 'base.m3u' -Encoding UTF8; $content = $content -replace '\{\{SERVIDOR\}\}', '%nuevo_servidor%'; $content = $content -replace '\{\{TOKEN\}\}', '%nuevo_token%'; Set-Content 'nico' -Value $content -Encoding UTF8"
 
 echo.
-echo [1/2] Archivo 'nico' generado correctamente.
-echo [2/2] Subiendo cambios a GitHub...
+echo [1/3] Archivo 'nico' generado correctamente.
+echo [2/3] Sincronizando con GitHub...
 
-REM 2. Comandos automáticos de Git
+REM 2. Traer cambios remotos por si acaso
+git pull origin main --rebase
+
+echo [3/3] Subiendo cambios a GitHub...
+
+REM 3. Comandos automáticos de Git
 git add .
 git commit -m "Actualizacion automatica de servidor y token"
 git push
