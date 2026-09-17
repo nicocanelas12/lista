@@ -424,7 +424,7 @@ Deportes
 #EXTINF:-1 group-logo="https://i.imgur.com/EU6cNrE.png"
 
 
-#EXTINF:-1 tvg-id="tvg-id="ESPN HD.uy" tvg-name="ESPN Argentina" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png" group-title="Deportes",ESPN
+#EXTINF:-1 tvg-id="tvg-id="ESPN HD.uy" tvg-name="ESPN" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png" group-title="Deportes",ESPN
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"d079ffa3757e8335611fc48be6ba47ff":"05059d1cb21b6708a55e9c26fb38e2f3"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
