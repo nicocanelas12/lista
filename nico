@@ -57,7 +57,7 @@ https://edge-live05-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.e
 #EXTINF:-1 tvg-id="Telefe HD.uy" tvg-logo="https://i.imgur.com/1ad9pDr.png" group-title="Nacional",Telefe Internacional
 https://edge-live05-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODY2Njk3Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0FtZXJpY2FUVi9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiMmY4YzY4ZjBhMDcwZjAyYSIsInNlc3Npb25faWQiOiJhNTRhMWM4YmFjNzFmYTJiZjAxMWEyM2EwZTI3Zjg4Mi0xNzg5NjkzODk3LTM4MyIsImNsaWVudF9pZCI6ImZsb3c6MTExMjgyMS0tZmxvdzoxMTEyODIxOlAiLCJkZXZpY2VfaWQiOiJhNTRhMWM4YmFjNzFmYTJiZjAxMWEyM2EwZTI3Zjg4MiIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjExNCIsImF1ZCI6IjM2NCIsInNvdXJjZXMiOlsxMDUsODUsMTQ0LDIxMCw4Niw4OF19.whrsM1X19ViyiV267gX2F1IJDxmcpjkDZi8b8f3CGBN6Rw7Mu83L_6RFOsY3Dbf6tFdU52nbN2civ4cC90m7Nw==/live/c4eds/Telefe_Internacional/SA_Live_dash_enc_wl/Telefe_Internacional.mpd
 
-#EXTINF:-1 tvg-id="Canal 13.ar" tvg-name="Canal 13.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/eltrece-ar.png" group-title="Nacional",El Trece 
+#EXTINF:-1 tvg-id="ElTrece.ar" tvg-name="Canal 13.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/eltrece-ar.png" group-title="Nacional",El Trece 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=4aa8ec10f92b212c0cbaaa8e0591b468:17985aeaac30e62e6dad45f4df84cc2c
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -424,7 +424,7 @@ Deportes
 #EXTINF:-1 group-logo="https://i.imgur.com/EU6cNrE.png"
 
 
-#EXTINF:-1 tvg-id="tvg-id="ESPN.ar" tvg-name="ESPN Argentina" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png" group-title="Deportes",ESPN
+#EXTINF:-1 tvg-id="ESPN HD.uy" tvg-name="ESPN" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png" group-title="Deportes",ESPN
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"d079ffa3757e8335611fc48be6ba47ff":"05059d1cb21b6708a55e9c26fb38e2f3"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -530,6 +530,13 @@ https://vcdn.mn10.entel.bo:443/Content/DASH/Live/Channel(62567d5c-295c-4ffd-ac7e
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://edge-live05-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODY2Njk3Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0FtZXJpY2FUVi9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiMmY4YzY4ZjBhMDcwZjAyYSIsInNlc3Npb25faWQiOiJhNTRhMWM4YmFjNzFmYTJiZjAxMWEyM2EwZTI3Zjg4Mi0xNzg5NjkzODk3LTM4MyIsImNsaWVudF9pZCI6ImZsb3c6MTExMjgyMS0tZmxvdzoxMTEyODIxOlAiLCJkZXZpY2VfaWQiOiJhNTRhMWM4YmFjNzFmYTJiZjAxMWEyM2EwZTI3Zjg4MiIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjExNCIsImF1ZCI6IjM2NCIsInNvdXJjZXMiOlsxMDUsODUsMTQ0LDIxMCw4Niw4OF19.whrsM1X19ViyiV267gX2F1IJDxmcpjkDZi8b8f3CGBN6Rw7Mu83L_6RFOsY3Dbf6tFdU52nbN2civ4cC90m7Nw==/live/c7eds/ESPN3_Uy-Py/SA_Live_dash_enc/ESPN3_Uy-Py.mpd
+
+#EXTINF:-1 tvg-id="ESPN HD.uy" tvg-name="ESPN" tvg-logo="http://res.cloudinary.com/doj39auqi/image/upload/v1684343656/cxuieragbu4epuhxo7in.png" group-title="Deportes",ESPN 🇵🇾
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://pqlbatyoaawbhfyldlpw.supabase.co/functions/v1/ESPN_PRY
+#KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.py
+#KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.py/
+https://edge-live05-mun.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzg5ODY2Njk3Iiwic2lwIjoiMTgxLjE2Ni4xNzguMTUwIiwicGF0aCI6Ii9saXZlL2MzZWRzL0FtZXJpY2FUVi9TQV9MaXZlX2Rhc2hfZW5jLyIsInNlc3Npb25fY2RuX2lkIjoiMmY4YzY4ZjBhMDcwZjAyYSIsInNlc3Npb25faWQiOiJhNTRhMWM4YmFjNzFmYTJiZjAxMWEyM2EwZTI3Zjg4Mi0xNzg5NjkzODk3LTM4MyIsImNsaWVudF9pZCI6ImZsb3c6MTExMjgyMS0tZmxvdzoxMTEyODIxOlAiLCJkZXZpY2VfaWQiOiJhNTRhMWM4YmFjNzFmYTJiZjAxMWEyM2EwZTI3Zjg4MiIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjExNCIsImF1ZCI6IjM2NCIsInNvdXJjZXMiOlsxMDUsODUsMTQ0LDIxMCw4Niw4OF19.whrsM1X19ViyiV267gX2F1IJDxmcpjkDZi8b8f3CGBN6Rw7Mu83L_6RFOsY3Dbf6tFdU52nbN2civ4cC90m7Nw==/live/c4eds/ESPN2_PY/SA_Live_dash_enc/ESPN2_PY.mpd
 
 #EXTINF:-1 tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/fysmne1660760631.png" group-title="Deportes",ESPN 🇲🇽
 #KODIPROP:inputstream.adaptive.license_type=clearkey
