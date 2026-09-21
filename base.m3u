@@ -424,7 +424,7 @@ Deportes
 #EXTINF:-1 group-logo="https://i.imgur.com/EU6cNrE.png"
 
 
-#EXTINF:-1 tvg-id="tvg-id="ESPN HD.uy" tvg-name="ESPN" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png" group-title="Deportes",ESPN
+#EXTINF:-1 "tvg-id="ESPN HD.uy" tvg-name="ESPN" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png" group-title="Deportes",ESPN
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"d079ffa3757e8335611fc48be6ba47ff":"05059d1cb21b6708a55e9c26fb38e2f3"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -587,10 +587,12 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/FoxSports2HD/SA_Live_dash_enc/FoxS
 
 
 
-
 #EXTINF:-1 tvg-id="FOX Sports 3.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/fox-sports-3-ar.png" group-title="Deportes",FOX Sports 3 
-https://joy.nx-pc.edge-apps.net/hls/nhpm-b5ank-dc0f8-23dl8.m3u8
-
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={"4629bd0ae30c0e72af111fb948fada1c":"7864154c679e769e7f164ba083c8fad3"}
+#KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
+#KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
+https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/FoxSports3HD/SA_Live_dash_enc/FoxSports3HD.mpd
 
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -644,13 +646,13 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Eventos_2_HD/SA_Live_dash_enc/Even
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/masterentertainment/listas/refs/heads/main/logos/EVNTD.png" group-title="Deportes",Eventos Flow 🇵🇾
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key={"49eb924ba998ca7fbbaee30dcef1ecb4":"11111111111111118111000000000000"}
+#KODIPROP:inputstream.adaptive.license_key=https://jdrjjuarzngptvngxpvp.supabase.co/functions/v1/EVENTOS_PY
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/Info_Mora/SA_Live_dash_enc_wl/Info_Mora.mpd
+https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/Eventos_PY/SA_Live_dash_enc_wl/Eventos_PY.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"3d7afc43dab940d699b61466b245369f":"712b5165ff990156e6c9e580b0b4df59"}
+#KODIPROP:inputstream.adaptive.license_key=https://jdrjjuarzngptvngxpvp.supabase.co/functions/v1/EVENTOS-_PY
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/masterentertainment/listas/refs/heads/main/logos/EVNTD.png" group-title="Deportes",Eventos Flow 2 🇵🇾
