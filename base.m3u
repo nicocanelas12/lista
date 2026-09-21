@@ -776,6 +776,32 @@ https://099ed2f3014c41e78f3c7bc29b21bc11.mediatailor.us-east-1.amazonaws.com/v1/
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/DSports_Uruguay_Premium/SA_Live_dash_enc_wl/DSports_Uruguay_Premium.mpd
 
+
+#EXTINF:-1 tvg-id="DSports" tvg-name="DSports Argentina" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Directv)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=13129171e9303da3a31dd7b583f7f41c:dc4844c309c47baf996f267cda324d61
+#EXTVLCOPT:http-user-agent=dgo/4.48.0 (Android; Android 7.1.2; Asus; ASUS_Z01QD) ExoPlayer/2.19.1
+#EXTVLCOPT:http-origin=https://android_mobile.directvgo.com
+#EXTVLCOPT:http-referrer=https://android_mobile.directvgo.com/
+https://1cf44b5bdec84b56bd4ec71e0cbf33de.mediatailor.us-east-1.amazonaws.com/v1/dash/dffceb859a31f14d0ed059ef6b4e2e4d850e60b1/live_1057/1057_DIRECTV_SPORTS_ARG_DASH/manifest.mpd
+ 
+ 
+#EXTINF:-1 tvg-id="DSports 2" tvg-name="DIRECTV SPORTS OCC 2" tvg-logo="https://i.postimg.cc/hGDVfzgm/dsports-2.png" group-title="Deportes",DSports 2 (Directv)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=054e17b9b99e3e0aa1e022d238635d35:4cc211af8468e321973787bb61f55db4
+#EXTVLCOPT:http-user-agent=dgo/4.48.0 (Android; Android 7.1.2; Asus; ASUS_Z01QD) ExoPlayer/2.19.1
+#EXTVLCOPT:http-origin=https://android_mobile.directvgo.com
+#EXTVLCOPT:http-referrer=https://android_mobile.directvgo.com/
+https://46925e69ccf445e09667cb17c8bb4f2c.mediatailor.us-east-1.amazonaws.com/v1/dash/dffceb859a31f14d0ed059ef6b4e2e4d850e60b1/live_1065/1065_DIRECTV_SPORTS_OCC_2_DASH/manifest.mpd
+ 
+#EXTINF:-1 tvg-id="DSports HD" tvg-name="DIRECTV SPORTS HD" tvg-logo="https://i.postimg.cc/gcnKcwqB/dsports.png" group-title="Deportes",DSports + (Directv)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=7dbd6af5e0e530919642f53f4b9af775:48d7040d3c5edf52115fd0b2ede3bdb0
+#EXTVLCOPT:http-user-agent=dgo/4.48.0 (Android; Android 7.1.2; Asus; ASUS_Z01QD) ExoPlayer/2.19.1
+#EXTVLCOPT:http-origin=https://android_mobile.directvgo.com
+#EXTVLCOPT:http-referrer=https://android_mobile.directvgo.com/
+https://b5cce558f58c4843a8264d282ebce3ec.mediatailor.us-east-1.amazonaws.com/v1/dash/dffceb859a31f14d0ed059ef6b4e2e4d850e60b1/live_1071/1071_DIRECTV_SPORTS_HD_DASH/manifest.mpd
+
 #EXTINF:-1 tvg-name="DSports Argentina" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports 🇦🇷
 #EXTVLCOPT:http-user-agent=AivAndroidPlayer/1.0 (AndroidDevice)
 #EXTVLCOPT:http-referrer=https://www.primevideo.com/
@@ -1286,17 +1312,13 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/HBOHD/SA_Live_dash_enc_wl/HBOHD.mp
 
 
 #EXTINF:-1 tvg-id="HBO HD.mx" tvg-logo="https://i.postimg.cc/hP2f012C/HBO.png" group-title="HBO + Universal",HBO 🇲🇽
-#EXTVLCOPT:http-user-agent=izzigo/11.5.1(18)_prd izzigo ahh (Linux;Android 16) AndroidXMedia3/1.0.2
-#EXTVLCOPT:http-referrer=https://www.izzigo.tv/webclient/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=e5e43e324b6cd33b92c9ac8c398bb3c8:c8c7f804f0ecfc8fc0d53dff48d7ece1
-https://live3-ott.izzigo.tv/15/out/u/dash/HBO-HD/default.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=026db28a966b1d022cbeaa8816e5525b&key=ed3f885f288102d9de178bdef3b7e451
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+https://live1-ott.izzigo.tv/7/out/u/dash/HBO-HD-H265/default.mpd
 
-
-#EXTINF:-1 tvg-id="HBO HD.mx" tvg-logo="https://i.postimg.cc/hP2f012C/HBO.png" group-title="HBO + Universal",HBO 🇲🇽
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_west_hd.mpd
 
 
 #EXTINF:-1 tvg-id="HBO 2 HD.uy" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/HBO2P.png?raw=true" group-title="HBO + Universal",HBO 2
@@ -1306,10 +1328,13 @@ http://147.78.1.28/xview/hbo_west_hd.mpd
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/HBO_2/SA_Live_dash_enc/HBO_2.mpd
 
- #EXTINF:-1 tvg-id="HBO 2 HD.mx" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/HBO2P.png?raw=true" group-title="HBO + Universal",HBO 2 🇲🇽
+#EXTINF:-1 tvg-id="HBO 2 HD.mx" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/HBO2P.png?raw=true" group-title="HBO + Universal",HBO 2 🇲🇽
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=af3d986f5d7f4bd3b672822514f400a3:325fea0b25600fd26bfd497a03a52599
-http://147.78.1.28/xview/hbo_2_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=8cee93949588075725a6b3528a415ae1&key=ab2bf64ff3a054e56527bce95c909f82
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO2-HD-H265/default.mpd
 
 #EXTINF:-1 321" tvg-id="HBO Plus HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/124/CH_LOGO/160/160/0/0/10237380072165.png" group-title="HBO + Universal",HBO Plus
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1320,8 +1345,11 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/HBO_Plus/SA_Live_dash_enc/HBO_Plus
 
 #EXTINF:-1 tvg-id="HBO Plus" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/124/CH_LOGO/160/160/0/0/10237380072165.png" group-title="HBO + Universal",HBO Plus 🇲🇽
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=325fea0b25600fd26bfd497a03a52599&keyid%5B%5D=af3d986f5d7f4bd3b672822514f400a3
-http://147.78.1.28/xview/hbo_plus_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=bcf21b0b685df69510b2709f18befd17&key=19f88216f52de21149cda28c301f5d96
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-PLUS-HD-H265/default.mpd
 
 
 #EXTINF:-1 322" tvg-id="HBO Family.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/102/CH_LOGO/160/160/0/0/7354519807335.png" group-title="HBO + Universal",HBO Family 
@@ -1333,8 +1361,12 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/HBO_Family/SA_Live_dash_enc/HBO_Fa
 
 #EXTINF:-1 tvg-id="HBO Family" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/102/CH_LOGO/160/160/0/0/7354519807335.png" group-title="HBO + Universal",HBO Family 🇲🇽
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=325fea0b25600fd26bfd497a03a52599&keyid%5B%5D=af3d986f5d7f4bd3b672822514f400a3
-http://147.78.1.28/xview/hbo_family_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=230a6cfa5e7fd4665b15b6ddccb96459&key=939c3f61b9fb213518e49c24eceeab85
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-FAMILY-HD-H265/default.mpd
+
 
 #EXTINF:-1 323" tvg-id="HBO Mundi HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/107/CH_LOGO/160/160/0/0/61157416071448.png" group-title="HBO + Universal",HBO Mundi 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1345,8 +1377,11 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/HBO_Mundi/SA_Live_dash_enc/HBO_Mun
 
 #EXTINF:-1 tvg-id="HBO Mundi" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/107/CH_LOGO/160/160/0/0/61157416071448.png" group-title="HBO + Universal",HBO Mundi 🇲🇽
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_mundi_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=96b2370bdcc9acb6caa0cfd5aa35dcf4&key=b732a02918aa32e739e43952db768cc6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-MUNDI-HD-H265/default.mpd
 
 #EXTINF:-1 tvg-id="HBO Signature HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/49/CH_LOGO/160/160/0/0/3657655307500.png" group-title="HBO + Universal",HBO Signature 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1364,8 +1399,11 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/HBO_Signature/SA_Live_dash_enc_wl/
 
 #EXTINF:-1 tvg-id="HBO Signature" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/49/CH_LOGO/160/160/0/0/3657655307500.png" group-title="HBO + Universal",HBO Signature 🇲🇽
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_signature_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=cbda1cb384558d8ec6fd3cc3841bad87&key=0eba590cffc565ed48ee61970c8bf2dc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-SIGNATURE-HD-H265/default.mpd
 
 #EXTINF:-1 tvg-id="HBO POP HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/109/CH_LOGO/160/160/0/0/68908128073927.png" group-title="HBO + Universal",HBO Pop 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1376,8 +1414,12 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/HBO_POP/SA_Live_dash_enc/HBO_POP.m
 
 #EXTINF:-1 tvg-id="HBO POP" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/109/CH_LOGO/160/160/0/0/68908128073927.png" group-title="HBO + Universal",HBO Pop 🇲🇽
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_pop_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=04ab4cefd27bf2635261fa714af883d6&key=5a1282ee809826b9b2a5636970730da6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-POP-HD-H265/default.mpd
+
 
 #EXTINF:-1 tvg-id="HBO Xtreme HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/108/CH_LOGO/160/160/0/0/6041444607334.png" group-title="HBO + Universal",HBO Xtreme 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -1388,8 +1430,12 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/HBO_Extreme/SA_Live_dash_enc/HBO_E
 
 #EXTINF:-1 tvg-id="HBO Xtreme" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/108/CH_LOGO/160/160/0/0/6041444607334.png" group-title="HBO + Universal",HBO Xtreme 🇲🇽
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=8cdb36741f8a5e44076eebd33ac9d42d&keyid%5B%5D=55d247f1e7c045c8b81b913a3d338de6
-http://147.78.1.28/xview/hbo_xtreme_hd.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://delgadolife.net/mundo/api/results.php?keyid=abf304290bec7c982e706b1fae592aea&key=73e1d01cc86bb88c184fbca31292977f
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.izzigo.tv/
+#EXTVLCOPT:http-origin=https://www.izzigo.tv
+https://live1-ott.izzigo.tv/8/out/u/dash/HBO-XTREME-HD-H265/default.mpd
+
 
 #EXTINF:-1 tvg-id="Universal HD.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/41/CH_LOGO/800/542/0/0/9929073907327.png" group-title="HBO + Universal",Universal TV 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
