@@ -57,7 +57,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/TelefeHD/SA_Live_dash_enc_wl/Telef
 #EXTINF:-1 tvg-id="Telefe HD.uy" tvg-logo="https://i.imgur.com/1ad9pDr.png" group-title="Nacional",Telefe Internacional
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/Telefe_Internacional/SA_Live_dash_enc_wl/Telefe_Internacional.mpd
 
-#EXTINF:-1 tvg-id="ElTrece.ar" tvg-name="Canal 13.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/eltrece-ar.png" group-title="Nacional",El Trece 
+#EXTINF:-1 tvg-id="Canal 13.ar" tvg-name="Canal 13.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/eltrece-ar.png" group-title="Nacional",El Trece 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=4aa8ec10f92b212c0cbaaa8e0591b468:17985aeaac30e62e6dad45f4df84cc2c
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -65,7 +65,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/Telefe_Internacional/SA_Live_dash_
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/ArtearHD/SA_Live_dash_enc/ArtearHD.mpd
 
 
-#EXTINF:-1 tvg-id="ElTreceInternacional.uy" tvg-logo="https://i.ibb.co/0qTfhWG/eltrece-internacional.png" group-title="Nacional",El Trece Internacional
+#EXTINF:-1 tvg-id="Canal 13 (Satelital).ar" tvg-logo="https://i.ibb.co/0qTfhWG/eltrece-internacional.png" group-title="Nacional",El Trece Internacional
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"c5f7b491a191048931aaaf0314558bc7":"6477522b434cad2020b5fb4d055720b0"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -144,7 +144,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/CronicaTV/SA_Live_dash_enc/Cronica
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/26_TV_HD/SA_Live_dash_enc/26_TV_HD.mpd
 
 
-#EXTINF:-1 tvg-id="Metro.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/metro-ar.png?raw=true" group-title="Nacional",Metro 
+#EXTINF:-1 tvg-id="Metro.ar" tvg-name="Metro.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/metro-ar.png?raw=true" group-title="Nacional",Metro 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"30040b6c7b723aee251c0dc3c4f4d84c":"c8d60a61d2d9d2acd4040a21da4d2203"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -200,7 +200,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/Magazine/SA_Live_dash_enc//Magazin
 #KODIPROP:inputstream.adaptive.license_key=7e9c0f045a0940b971d1067eecf629b7:923f466a008d077b21ac13ede21600a5
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 tvg-id="ArgentinisimaSatelital.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/argentinisima-satelital-ar.png" group-title="Nacional",Argentinisima
+#EXTINF:-1 tvg-id="Argentinísima Satelital.ar" tvg-name="Argentinísima Satelital.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/argentinisima-satelital-ar.png" group-title="Nacional",Argentinisima
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Argentinisima/SA_Live_dash_enc/Argentinisima.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -249,14 +249,14 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/MixTV/SA_Live_dash_enc/MixTV.mpd
 #KODIPROP:inputstream.adaptive.license_key=13e166b20d99713a42e42bfe91c7330b:413a0665d266bcc76a706ccfce2a2410
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 tvg-id="Encuentro.uy" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/encuentro-ar.png" group-title="Nacional", Encuentro
+#EXTINF:-1 tvg-id="Encuentro.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/encuentro-ar.png" group-title="Nacional", Encuentro
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Encuentro/SA_Live_dash_enc/Encuentro.mpd	
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=ada50e6dfa73ff021b64cda0e3266441:a8e86512821e7657d05acbbb703b5269
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 tvg-id="CANAL A.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/canal-a-ar.png" group-title="Nacional", Canal (á)
+#EXTINF:-1 tvg-id="Canal á.ar" tvg-name="Canal á.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/canal-a-ar.png" group-title="Nacional", Canal (á)
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Canal_a/SA_Live_dash_enc/Canal_a.mpd
 
 #EXTINF:-1 tvg-id="Perfil.ar" tvg-logo="https://i.imgur.com/AvICFVH.png" group-title="Nacional",+Perfil
@@ -353,7 +353,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/BabyTV/SA_Live_dash_enc/BabyTV.mpd
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Tooncast/SA_Live_dash_enc/Tooncast.mpd
 
 
-#EXTINF:-1 tvg-id="Nick Jr.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/863/CH_LOGO/800/542/0/0/61362740071226.png" group-title="Infantil",Nick Jr.
+#EXTINF:-1 tvg-id="Nick Jr..ar" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/863/CH_LOGO/800/542/0/0/61362740071226.png" group-title="Infantil",Nick Jr.
 #KODIPROP:inputstream.adaptive.license_key=8e1fb2b59b9d83c11466cb54b31928e2:3bf19e8d8956daca91daffb746f08bb1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -424,7 +424,7 @@ Deportes
 #EXTINF:-1 group-logo="https://i.imgur.com/EU6cNrE.png"
 
 
-#EXTINF:-1 "tvg-id="ESPN HD.uy" tvg-name="ESPN" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png" group-title="Deportes",ESPN
+#EXTINF:-1 "tvg-id="ESPN 2.ar" tvg-name="ESPN 2.ar" tvg-logo="https://i.postimg.cc/T5YBc3cB/ESPN-1-Argentina.png" group-title="Deportes",ESPN
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"d079ffa3757e8335611fc48be6ba47ff":"05059d1cb21b6708a55e9c26fb38e2f3"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -432,7 +432,7 @@ Deportes
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/ESPN2HD/SA_Live_dash_enc/ESPN2HD.mpd
 
 
-#EXTINF:-1 tvg-id="ESPN 2 HD.uy" tvg-name="ESPN 2" tvg-logo="https://i.postimg.cc/D4yRcwg2/ESPN-2-Argentina.png" group-title="Deportes",ESPN 2 
+#EXTINF:-1 tvg-id="ESPN.ar" tvg-name="ESPN.ar" tvg-logo="https://i.postimg.cc/D4yRcwg2/ESPN-2-Argentina.png" group-title="Deportes",ESPN 2 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"e6eab53cf8ea962b999c59c298596a65":"10c103ae76f99620d66fa75f2c03302a"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -441,7 +441,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/ESPN2_Arg/SA_Live_dash_enc/ESPN2_A
 
 
 
-#EXTINF:-1 tvg-id="ESPN 3 HD.uy" tvg-logo="https://i.postimg.cc/0MCLmw7Z/ESPN-3-Argentina.png" group-title="Deportes",ESPN 3 
+#EXTINF:-1 tvg-id="ESPN 3.ar" tvg-name="ESPN 3.ar" tvg-logo="https://i.postimg.cc/0MCLmw7Z/ESPN-3-Argentina.png" group-title="Deportes",ESPN 3 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=deeed0f44c6b45e064f4d5064486e821:bf89ceeb93564ddc603ba6afd8c9266a
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -450,7 +450,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/ESPN3/SA_Live_dash_enc/ESPN3.mpd
 
 
 
-#EXTINF:-1 tvg-id="ESPN 4 HD.uy" tvg-logo="https://i.postimg.cc/1fnQ2Sfy/ESPN-4-Sur.png" group-title="Deportes",ESPN 4 
+#EXTINF:-1 tvg-id="ESPN Extra.ar" tvg-name="ESPN Extra.ar" tvg-logo="https://i.postimg.cc/1fnQ2Sfy/ESPN-4-Sur.png" group-title="Deportes",ESPN 4 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"ZF4TYk6TOEGx6jXNobVb0Q","kid":"0CmB5vrqzvSckP2wU6tkHQ"}],"type":"temporary"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -617,7 +617,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/TyCSport/SA_Live_dash_enc/TyCSport
 #EXTINF:-1 tvg-id="629dtv.cl" tvg-logo="https://i.imgur.com/qeZwmix.jpeg" group-title="Deportes",TyC Sports Internacional
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/TyC_Internacional/SA_Live_dash_enc/TyC_Internacional.mpd
 
-#EXTINF:-1 tvg-id="TyC 24" tvg-name="TyC 24" tvg-logo="https://i.ibb.co/jPPwcwnk/tyc-play-2026.png" group-title="Deportes",TyC 24
+#EXTINF:-1 tvg-id="TyC 24" tvg-name="TyC 24" tvg-logo="https://i.ibb.co/gGbp2pF/tyc-2026.png" group-title="Deportes",TyC 24
 #EXTVLCOPT:http-referrer=https://play.tycsports.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36
 #EXTHTTP:{"cookie":"","referer":"https://play.tycsports.com/","user-agent":"Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36"}
@@ -662,7 +662,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/Eventos2_PY/SA_Live_dash_enc/Event
 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=3269536fedc69cba1e0281ff62cc4eb9:5246eedf4e7af3771f80899db667dede
-#EXTINF:-1 tvg-id="America Sports.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/america-sports-ar.png?raw=true" group-title="Deportes",America Sports 
+#EXTINF:-1 tvg-id="América Sports.ar" tvg-name="América Sports.ar" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/america-sports-ar.png?raw=true" group-title="Deportes",America Sports 
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/America_Sports/SA_Live_dash_enc/America_Sports.mpd
@@ -739,21 +739,21 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/DSports_2/SA_Live_dash_enc/DSports
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/DSports_2/SA_Live_dash_enc_wl/DSports_2.mpd
 
-#EXTINF:-1 tvg-id="DSports.uy" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Flow) 🇺🇾
+#EXTINF:-1 tvg-id="DSports HD.uy" tvg-name="DSports HD.uy" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Flow) 🇺🇾
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=9768d634efd3139386b907405e0a70cc:f02c61e5952a3079f629e2f705b02cc6
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/Dsports_UY/SA_Live_dash_enc/Dsports_UY.mpd
 
-#EXTINF:-1 tvg-id="DSports2.uy" tvg-logo="https://i.postimg.cc/hGDVfzgm/dsports-2.png" group-title="Deportes",DSports 2 (Flow) 🇺🇾
+#EXTINF:-1 tvg-id="Dsports 2 HD.uy" tvg-name="Dsports 2 HD.uy" tvg-logo="https://i.postimg.cc/hGDVfzgm/dsports-2.png" group-title="Deportes",DSports 2 (Flow) 🇺🇾
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=df41365cbe65033f4e57f4b7bafafbf3:62c11f75b6836e1defe480d8a9775320
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/Dsports2_UY/SA_Live_dash_enc_wl/Dsports2_UY.mpd
 
-#EXTINF:-1 tvg-name="DSportsPlus.uy" tvg-logo="https://i.postimg.cc/gcnKcwqB/dsports.png" group-title="Deportes",DSports+ (Flow) 🇺🇾
+#EXTINF:-1 tvg-name="Dsports + HD.uy" tvg-name="Dsports + HD.uy" tvg-logo="https://i.postimg.cc/gcnKcwqB/dsports.png" group-title="Deportes",DSports+ (Flow) 🇺🇾
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=fc51b58e664b610663329079722d98b3:3a444d28d15313665b305bb99c0e4c82
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -1100,7 +1100,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/AMC/SA_Live_dash_enc/AMC.mpd
 
 
 
-#EXTINF:-1  tvg-id="AMC Series HD.uy" tvg-logo="https://i.postimg.cc/Hcd31vF7/AMC-Series.png" group-title="Cine + Series",AMC Series 
+#EXTINF:-1  tvg-id="AMC Series.uy" tvg-logo="https://i.postimg.cc/Hcd31vF7/AMC-Series.png" group-title="Cine + Series",AMC Series 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"eede4d68b8f02d26fe3f59d2125b56e2":"2f064e1c42bd2ec12bc98d02eb62f06e"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -1197,7 +1197,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/TNT_HD_Arg/SA_Live_dash_enc/TNT_HD
 
 
 
-#EXTINF:-1 tvg-id="TCM SD.uy" tvg-name="TCM" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/285/CH_LOGO/400/400/0/0/1820288007328.png" group-title="Cine + Series",TCM 
+#EXTINF:-1 tvg-id="TCM.ar" tvg-name="TCM.ar" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/285/CH_LOGO/400/400/0/0/1820288007328.png" group-title="Cine + Series",TCM 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"d40eab36dff7414984c6f51b7174be0c":"ebb259a7f76be779f8dd7d68f55e0098"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -1756,7 +1756,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/HTV/SA_Live_dash_enc/HTV.mpd
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/MTV_HD/SA_Live_dash_enc/MTV_HD.mpd
 
-#EXTINF:-1 tvg-id="QuieroMusica.ar" tvg-logo="https://www.personal.com.ar/content/dam/teco-cms-ecosystem/flow/guia-de-canales/3281.png" group-title="Música",Quiero Musica
+#EXTINF:-1 tvg-id="Quiero.ar" tvg-logo="https://www.personal.com.ar/content/dam/teco-cms-ecosystem/flow/guia-de-canales/3281.png" group-title="Música",Quiero Musica
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=b650f8342cb564426d68304411bbfe8b:91c659df1f76ccc54ccd865517824e34
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
