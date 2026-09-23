@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://www.open-epg.com/files/argentina4.xml.gz,https://www.open-epg.com/files/uruguay2.xml.gz"
+#EXTM3U x-tvg-url="https://www.open-epg.com/files/argentina4.xml.gz,https://www.open-epg.com/files/uruguay2.xml.gz,https://www.open-epg.com/files/argentina2.xml.gz"
  
 Nacional
  
@@ -633,7 +633,7 @@ https://streams2.sofast.tv/ptnr-hispasat/title-TYC-SPORTS-LATMA/v1/master/611d79
 #KODIPROP:inputstream.adaptive.license_key={"fdb996352a45b339b86f3eb336af36c6":"21b8543c13b2b87e0e097602a71f3f91"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 tvg-id="Flow Sports.ar" tvg-logo="https://static.flow.com.ar/images/673/CH_LOGO/500/500/0/0/53028730071359.png" group-title="Deportes", Flow Sports 
+#EXTINF:-1 tvg-id="EVENTOS HD.ar" tvg-logo="https://static.flow.com.ar/images/673/CH_LOGO/500/500/0/0/53028730071359.png" group-title="Deportes", Flow Sports 
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/Eventos1HD/SA_Live_dash_enc/Eventos1HD.mpd
 
 
@@ -1290,7 +1290,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Europa_Europa/SA_Live_dash_enc/Eur
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/AEHD/SA_Live_dash_enc/AEHD.mpd
 
 
-#EXTINF:-1 tvg-id="USA.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/488/CH_LOGO/160/160/0/0/81694330078327.png" group-title="Cine + Series",USA 
+#EXTINF:-1 tvg-id="USA NETWORK.ar" tvg-name="USA NETWORK.ar" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/488/CH_LOGO/160/160/0/0/81694330078327.png" group-title="Cine + Series",USA 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"27e223ab07b58c2c968e7304c14cd75e":"6dc4c9640f27778da211689c821adecd"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -1604,7 +1604,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Theater_HD/SA_Live_dash_enc/Theate
 
 
 
-#EXTINF:-1 tvg-id="Home and Health HD.uy" tvg-name="Discovery Home And Health" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/DSH&H.png?raw=true" group-title="Novelas + Variedades",Discovery Home And Health 
+#EXTINF:-1 tvg-id="HOME AND HEALTH.ar" tvg-name="HOME AND HEALTH.ar" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/DSH&H.png?raw=true" group-title="Novelas + Variedades",Discovery Home And Health 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=6e2bc2b3c9464c407af6d0559bb5e1ea:43ec5e698b6f60a0f41d604909a25186
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
