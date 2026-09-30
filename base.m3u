@@ -700,7 +700,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/NBA_TV/SA_Live_dash_enc/NBA_TV.mpd
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/DeporTVHD/SA_Live_dash_enc/DeporTVHD.mpd
 
 
-#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Flow) 
+#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports (Flow) 
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"86d19904429f78baf98cf1fd481c430e":"5229197732a9a3e109264b272bd782f2"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -708,7 +708,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/DeporTVHD/SA_Live_dash_enc/DeporTV
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/DSports_1/SA_Live_dash_enc/DSports_1.mpd
 
 
-#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Flow) FHD
+#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports (Flow) FHD
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key={"86d19904429f78baf98cf1fd481c430e":"5229197732a9a3e109264b272bd782f2"}
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -730,21 +730,21 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/DSports_2/SA_Live_dash_enc/DSports
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c3eds/DSports_2/SA_Live_dash_enc_wl/DSports_2.mpd
 
-#EXTINF:-1 tvg-id="DSports HD.uy" tvg-name="DSports HD.uy" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Flow) 🇺🇾
+#EXTINF:-1 tvg-id="DSports HD.uy" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports (Flow) 🇺🇾
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=9768d634efd3139386b907405e0a70cc:f02c61e5952a3079f629e2f705b02cc6
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/Dsports_UY/SA_Live_dash_enc/Dsports_UY.mpd
 
-#EXTINF:-1 tvg-id="Dsports 2 HD.uy" tvg-name="Dsports 2 HD.uy" tvg-logo="https://i.postimg.cc/hGDVfzgm/dsports-2.png" group-title="Deportes",DSports 2 (Flow) 🇺🇾
+#EXTINF:-1 tvg-id="Dsports 2 HD.uy" tvg-logo="https://i.postimg.cc/hGDVfzgm/dsports-2.png" group-title="Deportes",DSports 2 (Flow) 🇺🇾
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=df41365cbe65033f4e57f4b7bafafbf3:62c11f75b6836e1defe480d8a9775320
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c7eds/Dsports2_UY/SA_Live_dash_enc_wl/Dsports2_UY.mpd
 
-#EXTINF:-1 tvg-name="Dsports + HD.uy" tvg-name="Dsports + HD.uy" tvg-logo="https://i.postimg.cc/gcnKcwqB/dsports.png" group-title="Deportes",DSports+ (Flow) 🇺🇾
+#EXTINF:-1 tvg-name="Dsports + HD.uy" tvg-logo="https://i.imgur.com/433GM91.jpeg" group-title="Deportes",DSports+ (Flow) 🇺🇾
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=fc51b58e664b610663329079722d98b3:3a444d28d15313665b305bb99c0e4c82
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
@@ -768,7 +768,7 @@ https://099ed2f3014c41e78f3c7bc29b21bc11.mediatailor.us-east-1.amazonaws.com/v1/
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/DSports_Uruguay_Premium/SA_Live_dash_enc_wl/DSports_Uruguay_Premium.mpd
 
 
-#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports (Directv)
+#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports (Directv)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=13129171e9303da3a31dd7b583f7f41c:dc4844c309c47baf996f267cda324d61
 #EXTVLCOPT:http-user-agent=dgo/4.48.0 (Android; Android 7.1.2; Asus; ASUS_Z01QD) ExoPlayer/2.19.1
@@ -777,7 +777,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c4eds/DSports_Uruguay_Premium/SA_Live_da
 https://1cf44b5bdec84b56bd4ec71e0cbf33de.mediatailor.us-east-1.amazonaws.com/v1/dash/dffceb859a31f14d0ed059ef6b4e2e4d850e60b1/live_1057/1057_DIRECTV_SPORTS_ARG_DASH/manifest.mpd
  
  
-#EXTINF:-1 tvg-id="DSports 2" tvg-name="DIRECTV SPORTS OCC 2" tvg-logo="https://i.postimg.cc/hGDVfzgm/dsports-2.png" group-title="Deportes",DSports 2 (Directv)
+#EXTINF:-1 tvg-id="DSports 2" tvg-logo="https://i.postimg.cc/hGDVfzgm/dsports-2.png" group-title="Deportes",DSports 2 (Directv)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=054e17b9b99e3e0aa1e022d238635d35:4cc211af8468e321973787bb61f55db4
 #EXTVLCOPT:http-user-agent=dgo/4.48.0 (Android; Android 7.1.2; Asus; ASUS_Z01QD) ExoPlayer/2.19.1
@@ -785,7 +785,7 @@ https://1cf44b5bdec84b56bd4ec71e0cbf33de.mediatailor.us-east-1.amazonaws.com/v1/
 #EXTVLCOPT:http-referrer=https://android_mobile.directvgo.com/
 https://46925e69ccf445e09667cb17c8bb4f2c.mediatailor.us-east-1.amazonaws.com/v1/dash/dffceb859a31f14d0ed059ef6b4e2e4d850e60b1/live_1065/1065_DIRECTV_SPORTS_OCC_2_DASH/manifest.mpd
  
-#EXTINF:-1 tvg-id="0433" tvg-logo="https://i.postimg.cc/gcnKcwqB/dsports.png" group-title="Deportes",DSports + (Directv)
+#EXTINF:-1 tvg-id="0433" tvg-logo="https://i.imgur.com/433GM91.jpeg" group-title="Deportes",DSports + (Directv)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7dbd6af5e0e530919642f53f4b9af775:48d7040d3c5edf52115fd0b2ede3bdb0
 #EXTVLCOPT:http-user-agent=dgo/4.48.0 (Android; Android 7.1.2; Asus; ASUS_Z01QD) ExoPlayer/2.19.1
@@ -793,7 +793,7 @@ https://46925e69ccf445e09667cb17c8bb4f2c.mediatailor.us-east-1.amazonaws.com/v1/
 #EXTVLCOPT:http-referrer=https://android_mobile.directvgo.com/
 https://b5cce558f58c4843a8264d282ebce3ec.mediatailor.us-east-1.amazonaws.com/v1/dash/dffceb859a31f14d0ed059ef6b4e2e4d850e60b1/live_1071/1071_DIRECTV_SPORTS_HD_DASH/manifest.mpd
 
-#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports 🇦🇷
+#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports 🇦🇷
 #EXTVLCOPT:http-user-agent=AivAndroidPlayer/1.0 (AndroidDevice)
 #EXTVLCOPT:http-referrer=https://www.primevideo.com/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -809,14 +809,14 @@ https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/x0srg3jjpz/
 #KODIPROP:inputstream.adaptive.license_key=https://oikoapp.xyz/selvanegra/results.php?key=c664b811a97edc555da47c1d22482542&keyid=0db71325e4256f5f16b348b3b1b7832a
 https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/nzl2d4ffbw/out/v1/d094dc6ba8354f3e88b7efa32f80cc33/cenc.mpd|User-Agent=AivAndroidPlayer/1.0 (AndroidDevice)&Referer=https://www.primevideo.com/
 
-#EXTINF:-1 tvg-id="0433" tvg-logo="https://i.postimg.cc/gcnKcwqB/dsports.png" group-title="Deportes",DSports+ 🇦🇷
+#EXTINF:-1 tvg-id="0433" tvg-logo="https://i.imgur.com/433GM91.jpeg" group-title="Deportes",DSports+ 🇦🇷
 #EXTVLCOPT:http-user-agent=AivAndroidPlayer/1.0 (AndroidDevice)
 #EXTVLCOPT:http-referrer=https://www.primevideo.com/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://oikoapp.xyz/selvanegra/results.php?key=3f8d519997196db76631dd4b427f53f6&keyid=da81f7165f73c884fc1dcf0bf3bd4bb5
 https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/hoo4ddqavw/out/v1/dadfb43b8a714e4f9288026b5c3351a0/cenc.mpd|User-Agent=AivAndroidPlayer/1.0 (AndroidDevice)&Referer=https://www.primevideo.com/
 
-#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports 
+#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports 
 #EXTVLCOPT:http-user-agent=AivAndroidPlayer/1.0 (AndroidDevice)
 #EXTVLCOPT:http-referrer=https://www.primevideo.com/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -824,7 +824,7 @@ https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/hoo4ddqavw/
 https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/qubxnja5rl/out/v1/4ef0db80aa3341e2babb58314541f1e0/cenc.mpd|User-Agent=AivAndroidPlayer/1.0 (AndroidDevice)&Referer=https://www.primevideo.com/
 
 
-#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports 
+#EXTINF:-1 tvg-id="1431" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports 
 #EXTVLCOPT:http-user-agent=AivAndroidPlayer/1.0 (AndroidDevice)
 #EXTVLCOPT:http-referrer=https://www.primevideo.com/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -832,7 +832,7 @@ https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/qubxnja5rl/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd|User-Agent=AivAndroidPlayer/1.0 (AndroidDevice)&Referer=https://www.primevideo.com/
 
-#EXTINF:-1 tvg-id="2431" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports 🇨🇱
+#EXTINF:-1 tvg-id="2431" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports 🇨🇱
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/130.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://www.paramountplus.com/
 #EXTVLCOPT:http-origin=https://www.paramountplus.com
@@ -847,13 +847,13 @@ https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/cardt9ai8g/
 #EXTVLUM-USER-AGENT=AivAndroidPlayer/1.0 (AndroidDevice)
 http://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/dash/enc/rgilyeubta/out/v1/09a67027b18f4fd78aaa3794a2aacfe8/cenc.mpd|Referer=https://www.primevideo.com/&User-Agent=AivAndroidPlayer/1.0 (AndroidDevice)
 
-#EXTINF:-1 tvg-id="1433" tvg-logo="https://i.postimg.cc/gcnKcwqB/dsports.png" group-title="Deportes",DSports + 🇨🇱
+#EXTINF:-1 tvg-id="1433" tvg-logo="https://i.imgur.com/433GM91.jpeg" group-title="Deportes",DSports + 🇨🇱
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://m3ukodi.com/php/clearkey_hextobase64/results.php?key%5B%5D=ddfd7ca653d6f35543d8edb3c688e20f&keyid%5B%5D=83f81c4cc1443991543de4e22eea7586
 #EXTVLUM-USER-AGENT=AivAndroidPlayer/1.0 (AndroidDevice)
 http://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/dash/enc/ud6bnhthpj/out/v1/2639a2f4480f4269953de466d5f46463/cenc.mpd|Referer=https://www.primevideo.com/&User-Agent=AivAndroidPlayer/1.0 (AndroidDevice)
 
-#EXTINF:-1 tvg-id="0431" tvg-logo="https://i.postimg.cc/hvzLcknV/dsports.png" group-title="Deportes",DSports 🇨🇴
+#EXTINF:-1 tvg-id="0431" tvg-logo="https://i.imgur.com/UvlmJRi.jpeg" group-title="Deportes",DSports 🇨🇴
 #EXTVLCOPT:http-user-agent=AivAndroidPlayer/1.0 (AndroidDevice)
 #EXTVLCOPT:http-referrer=https://www.primevideo.com/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
