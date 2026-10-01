@@ -229,7 +229,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/INCAA_Tv/SA_Live_dash_enc/INCAA_Tv
 
 
 
-#EXTINF:-1 tvg-name="canal 25" tvg-logo="https://i.ibb.co/RpQLdrKk/flow.png" group-title="Nacional",Canal 25 
+#EXTINF:-1 tvg-name="AlphaTv.ar" tvg-logo="https://i.imgur.com/uaMnogs.jpeg" group-title="Nacional",Alpha TV
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=d67ea3430c0dd019e820535765268109:7d7bf2d1b5f4c7c97138a1b9b98e0675
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://portal.app.flow.com.ar
