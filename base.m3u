@@ -9,7 +9,7 @@ Nacional
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=589f5b6f4afec0b3362cd6be2ab1eb36:6d685f3151730ca6a4be7765a46d30a5
 #KODIPROP:inputstream.adaptive.stream_headers=origin=https://portal.app.flow.com.ar
-#EXTINF:-1 tvg-id="0903" tvg-logo="https://i.postimg.cc/5t1Qr2mk/LEP.png" group-title="Nacional",TV Pública 
+#EXTINF:-1 tvg-id="TVPublica.ar" tvg-logo="https://i.postimg.cc/5t1Qr2mk/LEP.png" group-title="Nacional",TV Pública 
 https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Canal7/SA_Live_dash_enc/Canal7.mpd
 
 
@@ -1434,7 +1434,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Universal_Premiere/SA_Live_dash_en
 #EXTINF:-1 tvg-name="Universal Premiere.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1285/CH_LOGO/800/542/0/0/62685863076950.png" group-title="HBO + Universal",Universal Premiere opc2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://archive.org/download/hb7bfh.f/HB7%2524b%2524Fh%25C2%25B7F%2524/upremieree.json
+#KODIPROP:inputstream.adaptive.license_key=https://archive.org/download/hb7bfh.f/HB7%2524b%2524Fh%25C2%25B7F%2524/t.me/teleplay24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 https://unipluslivedash.akamaized.net/universalpremiert0/manifest.mpd
 
@@ -1456,7 +1456,7 @@ https://{{SERVIDOR}}/tok_{{TOKEN}}/live/c6eds/Universal_Cinema/SA_Live_dash_enc/
 #EXTINF:-1 tvg-id="Universal Cinema.uy" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1282/CH_LOGO/800/542/0/0/21817888076947.png" group-title="HBO + Universal",Universal Cinema opc2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://archive.org/download/hb7bfh.f/HB7%2524b%2524Fh%25C2%25B7F%2524/ucinemae.json
+#KODIPROP:inputstream.adaptive.license_key=https://archive.org/download/hb7bfh.f/HB7%2524b%2524Fh%25C2%25B7F%2524/t.me/worldtv6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 https://unipluslivedash.akamaized.net/universalcinemat0/manifest.mpd
 
